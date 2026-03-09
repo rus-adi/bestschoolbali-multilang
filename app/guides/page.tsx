@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getAllPosts } from "../../lib/posts";
+import { getAllPosts, hasPostTranslation } from "../../lib/posts";
+import T from "../../components/T";
 import { getGuideTopicsWithCounts } from "../../lib/guideTopics";
 
 const SITE_URL = "https://bestschoolbali.com";
@@ -13,14 +14,15 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/guides` },
 };
 
-export default function GuidesHubPage() {
-  const topics = getGuideTopicsWithCounts();
-  const posts = getAllPosts();
+export default function GuidesHubPage({ locale = "en" }: { locale?: string }) {
+  const topics = getGuideTopicsWithCounts(locale);
+  const allPosts = getAllPosts(locale);
+  const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
 
   return (
     <main className="container" style={{ paddingTop: 22 }}>
       <div className="card">
-        <h1 style={{ marginTop: 0 }}>Guides</h1>
+        <h1 style={{ marginTop: 0 }}><T k="guides.title" /></h1>
         <p className="small" style={{ marginTop: 8 }}>
           If you are new to Bali schooling, start with a shortlist, then confirm age coverage and curriculum, and only then
           compare total first-year cost. These guides are written to help you ask better questions and avoid surprises.
@@ -28,19 +30,19 @@ export default function GuidesHubPage() {
 
         <div className="inlineLinks" style={{ marginTop: 12 }}>
           <a className="btn" href="/schools">
-            Browse schools
+            <T k="guides.browseSchools" />
           </a>
           <a className="btn" href="/areas">
-            Browse areas
+            <T k="guides.browseAreas" />
           </a>
           <a className="btn" href="/curriculums">
-            Browse curriculums
+            <T k="guides.browseCurriculums" />
           </a>
           <a className="btn" href="/fees">
-            Fees overview
+            <T k="guides.feesOverview" />
           </a>
           <a className="btn btnPrimary" href="/contact">
-            Get guidance
+            <T k="guides.getGuidance" />
           </a>
         </div>
       </div>
@@ -89,7 +91,7 @@ export default function GuidesHubPage() {
 
           <div className="inlineLinks" style={{ marginTop: 12 }}>
             <a className="btn" href="/posts">
-              View all posts
+              <T k="guides.viewAllPosts" />
             </a>
           </div>
         </section>

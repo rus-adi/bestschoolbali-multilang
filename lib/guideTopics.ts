@@ -53,17 +53,17 @@ function postMatchesTopic(post: PostMeta, topic: GuideTopic) {
   return topic.match.some((m) => haystack.includes(m.toLowerCase()));
 }
 
-export function getGuideTopicsWithCounts() {
-  const posts = getAllPosts();
+export function getGuideTopicsWithCounts(locale: string = "en") {
+  const posts = getAllPosts(locale);
   return GUIDE_TOPICS.map((t) => ({
     ...t,
     count: posts.filter((p) => postMatchesTopic(p, t)).length,
   })).filter((t) => t.count > 0);
 }
 
-export function getPostsForTopic(topicSlug: string): PostMeta[] {
+export function getPostsForTopic(topicSlug: string, locale: string = "en"): PostMeta[] {
   const topic = GUIDE_TOPICS.find((t) => t.slug === slugify(topicSlug));
   if (!topic) return [];
-  const posts = getAllPosts();
+  const posts = getAllPosts(locale);
   return posts.filter((p) => postMatchesTopic(p, topic));
 }
