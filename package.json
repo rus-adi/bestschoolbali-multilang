@@ -8,7 +8,8 @@
     "build": "node scripts/generate-sitemap.mjs && next build",
     "qa:content": "node scripts/qa-duplicate-content.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:i18n-posts": "node scripts/check-post-translations.mjs"
   },
   "dependencies": {
     "next": "^14.2.0",
