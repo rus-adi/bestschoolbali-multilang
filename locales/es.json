@@ -312,5 +312,77 @@
     "feesOverview": "Resumen de cuotas",
     "getGuidance": "Obtener asesoría",
     "viewAllPosts": "Ver todos los artículos"
+  },
+  "typesPage": {
+    "title": "Tipos de escuela",
+    "subtitle": "Explora escuelas por tipo y abre los perfiles para confirmar currículo, edades y cuotas.",
+    "cards": {
+      "schoolsCount": "{count} escuelas",
+      "browse": "Ver"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combina tipo con zona",
+        "body": "El tipo ayuda a filtrar rápido, pero el trayecto suele decidir. Elige primero la zona y luego revisa el tipo.",
+        "areasCta": "Explorar zonas",
+        "directoryCta": "Abrir directorio"
+      },
+      "fees": {
+        "title": "Cuotas y presupuesto",
+        "body": "Compara escuelas por costo total del primer año. Los rangos de presupuesto son la forma más rápida de filtrar al inicio.",
+        "budgetCta": "Rangos de presupuesto",
+        "feesCta": "Resumen de cuotas"
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué significa el tipo de escuela?",
+      "a1": "Las etiquetas de tipo son un atajo para explorar. Las escuelas pueden usar términos distintos, así que abre el perfil y confirma programa, idioma de enseñanza y cobertura por edad/curso.",
+      "q2": "¿‘Escuela internacional’ siempre es la mejor opción?",
+      "a2": "No necesariamente. Muchas familias priorizan trayecto, encaje con la comunidad y apoyo. Usa el tipo como punto de partida y luego filtra por edades, ruta curricular y costo total del primer año.",
+      "q3": "¿Cómo hacer una lista corta después de elegir un tipo?",
+      "a3": "Primero elige la zona (el tráfico importa), luego confirma edades/cursos y currículo. Por último, compara cuotas pidiendo el total completo del primer año (matrícula + pagos únicos + extras recurrentes).",
+      "q4": "¿Pueden ayudarnos a elegir?",
+      "a4": "Sí. Si compartes tu zona, la edad de tu hijo/a y dos prioridades (currículo, presupuesto, apoyo de idioma), te sugerimos una lista corta y preguntas concretas para admisiones."
+    },
+    "typeLabels": {
+      "school": "Escuela",
+      "preschool": "Preescolar",
+      "international-school": "Escuela internacional",
+      "learning-centre": "Centro de aprendizaje",
+      "early-years": "Primeros años",
+      "montessori-school": "Escuela Montessori",
+      "childcare": "Guardería",
+      "academy": "Academia",
+      "homeschool-program": "Programa de educación en casa",
+      "waldorf-school": "Escuela Waldorf"
+    }
+  },
+  "comparePage": {
+    "title": "Comparar escuelas",
+    "subtitle": "Elige algunas escuelas y compara cuotas, edades, etiquetas curriculares y zona; luego abre los perfiles para ver más detalles.",
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Cuál es la mejor forma de comparar escuelas de manera justa?",
+      "a1": "Usa la misma lista de preguntas para cada escuela. Compara trayecto, cobertura por edad/curso, ruta curricular y costo total del primer año (matrícula + pagos únicos + extras recurrentes).",
+      "q2": "¿Las cuotas de este sitio son exactas?",
+      "a2": "Las cuotas son rangos aproximados. Las escuelas pueden actualizar precios en cualquier momento. Solicita siempre la hoja de cuotas más reciente y confirma qué está incluido.",
+      "q3": "¿Cuántas escuelas deberíamos preseleccionar?",
+      "a3": "La mayoría de familias preselecciona entre 3 y 5 y luego hace visitas en días cercanos para comparar mejor.",
+      "q4": "¿Pueden ayudarnos a elegir?",
+      "a4": "Sí. Comparte tu zona, la edad de tu hijo/a y un par de prioridades (currículo, apoyo de idioma, presupuesto) y te ayudaremos a crear una lista corta y redactar preguntas para admisiones."
+    },
+    "sections": {
+      "area": {
+        "title": "Comparaciones de zonas populares",
+        "body": "Si estás decidiendo dónde vivir, estas comparaciones te ayudan a entender trayecto y opciones de escuelas.",
+        "cta": "Ver comparaciones de zonas"
+      },
+      "ages": {
+        "title": "Explorar por edad",
+        "body": "¿Prefieres empezar por cobertura de edad/curso? Usa rangos amplios de edad y luego filtra por zona y currículo.",
+        "cta": "Explorar por edad"
+      }
+    }
   }
 }

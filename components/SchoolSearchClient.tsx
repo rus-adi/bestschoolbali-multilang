@@ -3,6 +3,7 @@
 import React from 'react';
 import type { School } from '../lib/schools';
 import { slugify } from '../lib/slug';
+import { getSchoolLogo } from '../lib/schoolLogo';
 import { useLocaleHref, useT } from './I18nProvider';
 import SchoolInterestButton from './SchoolInterestButton';
 
@@ -257,7 +258,7 @@ export default function SchoolSearchClient({
 
       <div style={{ marginTop: 12 }} className="grid">
         {filtered.slice(0, maxResults).map((s) => {
-          const icon = `/img/schools/${s.id}.webp`;
+          const icon = getSchoolLogo(s);
           const tagsPreview = (s.curriculum_tags ?? []).slice(0, 5);
           const selected = compareIds.includes(s.id);
           return (
