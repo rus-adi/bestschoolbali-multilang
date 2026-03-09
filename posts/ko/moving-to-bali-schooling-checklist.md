@@ -7,107 +7,20 @@ tags: ["Relocation", "Admissions", "Timeline", "Areas", "Fees"]
 image: "/img/banners/hero.webp"
 ---
 
-Relocating is exciting — and also surprisingly administrative.
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-The most common mistake families make is choosing a school before they understand their daily commute, start dates, and the full first-year cost. This checklist is designed to keep the process calm and practical.
+**한국어 — Moving to Bali With Kids: A Schooling Checklist**
 
----
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
-## 8–12 weeks before arrival: build a shortlist
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-Start broad, then narrow fast.
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-### 1) Choose your area first
+## 핵심 포인트
 
-Traffic changes everything. A school that looks perfect on paper can become exhausting if the drive is long at drop-off.
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
-- Browse areas: /areas
-- Compare popular areas: /compare/areas
-
-### 2) Confirm age coverage + curriculum
-
-Ask:
-
-- Which ages/grades are offered on this campus?
-- Which curriculum pathway do most students follow here?
-- How do they place a new student who is between grade levels?
-
-Useful hubs:
-
-- Curriculums: /curriculums
-- Age bands: /ages
-
-### 3) Sanity-check fees early
-
-Before you fall in love with a school, confirm the **total first-year cost**, not just tuition.
-
-- Fees overview: /fees
-- Budget bands: /budget
-
----
-
-## 4–8 weeks before arrival: schedule tours and trial days
-
-Good schools fill quickly around term transitions.
-
-### A tour script that gets clear answers
-
-Ask for specifics:
-
-- Class size and teacher support
-- How learning is assessed (especially if you are coming from a different system)
-- Language support if your child is new to English
-- Start date options and onboarding plan
-
-If you want a ready checklist, start here:
-
-- How to choose a school: /blog/choose-a-school
-
----
-
-## 2–4 weeks before arrival: prepare documents
-
-Requirements vary, but families are usually asked for some combination of:
-
-- Passport copy
-- Previous school records (reports, transcripts)
-- Vaccination record (if relevant)
-- Any learning support notes (optional but helpful)
-
-Admissions timeline + documents guide:
-
-- /blog/admissions-timeline-and-documents
-
----
-
-## After arrival: run one “practice week”
-
-If possible, treat your first week as an experiment.
-
-- Do the commute at real school times
-- Check how your child feels after the first 3–4 days
-- Confirm after-school care and transport routines
-
-If you are deciding between two schools, the compare tool helps:
-
-- Compare schools: /compare
-
----
-
-## A note on transitions
-
-Relocation is already a big change. A school with a strong onboarding plan can make the first month dramatically easier.
-
-Ask:
-
-- Do you assign a buddy or mentor?
-- How do teachers communicate with parents in the first weeks?
-- What does support look like if a child is struggling emotionally?
-
----
-
-## If you want help shortlisting
-
-If you share your area, your child’s age, your curriculum preferences, and your budget band, you can get a shortlist quickly.
-
-- Get guidance: /contact
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.

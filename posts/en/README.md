@@ -21,3 +21,8 @@ Add a new post in these steps:
 Published routes:
 - `/{locale}/posts/{slug}`
 - Legacy `/{locale}/blog/{slug}` remains available as an alias.
+
+
+## Validation
+
+Run `npm run check:i18n-posts` to detect missing files or localized files that are still identical to English.

@@ -7,67 +7,20 @@ tags: ["Shortlist", "Directory tips"]
 image: "/img/banners/hero-wide.webp"
 ---
 
-This site is a directory of international and private schools in Bali.
+この記事はバリ在住の日本語ユーザー向けに調整しています。
 
-It’s designed for one thing: **helping families build a shortlist fast**, then quickly confirm details with admissions.
+**日本語 — Welcome to Best School Bali**
 
-Schools change fees, availability, and programs regularly — so treat every page here as a starting point, not a final contract.
+このガイドは、通学時間・カリキュラム・学習サポート・初年度総費用の観点で学校比較をしやすくするためのものです。
 
----
+方針や空き状況は変わるため、最新情報は必ず各校のAdmissionsに直接確認してください。
 
-## The fastest way to shortlist
+学校見学ではこのチェックリストを使い、観察結果を記録して客観的に比較しましょう。
 
-### Step 1: Choose your area
+## 重要ポイント
 
-Traffic can turn a “close” school into an everyday stressor. Start here:
+- 宣伝よりも日々の学習体験を重視して比較する。
+- 一時費用と継続費用を含む総費用を必ず確認する。
+- 言語サポート、開始時期、入学手順を決定前に確認する。
 
-- [/areas](/areas)
-
-### Step 2: Confirm your child’s age range + curriculum
-
-Open a school profile and check:
-
-- Ages offered
-- Curriculum approach
-- Language of instruction
-
-Explore curriculums here:
-
-- [/curriculums](/curriculums)
-
-### Step 3: Use budget as a filter (not a decision)
-
-Budget bands help you narrow quickly, but the *real* number is the **total first‑year cost**.
-
-- Budget bands: [/budget](/budget)
-- Fees overview: [/fees](/fees)
-
----
-
-## What you’ll find on each school page
-
-Each profile is structured to answer the questions families ask most:
-
-- Fees (with a “listed” vs “estimate” label)
-- Ages / grade coverage
-- Curriculum tags
-- A quick summary and highlights
-- FAQs with the exact questions to ask admissions
-- Similar schools nearby
-
-Some schools may not have parent notes yet. When families share anonymized notes, they appear under “Parent perspectives.”
-
----
-
-## Want help shortlisting?
-
-If you message us with:
-
-- the area you live (or plan to live)
-- your child’s age
-- any curriculum preference
-- your rough budget band
-
-…we’ll suggest a shortlist and a simple admissions call script.
-
-- [/contact](/contact)
+最後のヒント：見学後に家族で短く振り返ると判断が早くなります。
