@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import type { School } from '../lib/schools';
 import T from './T';
 import SchoolInterestButton from './SchoolInterestButton';
+import { getSchoolLogo } from '../lib/schoolLogo';
 
 type Props = {
   school: School;
@@ -10,7 +11,7 @@ type Props = {
 };
 
 export default function SchoolListCard({ school, meta, feeText }: Props) {
-  const schoolImg = `/img/schools/${school.id}.webp`;
+  const schoolImg = getSchoolLogo(school);
 
   return (
     <div className="card schoolCard schoolCardWithActions">
