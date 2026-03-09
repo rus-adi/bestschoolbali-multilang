@@ -161,7 +161,7 @@
     "badgeParents": "保護者の声",
     "badgeGuidance": "Free guidance",
     "quickFilterInternational": "International Schools",
-    "quickFilterLocal": "Bali Local Schools",
+    "quickFilterLocal": "ネイチャースクール",
     "quickFilterMontessoriIb": "Montessori & IB",
     "quickFilterAffordable": "Affordable & Premium",
     "sponsoredHeading": "Sponsored schools",
@@ -189,7 +189,14 @@
     "guideLink": "Read the Guides",
     "noPosts": "No posts yet.",
     "morePosts": "More posts",
-    "readMore": "続きを読む"
+    "readMore": "続きを読む",
+    "chipRow": {
+      "label": "クイックフィルター",
+      "internationalSchools": "インターナショナルスクール",
+      "natureSchool": "ネイチャースクール",
+      "montessoriIb": "モンテッソーリ＆IB",
+      "affordablePremium": "手頃＆プレミアム"
+    }
   },
   "school": {
     "feesLabel": "Fees",

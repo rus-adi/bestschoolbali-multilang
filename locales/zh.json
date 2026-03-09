@@ -161,7 +161,7 @@
     "badgeParents": "家长视角",
     "badgeGuidance": "Free guidance",
     "quickFilterInternational": "International Schools",
-    "quickFilterLocal": "Bali Local Schools",
+    "quickFilterLocal": "自然学校",
     "quickFilterMontessoriIb": "Montessori & IB",
     "quickFilterAffordable": "Affordable & Premium",
     "sponsoredHeading": "Sponsored schools",
@@ -189,7 +189,14 @@
     "guideLink": "Read the Guides",
     "noPosts": "No posts yet.",
     "morePosts": "More posts",
-    "readMore": "阅读更多"
+    "readMore": "阅读更多",
+    "chipRow": {
+      "label": "快速筛选",
+      "internationalSchools": "国际学校",
+      "natureSchool": "自然学校",
+      "montessoriIb": "蒙台梭利与IB",
+      "affordablePremium": "平价与高端"
+    }
   },
   "school": {
     "feesLabel": "Fees",

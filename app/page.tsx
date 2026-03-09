@@ -7,6 +7,7 @@ import { getSponsoredSchools } from '../lib/sort';
 import HomeSearchForm from '../components/HomeSearchForm';
 import T from '../components/T';
 import SchoolTileCard from '../components/SchoolTileCard';
+import HomeQuickFilters from '../components/HomeQuickFilters';
 
 const SITE_URL = 'https://bestschoolbali.com';
 
@@ -91,24 +92,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="chipRow" aria-label="Quick filters">
-            <a className="chip" href="/schools?q=International">
-              <span className="chipIcon" aria-hidden="true">◎</span>
-              <T k="home.quickFilterInternational" />
-            </a>
-            <a className="chip" href="/schools?tag=Indonesian">
-              <span className="chipIcon" aria-hidden="true">⊙</span>
-              <T k="home.quickFilterLocal" />
-            </a>
-            <a className="chip" href="/schools?tag=Montessori">
-              <span className="chipIcon" aria-hidden="true">◈</span>
-              <T k="home.quickFilterMontessoriIb" />
-            </a>
-            <a className="chip" href="/schools?budget=Budget">
-              <span className="chipIcon" aria-hidden="true">◍</span>
-              <T k="home.quickFilterAffordable" />
-            </a>
-          </div>
+          <HomeQuickFilters />
         </div>
       </section>
 
