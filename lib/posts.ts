@@ -43,7 +43,8 @@ function byDateDesc(a: PostMeta, b: PostMeta) {
 }
 
 function normalizeLocale(locale?: string | null): Locale {
-  return isLocale(locale ?? undefined) ? locale : DEFAULT_LOCALE;
+  const candidate = locale ?? undefined;
+  return isLocale(candidate) ? candidate : DEFAULT_LOCALE;
 }
 
 function listMarkdownSlugs(dir: string): string[] {

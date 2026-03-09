@@ -1,23 +1,4 @@
-# Localized posts
+# 로컬라이즈된 포스트
 
-Add a new post in these steps:
-
-1. Create the source file in `posts/en/<slug>.md`
-2. Copy the same filename into each locale folder:
-   - `posts/nl/<slug>.md`
-   - `posts/de/<slug>.md`
-   - `posts/es/<slug>.md`
-   - `posts/fr/<slug>.md`
-   - `posts/ru/<slug>.md`
-   - `posts/zh/<slug>.md`
-   - `posts/ko/<slug>.md`
-   - `posts/ja/<slug>.md`
-   - `posts/ar/<slug>.md`
-3. Keep the same slug/filename across all languages.
-4. Keep frontmatter keys the same: `title`, `date`, `excerpt`, `category`, `tags`, `image`.
-5. Translate the markdown body for each locale.
-6. If a localized file is missing, the runtime falls back to English automatically.
-
-Published routes:
-- `/{locale}/posts/{slug}`
-- Legacy `/{locale}/blog/{slug}` remains available as an alias.
+이 폴더는 해당 언어용 로컬라이즈 포스트를 저장합니다.
+영문과 동일한 파일명(slug)을 유지하고 본문과 frontmatter를 정확히 번역하세요.

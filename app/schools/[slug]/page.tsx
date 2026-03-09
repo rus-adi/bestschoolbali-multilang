@@ -270,7 +270,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
 
   const claimUrl = `/claim/${school.id}`;
   const feedbackUrl = `/parent-feedback/${school.id}`;
-  const whatsappGuidance = `https://wa.me/62111111?text=${encodeURIComponent(
+  const whatsappGuidance = `https://wa.me/6285285408220?text=${encodeURIComponent(
     `Hi — can you help me shortlist schools? I’m looking at ${school.name} in ${school.area}.`,
   )}`;
 
@@ -432,7 +432,6 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
                   <blockquote>{q.quote}</blockquote>
                   <figcaption className="small">
                     — {q.label}
-                    {q.is_example ? <span className="pill"><T k="common.draft" /></span> : null}
                   </figcaption>
                 </figure>
               ))}

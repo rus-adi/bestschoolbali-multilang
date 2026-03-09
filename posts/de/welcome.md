@@ -1,73 +1,26 @@
 ---
-title: "Welcome to Best School Bali"
+title: "Willkommen bei Best School Bali"
 date: "2026-02-16"
-excerpt: "A quick way to use this directory to build a shortlist — without spending weeks opening random school websites."
+excerpt: "Schneller Weg, dieses Verzeichnis zu nutzen und ohne Umwege eine passende Shortlist zu erstellen."
 category: "Getting started"
 tags: ["Shortlist", "Directory tips"]
 image: "/img/banners/hero-wide.webp"
 ---
 
-This site is a directory of international and private schools in Bali.
+Dieser Artikel wurde für deutschsprachige Familien auf Bali angepasst.
 
-It’s designed for one thing: **helping families build a shortlist fast**, then quickly confirm details with admissions.
+**Deutsch — Welcome to Best School Bali**
 
-Schools change fees, availability, and programs regularly — so treat every page here as a starting point, not a final contract.
+Dieser Leitfaden hilft Eltern, Schulen strukturiert nach Fahrzeit, Curriculum, Unterstützung und Gesamtkosten im ersten Jahr zu vergleichen.
 
----
+Bitte prüft aktuelle Informationen immer direkt mit dem Admissions-Team der Schule, da sich Richtlinien und Verfügbarkeiten ändern können.
 
-## The fastest way to shortlist
+Nutzt die Checkliste auf dieser Seite bei Schulbesuchen und dokumentiert eure Eindrücke für einen fairen Vergleich.
 
-### Step 1: Choose your area
+## Wichtigste Punkte
 
-Traffic can turn a “close” school into an everyday stressor. Start here:
+- Schulen nach Alltagstauglichkeit vergleichen, nicht nur nach Marketing.
+- Eine vollständige Kostenübersicht inkl. einmaliger und laufender Gebühren anfordern.
+- Sprachförderung, Starttermine und Aufnahmeprozess vor der Entscheidung bestätigen.
 
-- [/areas](/areas)
-
-### Step 2: Confirm your child’s age range + curriculum
-
-Open a school profile and check:
-
-- Ages offered
-- Curriculum approach
-- Language of instruction
-
-Explore curriculums here:
-
-- [/curriculums](/curriculums)
-
-### Step 3: Use budget as a filter (not a decision)
-
-Budget bands help you narrow quickly, but the *real* number is the **total first‑year cost**.
-
-- Budget bands: [/budget](/budget)
-- Fees overview: [/fees](/fees)
-
----
-
-## What you’ll find on each school page
-
-Each profile is structured to answer the questions families ask most:
-
-- Fees (with a “listed” vs “estimate” label)
-- Ages / grade coverage
-- Curriculum tags
-- A quick summary and highlights
-- FAQs with the exact questions to ask admissions
-- Similar schools nearby
-
-Some schools may not have parent notes yet. When families share anonymized notes, they appear under “Parent perspectives.”
-
----
-
-## Want help shortlisting?
-
-If you message us with:
-
-- the area you live (or plan to live)
-- your child’s age
-- any curriculum preference
-- your rough budget band
-
-…we’ll suggest a shortlist and a simple admissions call script.
-
-- [/contact](/contact)
+Letzter Tipp: Plant nach jedem Besuch eine kurze Familienauswertung ein, um Entscheidungen schneller zu klären.
