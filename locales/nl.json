@@ -314,29 +314,29 @@
     "viewAllPosts": "Bekijk alle berichten"
   },
   "comparePage": {
-    "title": "Compare schools",
-    "subtitle": "Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.",
+    "title": "Scholen vergelijken",
+    "subtitle": "Kies een paar scholen en vergelijk kosten, leeftijden, curriculum-tags en locatie — open daarna de profielen voor details.",
     "faq": {
       "title": "FAQ",
-      "q1": "What’s the best way to compare schools fairly?",
-      "a1": "Use the same question list for each school. Compare commute, age/grade coverage, curriculum pathway, and total first-year cost (tuition + one-time fees + recurring extras).",
-      "q2": "Are the fees on this site exact?",
-      "a2": "Fees are best-effort ranges. Schools can update pricing at any time. Always request the latest fee sheet and confirm what’s included.",
-      "q3": "How many schools should we shortlist?",
-      "a3": "Most families shortlist 3–5, then do tours close together so the comparisons are fresh.",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. Share your area, your child’s age, and a couple of priorities (curriculum, language support, budget) and we’ll help you shortlist and draft admissions questions."
+      "q1": "Wat is de beste manier om scholen eerlijk te vergelijken?",
+      "a1": "Gebruik voor elke school dezelfde vragenlijst. Vergelijk reistijd, leeftijd/groepsdekking, curriculumroute en de totale kosten van het eerste jaar (schoolgeld + eenmalige kosten + terugkerende extra’s).",
+      "q2": "Zijn de kosten op deze site exact?",
+      "a2": "De kosten zijn indicatieve bandbreedtes. Scholen kunnen prijzen op elk moment wijzigen. Vraag altijd de meest recente kostenlijst op en controleer wat is inbegrepen.",
+      "q3": "Hoeveel scholen moeten we op de shortlist zetten?",
+      "a3": "De meeste gezinnen kiezen 3–5 scholen en plannen rondleidingen dicht op elkaar zodat vergelijken makkelijker is.",
+      "q4": "Kunnen jullie ons helpen kiezen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar prioriteiten (curriculum, taalondersteuning, budget), dan helpen we met een shortlist en gerichte toelatingsvragen."
     },
     "sections": {
       "area": {
-        "title": "Popular area comparisons",
-        "body": "If you’re deciding where to live, these comparisons help you understand commute and school options.",
-        "cta": "Browse area comparisons"
+        "title": "Populaire gebiedsvergelijkingen",
+        "body": "Als je beslist waar je wilt wonen, helpen deze vergelijkingen je reistijd en schoolopties beter te begrijpen.",
+        "cta": "Bekijk gebiedsvergelijkingen"
       },
       "ages": {
-        "title": "Browse by age",
-        "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
-        "cta": "Browse by age"
+        "title": "Bladeren op leeftijd",
+        "body": "Liever starten met leeftijd/groepsdekking? Gebruik brede leeftijdsbanden en verfijn daarna op gebied en curriculum.",
+        "cta": "Bladeren op leeftijd"
       }
     }
   }

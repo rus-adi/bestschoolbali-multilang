@@ -314,29 +314,29 @@
     "viewAllPosts": "Смотреть все публикации"
   },
   "comparePage": {
-    "title": "Compare schools",
-    "subtitle": "Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.",
+    "title": "Сравнить школы",
+    "subtitle": "Выберите несколько школ и сравните стоимость, возрастные диапазоны, теги программ и район — затем откройте профили для деталей.",
     "faq": {
       "title": "FAQ",
-      "q1": "What’s the best way to compare schools fairly?",
-      "a1": "Use the same question list for each school. Compare commute, age/grade coverage, curriculum pathway, and total first-year cost (tuition + one-time fees + recurring extras).",
-      "q2": "Are the fees on this site exact?",
-      "a2": "Fees are best-effort ranges. Schools can update pricing at any time. Always request the latest fee sheet and confirm what’s included.",
-      "q3": "How many schools should we shortlist?",
-      "a3": "Most families shortlist 3–5, then do tours close together so the comparisons are fresh.",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. Share your area, your child’s age, and a couple of priorities (curriculum, language support, budget) and we’ll help you shortlist and draft admissions questions."
+      "q1": "Как лучше всего сравнивать школы объективно?",
+      "a1": "Используйте один и тот же список вопросов для каждой школы. Сравнивайте дорогу, возраст/классы, академическую траекторию и полную стоимость первого года (обучение + разовые сборы + регулярные доплаты).",
+      "q2": "Стоимость на сайте точная?",
+      "a2": "Стоимость указана как ориентировочные диапазоны. Школы могут обновлять цены в любое время. Всегда запрашивайте актуальный прайс и уточняйте, что включено.",
+      "q3": "Сколько школ стоит включить в шорт-лист?",
+      "a3": "Обычно семьи выбирают 3–5 школ и проводят визиты в близкие даты, чтобы сравнение было более точным.",
+      "q4": "Вы можете помочь нам с выбором?",
+      "a4": "Да. Сообщите ваш район, возраст ребёнка и несколько приоритетов (программа, языковая поддержка, бюджет), и мы поможем собрать шорт-лист и подготовить вопросы для приёмной комиссии."
     },
     "sections": {
       "area": {
-        "title": "Popular area comparisons",
-        "body": "If you’re deciding where to live, these comparisons help you understand commute and school options.",
-        "cta": "Browse area comparisons"
+        "title": "Популярные сравнения районов",
+        "body": "Если вы выбираете, где жить, эти сравнения помогут понять логистику и школьные варианты.",
+        "cta": "Смотреть сравнения районов"
       },
       "ages": {
-        "title": "Browse by age",
-        "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
-        "cta": "Browse by age"
+        "title": "Подбор по возрасту",
+        "body": "Хотите начать с возрастного диапазона/классов? Используйте широкие возрастные группы, а затем уточняйте по району и программе.",
+        "cta": "Смотреть по возрасту"
       }
     }
   }

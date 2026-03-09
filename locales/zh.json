@@ -314,29 +314,29 @@
     "viewAllPosts": "查看全部文章"
   },
   "comparePage": {
-    "title": "Compare schools",
-    "subtitle": "Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.",
+    "title": "对比学校",
+    "subtitle": "先选几所学校，对比学费、年龄范围、课程标签和区域，再进入学校档案查看详细信息。",
     "faq": {
-      "title": "FAQ",
-      "q1": "What’s the best way to compare schools fairly?",
-      "a1": "Use the same question list for each school. Compare commute, age/grade coverage, curriculum pathway, and total first-year cost (tuition + one-time fees + recurring extras).",
-      "q2": "Are the fees on this site exact?",
-      "a2": "Fees are best-effort ranges. Schools can update pricing at any time. Always request the latest fee sheet and confirm what’s included.",
-      "q3": "How many schools should we shortlist?",
-      "a3": "Most families shortlist 3–5, then do tours close together so the comparisons are fresh.",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. Share your area, your child’s age, and a couple of priorities (curriculum, language support, budget) and we’ll help you shortlist and draft admissions questions."
+      "title": "常见问题",
+      "q1": "如何更公平地比较学校？",
+      "a1": "对每所学校使用同一套问题清单。比较通勤、年龄/年级覆盖、课程路径，以及首年总成本（学费 + 一次性费用 + 经常性额外费用）。",
+      "q2": "网站上的费用是精确的吗？",
+      "a2": "费用为尽力提供的区间，学校可能随时调整价格。请务必索取最新收费表并确认包含项目。",
+      "q3": "我们应该初选多少所学校？",
+      "a3": "大多数家庭会先选 3–5 所学校，然后集中安排访校，便于横向比较。",
+      "q4": "你们可以帮助我们做选择吗？",
+      "a4": "可以。告诉我们你所在区域、孩子年龄和几个重点（课程、语言支持、预算），我们会帮你做初选并整理招生沟通问题。"
     },
     "sections": {
       "area": {
-        "title": "Popular area comparisons",
-        "body": "If you’re deciding where to live, these comparisons help you understand commute and school options.",
-        "cta": "Browse area comparisons"
+        "title": "热门区域对比",
+        "body": "如果你正在决定居住区域，这些对比可以帮助你了解通勤与学校选择。",
+        "cta": "查看区域对比"
       },
       "ages": {
-        "title": "Browse by age",
-        "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
-        "cta": "Browse by age"
+        "title": "按年龄浏览",
+        "body": "想先按年龄/年级范围筛选？先用宽泛年龄段，再按区域和课程继续缩小范围。",
+        "cta": "按年龄浏览"
       }
     }
   }

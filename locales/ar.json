@@ -314,29 +314,29 @@
     "viewAllPosts": "عرض جميع المقالات"
   },
   "comparePage": {
-    "title": "Compare schools",
-    "subtitle": "Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.",
+    "title": "مقارنة المدارس",
+    "subtitle": "اختر عدة مدارس وقارن بين الرسوم، والفئات العمرية، ووسوم المناهج، والمنطقة — ثم افتح ملفات المدارس للتفاصيل.",
     "faq": {
-      "title": "FAQ",
-      "q1": "What’s the best way to compare schools fairly?",
-      "a1": "Use the same question list for each school. Compare commute, age/grade coverage, curriculum pathway, and total first-year cost (tuition + one-time fees + recurring extras).",
-      "q2": "Are the fees on this site exact?",
-      "a2": "Fees are best-effort ranges. Schools can update pricing at any time. Always request the latest fee sheet and confirm what’s included.",
-      "q3": "How many schools should we shortlist?",
-      "a3": "Most families shortlist 3–5, then do tours close together so the comparisons are fresh.",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. Share your area, your child’s age, and a couple of priorities (curriculum, language support, budget) and we’ll help you shortlist and draft admissions questions."
+      "title": "الأسئلة الشائعة",
+      "q1": "ما أفضل طريقة لمقارنة المدارس بشكل عادل؟",
+      "a1": "استخدم نفس قائمة الأسئلة لكل مدرسة. قارن وقت التنقل، وتغطية العمر/الصف، ومسار المنهج، وإجمالي تكلفة السنة الأولى (الرسوم الدراسية + الرسوم لمرة واحدة + الإضافات المتكررة).",
+      "q2": "هل الرسوم في هذا الموقع دقيقة تمامًا؟",
+      "a2": "الرسوم معروضة كنطاقات تقديرية. قد تقوم المدارس بتحديث الأسعار في أي وقت. اطلب دائمًا أحدث جدول رسوم وتحقق مما هو مشمول.",
+      "q3": "كم مدرسة يجب أن نضع في القائمة المختصرة؟",
+      "a3": "معظم العائلات تختار 3 إلى 5 مدارس، ثم تقوم بالجولات في مواعيد متقاربة حتى تكون المقارنة أدق.",
+      "q4": "هل يمكنكم مساعدتنا في الاختيار؟",
+      "a4": "نعم. شاركنا منطقتك، وعمر طفلك، وبعض الأولويات (المنهج، دعم اللغة، الميزانية)، وسنساعدك في إعداد قائمة مختصرة وصياغة أسئلة القبول."
     },
     "sections": {
       "area": {
-        "title": "Popular area comparisons",
-        "body": "If you’re deciding where to live, these comparisons help you understand commute and school options.",
-        "cta": "Browse area comparisons"
+        "title": "مقارنات المناطق الشائعة",
+        "body": "إذا كنت تفكر في مكان السكن، فهذه المقارنات تساعدك على فهم التنقل وخيارات المدارس.",
+        "cta": "تصفح مقارنات المناطق"
       },
       "ages": {
-        "title": "Browse by age",
-        "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
-        "cta": "Browse by age"
+        "title": "التصفح حسب العمر",
+        "body": "تفضل البدء بتغطية العمر/الصف؟ استخدم فئات عمرية واسعة أولًا، ثم ضيّق حسب المنطقة والمنهج.",
+        "cta": "تصفح حسب العمر"
       }
     }
   }

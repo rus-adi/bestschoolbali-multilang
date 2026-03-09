@@ -314,29 +314,29 @@
     "viewAllPosts": "Voir tous les articles"
   },
   "comparePage": {
-    "title": "Compare schools",
-    "subtitle": "Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.",
+    "title": "Comparer les écoles",
+    "subtitle": "Sélectionnez quelques écoles et comparez les frais, les âges, les tags de programme et la zone — puis ouvrez les profils pour plus de détails.",
     "faq": {
       "title": "FAQ",
-      "q1": "What’s the best way to compare schools fairly?",
-      "a1": "Use the same question list for each school. Compare commute, age/grade coverage, curriculum pathway, and total first-year cost (tuition + one-time fees + recurring extras).",
-      "q2": "Are the fees on this site exact?",
-      "a2": "Fees are best-effort ranges. Schools can update pricing at any time. Always request the latest fee sheet and confirm what’s included.",
-      "q3": "How many schools should we shortlist?",
-      "a3": "Most families shortlist 3–5, then do tours close together so the comparisons are fresh.",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. Share your area, your child’s age, and a couple of priorities (curriculum, language support, budget) and we’ll help you shortlist and draft admissions questions."
+      "q1": "Quelle est la meilleure façon de comparer les écoles équitablement ?",
+      "a1": "Utilisez la même liste de questions pour chaque école. Comparez le trajet, la tranche d’âge/niveau, le parcours pédagogique et le coût total de la première année (frais de scolarité + frais ponctuels + extras récurrents).",
+      "q2": "Les frais affichés sur ce site sont-ils exacts ?",
+      "a2": "Les frais sont des fourchettes indicatives. Les écoles peuvent modifier leurs tarifs à tout moment. Demandez toujours la grille tarifaire la plus récente et vérifiez ce qui est inclus.",
+      "q3": "Combien d’écoles devrions-nous présélectionner ?",
+      "a3": "La plupart des familles présélectionnent 3 à 5 écoles, puis font les visites rapprochées pour comparer plus facilement.",
+      "q4": "Pouvez-vous nous aider à choisir ?",
+      "a4": "Oui. Partagez votre zone, l’âge de votre enfant et quelques priorités (programme, soutien linguistique, budget), et nous vous aiderons à établir une shortlist et à préparer les questions pour les admissions."
     },
     "sections": {
       "area": {
-        "title": "Popular area comparisons",
-        "body": "If you’re deciding where to live, these comparisons help you understand commute and school options.",
-        "cta": "Browse area comparisons"
+        "title": "Comparaisons de zones populaires",
+        "body": "Si vous hésitez sur l’endroit où vivre, ces comparaisons vous aident à comprendre les trajets et les options scolaires.",
+        "cta": "Voir les comparaisons de zones"
       },
       "ages": {
-        "title": "Browse by age",
-        "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
-        "cta": "Browse by age"
+        "title": "Parcourir par âge",
+        "body": "Vous préférez commencer par la couverture âge/niveau ? Utilisez de grandes tranches d’âge, puis affinez par zone et programme.",
+        "cta": "Parcourir par âge"
       }
     }
   }
