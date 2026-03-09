@@ -1,0 +1,124 @@
+{
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/en/posts",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/en/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog",
+      "destination": "/en/posts",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/:path*",
+      "destination": "/en/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/nl/blog",
+      "destination": "/nl/posts",
+      "permanent": true
+    },
+    {
+      "source": "/nl/blog/:path*",
+      "destination": "/nl/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog",
+      "destination": "/de/posts",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/:path*",
+      "destination": "/de/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/blog",
+      "destination": "/es/posts",
+      "permanent": true
+    },
+    {
+      "source": "/es/blog/:path*",
+      "destination": "/es/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog",
+      "destination": "/fr/posts",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/:path*",
+      "destination": "/fr/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog",
+      "destination": "/ru/posts",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/:path*",
+      "destination": "/ru/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog",
+      "destination": "/zh/posts",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/:path*",
+      "destination": "/zh/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog",
+      "destination": "/ko/posts",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/:path*",
+      "destination": "/ko/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog",
+      "destination": "/ja/posts",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/:path*",
+      "destination": "/ja/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog",
+      "destination": "/ar/posts",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/:path*",
+      "destination": "/ar/posts/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/:path((?!en(?:/|$)|nl(?:/|$)|de(?:/|$)|es(?:/|$)|fr(?:/|$)|ru(?:/|$)|zh(?:/|$)|ko(?:/|$)|ja(?:/|$)|ar(?:/|$)|img(?:/|$)|videos(?:/|$)|_next(?:/|$)|robots\\.txt$|sitemap\\.xml$|favicon.*|manifest.*).*)",
+      "destination": "/en/:path",
+      "permanent": true
+    }
+  ]
+}

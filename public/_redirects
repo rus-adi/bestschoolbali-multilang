@@ -1,0 +1,48 @@
+# Legacy blog aliases to posts
+/blog          /en/posts          301
+/blog/*        /en/posts/:splat   301
+/en/blog          /en/posts          301
+/en/blog/*        /en/posts/:splat   301
+/nl/blog          /nl/posts          301
+/nl/blog/*        /nl/posts/:splat   301
+/de/blog          /de/posts          301
+/de/blog/*        /de/posts/:splat   301
+/es/blog          /es/posts          301
+/es/blog/*        /es/posts/:splat   301
+/fr/blog          /fr/posts          301
+/fr/blog/*        /fr/posts/:splat   301
+/ru/blog          /ru/posts          301
+/ru/blog/*        /ru/posts/:splat   301
+/zh/blog          /zh/posts          301
+/zh/blog/*        /zh/posts/:splat   301
+/ko/blog          /ko/posts          301
+/ko/blog/*        /ko/posts/:splat   301
+/ja/blog          /ja/posts          301
+/ja/blog/*        /ja/posts/:splat   301
+/ar/blog          /ar/posts          301
+/ar/blog/*        /ar/posts/:splat   301
+
+# Preserve locale-prefixed routes
+/en/*          /en/:splat          200
+/nl/*          /nl/:splat          200
+/de/*          /de/:splat          200
+/es/*          /es/:splat          200
+/fr/*          /fr/:splat          200
+/ru/*          /ru/:splat          200
+/zh/*          /zh/:splat          200
+/ko/*          /ko/:splat          200
+/ja/*          /ja/:splat          200
+/ar/*          /ar/:splat          200
+
+# Preserve static assets and files
+/_next/*       /_next/:splat       200
+/img/*         /img/:splat         200
+/videos/*      /videos/:splat      200
+/robots.txt    /robots.txt         200
+/sitemap.xml   /sitemap.xml        200
+/favicon*      /favicon:splat      200
+/manifest*     /manifest:splat     200
+
+# Redirect legacy URLs to English
+/              /en/                301
+/*             /en/:splat          301
