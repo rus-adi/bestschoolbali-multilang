@@ -7,67 +7,20 @@ tags: ["Shortlist", "Directory tips"]
 image: "/img/banners/hero-wide.webp"
 ---
 
-This site is a directory of international and private schools in Bali.
+本文已为在巴厘岛的中文家庭做本地化整理。
 
-It’s designed for one thing: **helping families build a shortlist fast**, then quickly confirm details with admissions.
+**中文 — Welcome to Best School Bali**
 
-Schools change fees, availability, and programs regularly — so treat every page here as a starting point, not a final contract.
+本指南帮助家长按通勤、课程体系、学习支持和首年总费用来系统比较学校。
 
----
+由于政策与名额会变化，请始终向学校招生团队确认最新信息。
 
-## The fastest way to shortlist
+参观学校时可直接使用本页清单，并记录要点以便横向比较。
 
-### Step 1: Choose your area
+## 重点要点
 
-Traffic can turn a “close” school into an everyday stressor. Start here:
+- 优先比较日常学习体验，而不只看宣传内容。
+- 索取完整费用结构（一次性费用+持续性费用）。
+- 在决定前确认语言支持、入学时间与招生流程。
 
-- [/areas](/areas)
-
-### Step 2: Confirm your child’s age range + curriculum
-
-Open a school profile and check:
-
-- Ages offered
-- Curriculum approach
-- Language of instruction
-
-Explore curriculums here:
-
-- [/curriculums](/curriculums)
-
-### Step 3: Use budget as a filter (not a decision)
-
-Budget bands help you narrow quickly, but the *real* number is the **total first‑year cost**.
-
-- Budget bands: [/budget](/budget)
-- Fees overview: [/fees](/fees)
-
----
-
-## What you’ll find on each school page
-
-Each profile is structured to answer the questions families ask most:
-
-- Fees (with a “listed” vs “estimate” label)
-- Ages / grade coverage
-- Curriculum tags
-- A quick summary and highlights
-- FAQs with the exact questions to ask admissions
-- Similar schools nearby
-
-Some schools may not have parent notes yet. When families share anonymized notes, they appear under “Parent perspectives.”
-
----
-
-## Want help shortlisting?
-
-If you message us with:
-
-- the area you live (or plan to live)
-- your child’s age
-- any curriculum preference
-- your rough budget band
-
-…we’ll suggest a shortlist and a simple admissions call script.
-
-- [/contact](/contact)
+最后建议：每次参观后进行一次简短家庭复盘，决策会更清晰。

@@ -7,67 +7,20 @@ tags: ["Shortlist", "Directory tips"]
 image: "/img/banners/hero-wide.webp"
 ---
 
-This site is a directory of international and private schools in Bali.
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-It’s designed for one thing: **helping families build a shortlist fast**, then quickly confirm details with admissions.
+**한국어 — Welcome to Best School Bali**
 
-Schools change fees, availability, and programs regularly — so treat every page here as a starting point, not a final contract.
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
----
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-## The fastest way to shortlist
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-### Step 1: Choose your area
+## 핵심 포인트
 
-Traffic can turn a “close” school into an everyday stressor. Start here:
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
-- [/areas](/areas)
-
-### Step 2: Confirm your child’s age range + curriculum
-
-Open a school profile and check:
-
-- Ages offered
-- Curriculum approach
-- Language of instruction
-
-Explore curriculums here:
-
-- [/curriculums](/curriculums)
-
-### Step 3: Use budget as a filter (not a decision)
-
-Budget bands help you narrow quickly, but the *real* number is the **total first‑year cost**.
-
-- Budget bands: [/budget](/budget)
-- Fees overview: [/fees](/fees)
-
----
-
-## What you’ll find on each school page
-
-Each profile is structured to answer the questions families ask most:
-
-- Fees (with a “listed” vs “estimate” label)
-- Ages / grade coverage
-- Curriculum tags
-- A quick summary and highlights
-- FAQs with the exact questions to ask admissions
-- Similar schools nearby
-
-Some schools may not have parent notes yet. When families share anonymized notes, they appear under “Parent perspectives.”
-
----
-
-## Want help shortlisting?
-
-If you message us with:
-
-- the area you live (or plan to live)
-- your child’s age
-- any curriculum preference
-- your rough budget band
-
-…we’ll suggest a shortlist and a simple admissions call script.
-
-- [/contact](/contact)
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.

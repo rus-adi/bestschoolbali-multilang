@@ -7,71 +7,20 @@ tags: ["Canggu", "Ubud", "Commute"]
 image: "/img/banners/canggu.webp"
 ---
 
-Families often ask a version of the same question:
+本文已为在巴厘岛的中文家庭做本地化整理。
 
-> “Should we live in Canggu or Ubud if school is a priority?”
+**中文 — Canggu vs Ubud for Families: Choosing an Area for School**
 
-There’s no universal answer. The right choice depends on your daily routine, how much time you’re willing to spend in traffic, and the type of school environment you want.
+本指南帮助家长按通勤、课程体系、学习支持和首年总费用来系统比较学校。
 
----
+由于政策与名额会变化，请始终向学校招生团队确认最新信息。
 
-## Start with commute (not vibes)
+参观学校时可直接使用本页清单，并记录要点以便横向比较。
 
-A school that looks perfect online can become a daily stressor if the drive is unpredictable.
+## 重点要点
 
-Before you tour five schools, do this:
+- 优先比较日常学习体验，而不只看宣传内容。
+- 索取完整费用结构（一次性费用+持续性费用）。
+- 在决定前确认语言支持、入学时间与招生流程。
 
-- Pick two or three candidate neighbourhoods.
-- Check commute times for **drop‑off** and **pick‑up**.
-- Keep a shortlist only if the routine feels sustainable.
-
----
-
-## A simple way to compare areas
-
-Think in three layers:
-
-### 1) Daily rhythm
-
-- Morning schedule: early starts vs flexible mornings
-- After school: activities, beach/outdoors, family time
-
-### 2) School style fit
-
-Some families prioritise:
-
-- structured academics
-- outdoor or nature-based learning
-- early years environments
-
-Use curriculum tags as a starting point, but always confirm what they mean in practice.
-
-### 3) Logistics
-
-- transport options
-- after school care availability
-- how often you need to go to other parts of Bali
-
----
-
-## How to shortlist schools in either area
-
-1. Open the area pages:
-   - [/areas/canggu](/areas/canggu)
-   - [/areas/ubud](/areas/ubud)
-2. Pick 6–10 schools that fit your child’s age.
-3. Filter by curriculum preference.
-4. Then apply a budget band:
-   - [/budget](/budget)
-
-Aim for 3–5 tours. More than that usually creates decision fatigue.
-
----
-
-## Next step
-
-If you tell us your preferred area and your child’s age, we can suggest a shortlist and a simple admissions call script.
-
-- Browse areas: [/areas](/areas)
-- Browse schools: [/schools](/schools)
-- Contact: [/contact](/contact)
+最后建议：每次参观后进行一次简短家庭复盘，决策会更清晰。

@@ -7,93 +7,20 @@ tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"
 ---
 
-A trial day can be one of the best ways to understand fit — but only if you know what to look for.
+本文已为在巴厘岛的中文家庭做本地化整理。
 
-Most parents leave a trial day with a general feeling (“my child liked it”), but without the information needed to compare schools confidently. This checklist gives you a few simple things to observe, and a short set of questions that are easy for schools to answer.
+**中文 — What to Ask on a Trial Day: A Parent’s Checklist**
 
----
+本指南帮助家长按通勤、课程体系、学习支持和首年总费用来系统比较学校。
 
-## Before the trial: align on expectations
+由于政策与名额会变化，请始终向学校招生团队确认最新信息。
 
-Ask the school:
+参观学校时可直接使用本页清单，并记录要点以便横向比较。
 
-- Which class will my child join?
-- Will they follow the normal schedule?
-- Who will be responsible for onboarding them during the day?
+## 重点要点
 
-Then ask yourself:
+- 优先比较日常学习体验，而不只看宣传内容。
+- 索取完整费用结构（一次性费用+持续性费用）。
+- 在决定前确认语言支持、入学时间与招生流程。
 
-- Is your child shy, social, sensitive to noise, or easily tired?
-- Do they need structure, or do they thrive with flexibility?
-
----
-
-## During drop-off: watch the greeting
-
-The first five minutes can tell you a lot.
-
-Observe:
-
-- Do staff greet children by name?
-- Do they guide children kindly but firmly?
-- Do children seem calm, or rushed and anxious?
-
----
-
-## In class: look for three simple signals
-
-### 1) Attention and engagement
-
-Is the teacher doing all the talking, or are children actively involved?
-
-### 2) Support without dependence
-
-When a child struggles, do adults step in with coaching — or do they take over?
-
-### 3) Classroom culture
-
-Do children help each other? Are corrections respectful?
-
----
-
-## At pick-up: ask for specific feedback
-
-Good feedback is concrete.
-
-Ask:
-
-- What did my child enjoy most?
-- Where did they need the most support?
-- If we enroll, what would you recommend for the first month?
-
----
-
-## Questions that help you compare schools
-
-Keep it short. These are enough:
-
-1) What is the typical class size for this age?
-2) How do you support a child new to the school culture?
-3) How do you communicate with parents (weekly update, app, meetings)?
-4) What costs are usually missed by new families (uniforms, transport, after-school care)?
-
-Helpful context:
-
-- Fees overview: /fees
-- Admissions timeline: /blog/admissions-timeline-and-documents
-
----
-
-## Next step: narrow your shortlist
-
-After one or two trials, you should be able to narrow to 2–3 schools.
-
-Use the directory tools:
-
-- Compare schools: /compare
-- Browse areas: /areas
-- Browse curriculums: /curriculums
-
-If you want help shortlisting based on your area and your child’s age, you can ask here:
-
-- Get guidance: /contact
+最后建议：每次参观后进行一次简短家庭复盘，决策会更清晰。

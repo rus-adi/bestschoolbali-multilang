@@ -7,108 +7,20 @@ tags: ["Fees", "Budget", "What to ask"]
 image: "/img/banners/hero.webp"
 ---
 
-When families compare schools, the biggest source of confusion is simple:
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-**Most schools don’t cost “tuition per year.”** They cost **tuition + one‑time fees + recurring extras**.
+**한국어 — School Fees in Bali: How to Compare Total First‑Year Cost**
 
-If you compare schools using a *first‑year total*, you’ll make better decisions and waste less time on tours that never fit your budget.
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
----
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-## 1) The number you actually want: first‑year total
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-Ask admissions for this sentence in writing:
+## 핵심 포인트
 
-> “Please share the total first-year cost for a new student in Grade ___, including tuition and one-time fees.”
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
-Why first‑year total matters:
-
-- New student fees can be a big jump in year one.
-- Extra services (transport, meals, clubs) change the monthly picture.
-- Fee sheets are often different by grade level.
-
-If you only get a headline tuition range, follow up with a breakdown.
-
----
-
-## 2) Common fee line items to watch
-
-Every school has its own naming, but these are the usual categories:
-
-### One-time or “first year” fees
-
-- Registration / enrollment fee
-- Application fee
-- Development / capital levy (sometimes annual, sometimes one-time)
-- Deposit (sometimes refundable, sometimes not)
-
-### Recurring extras
-
-- Transport (bus / pickup)
-- Meals / snacks
-- Uniforms
-- Learning materials / books
-- Exams (or exam administration)
-- After-school care
-- Clubs / sports / activities
-- Devices or learning apps (more common in older grades)
-
-**Tip:** Ask whether activities are “included” but later billed per term.
-
----
-
-## 3) Listed vs estimated fees (how to interpret this directory)
-
-On Best School Bali, you’ll see one of two labels:
-
-- **Listed:** The range appears publicly somewhere (still confirm the latest year).
-- **Estimate:** Best-effort range based on available information; you should request the school’s official fee schedule.
-
-You can browse budget bands here:
-
-- [/budget](/budget)
-
-And a directory-wide fee view here:
-
-- [/fees/estimate](/fees/estimate)
-
----
-
-## 4) A simple comparison spreadsheet
-
-If you’re comparing more than three schools, use a basic table with these columns:
-
-- School
-- Area (commute)
-- Age/grade
-- Curriculum
-- Tuition (annual)
-- One-time fees (year one)
-- Monthly extras (transport/meals/after care)
-- Notes
-
-This turns “random browsing” into a shortlist in one afternoon.
-
----
-
-## 5) Five questions that save you money (and stress)
-
-Ask every school these exact questions:
-
-1. **“What is the total first-year cost for a new student in Grade ___?”**
-2. **“What’s included vs billed separately?”** (uniforms, transport, meals, exams, activities)
-3. **“Do you offer sibling discounts or payment plans?”**
-4. **“If we start mid-term, how does billing work?”**
-5. **“What are the refund/withdrawal rules?”**
-
-Schools that answer clearly, in writing, are much easier to plan with.
-
----
-
-## 6) Next step
-
-If you share your area and your child’s age, we can help you shortlist schools and draft the admissions questions.
-
-- Browse schools: [/schools](/schools)
-- Fees overview: [/fees](/fees)
-- Contact: [/contact](/contact)
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.
