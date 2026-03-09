@@ -15,6 +15,7 @@ export type Fees = {
 export type School = {
   id: string;
   name: string;
+  logo?: string | null;
   area: string;
   areas?: string[];
   type?: string;
