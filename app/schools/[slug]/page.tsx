@@ -432,7 +432,6 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
                   <blockquote>{q.quote}</blockquote>
                   <figcaption className="small">
                     — {q.label}
-                    {q.is_example ? <span className="pill"><T k="common.draft" /></span> : null}
                   </figcaption>
                 </figure>
               ))}

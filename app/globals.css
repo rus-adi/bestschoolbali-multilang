@@ -542,9 +542,11 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .homeHero h1,
+  .homeHero p,
   .homeHero .homeHeroTitle,
   .homeHero .homeHeroSubtitle {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 }
 
