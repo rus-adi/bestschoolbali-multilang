@@ -312,5 +312,32 @@
     "feesOverview": "Aperçu des frais",
     "getGuidance": "Get guidance",
     "viewAllPosts": "Voir tous les articles"
+  },
+  "comparePage": {
+    "title": "Comparer les écoles",
+    "subtitle": "Sélectionnez quelques écoles et comparez les frais, les âges, les tags de programme et la zone — puis ouvrez les profils pour plus de détails.",
+    "faq": {
+      "title": "FAQ",
+      "q1": "Quelle est la meilleure façon de comparer les écoles équitablement ?",
+      "a1": "Utilisez la même liste de questions pour chaque école. Comparez le trajet, la tranche d’âge/niveau, le parcours pédagogique et le coût total de la première année (frais de scolarité + frais ponctuels + extras récurrents).",
+      "q2": "Les frais affichés sur ce site sont-ils exacts ?",
+      "a2": "Les frais sont des fourchettes indicatives. Les écoles peuvent modifier leurs tarifs à tout moment. Demandez toujours la grille tarifaire la plus récente et vérifiez ce qui est inclus.",
+      "q3": "Combien d’écoles devrions-nous présélectionner ?",
+      "a3": "La plupart des familles présélectionnent 3 à 5 écoles, puis font les visites rapprochées pour comparer plus facilement.",
+      "q4": "Pouvez-vous nous aider à choisir ?",
+      "a4": "Oui. Partagez votre zone, l’âge de votre enfant et quelques priorités (programme, soutien linguistique, budget), et nous vous aiderons à établir une shortlist et à préparer les questions pour les admissions."
+    },
+    "sections": {
+      "area": {
+        "title": "Comparaisons de zones populaires",
+        "body": "Si vous hésitez sur l’endroit où vivre, ces comparaisons vous aident à comprendre les trajets et les options scolaires.",
+        "cta": "Voir les comparaisons de zones"
+      },
+      "ages": {
+        "title": "Parcourir par âge",
+        "body": "Vous préférez commencer par la couverture âge/niveau ? Utilisez de grandes tranches d’âge, puis affinez par zone et programme.",
+        "cta": "Parcourir par âge"
+      }
+    }
   }
 }

@@ -312,5 +312,32 @@
     "feesOverview": "Gebührenübersicht",
     "getGuidance": "Beratung erhalten",
     "viewAllPosts": "Alle Beiträge anzeigen"
+  },
+  "comparePage": {
+    "title": "Schulen vergleichen",
+    "subtitle": "Wähle einige Schulen aus und vergleiche Gebühren, Altersbereiche, Curriculum-Tags und Lage — öffne dann die Profile für Details.",
+    "faq": {
+      "title": "FAQ",
+      "q1": "Wie vergleicht man Schulen am fairsten?",
+      "a1": "Nutze für jede Schule dieselbe Fragenliste. Vergleiche Anfahrt, Alters-/Klassenabdeckung, Curriculum-Pfad und die gesamten Kosten im ersten Jahr (Schulgeld + einmalige Gebühren + laufende Zusatzkosten).",
+      "q2": "Sind die Gebühren auf dieser Website exakt?",
+      "a2": "Die Gebühren sind Best-Effort-Spannen. Schulen können Preise jederzeit ändern. Bitte fordere immer die aktuelle Gebührenliste an und prüfe, was enthalten ist.",
+      "q3": "Wie viele Schulen sollten wir in die engere Auswahl nehmen?",
+      "a3": "Die meisten Familien wählen 3–5 Schulen aus und machen die Besichtigungen zeitnah, damit der Vergleich frisch bleibt.",
+      "q4": "Könnt ihr uns bei der Auswahl helfen?",
+      "a4": "Ja. Teile uns deine Gegend, das Alter deines Kindes und ein paar Prioritäten (Curriculum, Sprachunterstützung, Budget) mit, dann helfen wir bei der Shortlist und Formulierung von Fragen für die Aufnahme."
+    },
+    "sections": {
+      "area": {
+        "title": "Beliebte Gebietsvergleiche",
+        "body": "Wenn ihr entscheidet, wo ihr wohnen möchtet, helfen diese Vergleiche dabei, Pendelzeit und Schuloptionen zu verstehen.",
+        "cta": "Gebietsvergleiche ansehen"
+      },
+      "ages": {
+        "title": "Nach Alter durchsuchen",
+        "body": "Du möchtest lieber mit Alters-/Klassenabdeckung starten? Nutze breite Altersbänder und grenze dann nach Gebiet und Curriculum ein.",
+        "cta": "Nach Alter durchsuchen"
+      }
+    }
   }
 }
