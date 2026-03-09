@@ -48,10 +48,10 @@
     "openDirectory": "Abrir directorio completo",
     "addToCompare": "Añadir para comparar",
     "addedToCompare": "Añadido a la comparación",
-    "shareInterest": "Share Interest",
-    "contactAboutSchool": "Contact About This School",
-    "openInterestForm": "Open interest form",
-    "copyFailed": "Could not copy link."
+    "shareInterest": "Compartir interés",
+    "contactAboutSchool": "Contactar sobre este colegio",
+    "openInterestForm": "Abrir formulario de interés",
+    "copyFailed": "No se pudo copiar el enlace."
   },
   "search": {
     "search": "Buscar",
@@ -153,10 +153,10 @@
     "notFound": "Not found"
   },
   "home": {
-    "heroTitleLead": "Find the",
-    "heroTitleAccent": "Best School",
-    "heroTitleTail": "in Bali",
-    "heroSubtitle": "Compare, Explore & Choose the Perfect Education for Your Child",
+    "heroTitleLead": "Encuentra la",
+    "heroTitleAccent": "mejor escuela",
+    "heroTitleTail": "en Bali",
+    "heroSubtitle": "Compara, explora y elige la educación perfecta para tu hijo",
     "badgeVerified": "Verified profiles",
     "badgeParents": "Parent perspectives",
     "badgeGuidance": "Free guidance",

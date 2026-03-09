@@ -48,10 +48,10 @@
     "openDirectory": "Open full directory",
     "addToCompare": "Add to compare",
     "addedToCompare": "Added to compare",
-    "shareInterest": "Share Interest",
-    "contactAboutSchool": "Contact About This School",
-    "openInterestForm": "Open interest form",
-    "copyFailed": "Could not copy link."
+    "shareInterest": "関心を共有",
+    "contactAboutSchool": "この学校について問い合わせ",
+    "openInterestForm": "関心フォームを開く",
+    "copyFailed": "リンクをコピーできませんでした。"
   },
   "search": {
     "search": "Search",
@@ -153,10 +153,10 @@
     "notFound": "Not found"
   },
   "home": {
-    "heroTitleLead": "Find the",
-    "heroTitleAccent": "Best School",
-    "heroTitleTail": "in Bali",
-    "heroSubtitle": "Compare, Explore & Choose the Perfect Education for Your Child",
+    "heroTitleLead": "バリで",
+    "heroTitleAccent": "最適な学校",
+    "heroTitleTail": "を見つけよう",
+    "heroSubtitle": "比較・検討して、お子さまに最適な教育を選びましょう",
     "badgeVerified": "Verified profiles",
     "badgeParents": "Parent perspectives",
     "badgeGuidance": "Free guidance",

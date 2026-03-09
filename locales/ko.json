@@ -48,10 +48,10 @@
     "openDirectory": "Open full directory",
     "addToCompare": "Add to compare",
     "addedToCompare": "Added to compare",
-    "shareInterest": "Share Interest",
-    "contactAboutSchool": "Contact About This School",
-    "openInterestForm": "Open interest form",
-    "copyFailed": "Could not copy link."
+    "shareInterest": "관심 공유하기",
+    "contactAboutSchool": "이 학교 문의하기",
+    "openInterestForm": "관심 양식 열기",
+    "copyFailed": "링크를 복사할 수 없습니다."
   },
   "search": {
     "search": "Search",
@@ -153,10 +153,10 @@
     "notFound": "Not found"
   },
   "home": {
-    "heroTitleLead": "Find the",
-    "heroTitleAccent": "Best School",
-    "heroTitleTail": "in Bali",
-    "heroSubtitle": "Compare, Explore & Choose the Perfect Education for Your Child",
+    "heroTitleLead": "발리에서",
+    "heroTitleAccent": "최적의 학교",
+    "heroTitleTail": "를 찾아보세요",
+    "heroSubtitle": "비교하고 탐색하여 우리 아이에게 맞는 교육을 선택하세요",
     "badgeVerified": "Verified profiles",
     "badgeParents": "Parent perspectives",
     "badgeGuidance": "Free guidance",

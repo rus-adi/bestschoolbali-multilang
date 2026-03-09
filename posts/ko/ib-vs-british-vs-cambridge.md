@@ -1,94 +1,26 @@
 ---
-title: "IB vs British vs Cambridge: How to Choose a Curriculum (Without Overthinking)"
+title: "IB vs British vs Cambridge: 과한 고민 없이 커리큘럼 고르기"
 date: "2026-02-22"
-excerpt: "A parent-friendly guide to common curriculum labels in Bali. Focuses on fit, transitions, and the questions that actually matter in admissions calls."
+excerpt: "발리에서 많이 보는 커리큘럼을 부모 관점에서 쉽게 정리한 가이드입니다."
 category: "Curriculums"
 tags: ["IB", "British", "Cambridge", "Curriculum"]
 image: "/img/banners/hero.webp"
 ---
 
-When schools list “IB”, “British”, or “Cambridge”, they’re pointing to a learning framework — but the real day‑to‑day experience can still vary a lot.
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-This guide is not about ranking systems. It’s about choosing a path that fits your child and makes transitions easier.
+**한국어 — IB vs British vs Cambridge: How to Choose a Curriculum (Without Overthinking)**
 
----
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
-## Start with these three questions
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-Before you compare curriculum names, ask:
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-1. **Where might we move next?** (country, school system, exam pathway)
-2. **How old is my child and how do they learn best?**
-3. **Do we want a more structured or more inquiry-based approach?**
+## 핵심 포인트
 
-Those answers matter more than the label on a brochure.
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
----
-
-## IB (International Baccalaureate)
-
-Families often look at IB when they want:
-
-- an internationally recognised framework
-- an inquiry-based learning style
-- smoother transitions between countries (depending on school)
-
-Important nuance:
-
-- Some schools offer IB in certain age ranges (not always the full continuum).
-- Ask which IB programmes are offered (PYP / MYP / DP) and at what grades.
-
-**Ask admissions:** “Which IB programmes do you offer, and what year levels are covered on this campus?”
-
----
-
-## British curriculum
-
-Families often choose “British” when they want:
-
-- a more structured, familiar progression
-- a system that can align well with UK-style key stages
-
-In practice:
-
-- “British” can mean different things (UK National Curriculum, British-style approach, or preparation for specific exams).
-
-**Ask admissions:** “Is it aligned to UK National Curriculum? Which assessments or exam pathways do you follow in the upper years?”
-
----
-
-## Cambridge
-
-Cambridge is often referenced when schools offer:
-
-- Cambridge International programmes
-- a known exam pathway in secondary years
-
-Key questions:
-
-- Which Cambridge stages are actually offered (Primary, Lower Secondary, IGCSE, A Level)?
-- Are exams offered on-site or through external centres?
-
-**Ask admissions:** “Which Cambridge stages do you cover and what is your exam pathway in the later years?”
-
----
-
-## The most useful comparison: transitions
-
-If you might move again, transitions are where curriculum matters most.
-
-Ask every school:
-
-- “How do you support new students joining from another curriculum?”
-- “How do you place students into year levels?”
-- “What language support is available?”
-
----
-
-## Next step
-
-Browse schools by curriculum tag, then shortlist by area and budget.
-
-- Browse curriculums: [/curriculums](/curriculums)
-- Browse schools: [/schools](/schools)
-- Browse areas: [/areas](/areas)
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.

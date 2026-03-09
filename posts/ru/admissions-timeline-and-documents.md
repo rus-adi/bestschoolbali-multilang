@@ -1,107 +1,26 @@
 ---
-title: "Admissions in Bali: Timeline, Documents, and What Happens Next"
+title: "Поступление на Бали: сроки, документы и следующие шаги"
 date: "2026-02-21"
-excerpt: "A clear overview of the typical admissions process: inquiry → tour → application → assessment → offer. Includes a document checklist you can prepare in advance."
+excerpt: "Понятная схема процесса поступления и список документов, который лучше подготовить заранее."
 category: "Admissions"
 tags: ["Admissions", "Documents", "Timeline"]
 image: "/img/banners/contact.webp"
 ---
 
-Admissions processes vary, but most schools in Bali follow a similar flow.
+Эта статья адаптирована для русскоязычных семей на Бали.
 
-If you know the steps and prepare the documents early, you can move quickly — especially when families are joining mid-year.
+**Русский — Admissions in Bali: Timeline, Documents, and What Happens Next**
 
----
+Это руководство помогает родителям сравнивать школы по практическим критериям: дорога, программа, поддержка и полная стоимость первого года.
 
-## The typical admissions steps
+Всегда уточняйте актуальные данные напрямую в отделе admissions, так как условия и наличие мест могут меняться.
 
-### 1) Inquiry
+Используйте чеклист во время визитов в школы и фиксируйте наблюдения для объективного сравнения.
 
-You contact admissions (email, form, or WhatsApp) and share:
+## Ключевые моменты
 
-- your child’s age / grade
-- preferred start date
-- any learning support needs
-- your current area (for commute)
+- Сравнивайте повседневный опыт, а не только маркетинговые обещания.
+- Запрашивайте полный бюджет: разовые и регулярные платежи.
+- Проверьте языковую поддержку, даты старта и этапы поступления до решения.
 
-### 2) Tour (and sometimes a trial day)
-
-Many schools encourage a tour before applying. Some offer a trial day, especially for early years.
-
-Ask:
-
-- “Which class would my child join?”
-- “How long is the trial day and what should we bring?”
-
-### 3) Application
-
-This is where you submit the formal paperwork. Some schools charge an application fee.
-
-### 4) Assessment / interview (if needed)
-
-Older students may do placement assessments (English, math) or a short interview. For younger children, it’s often observation.
-
-### 5) Offer, deposit, and contract
-
-If accepted, you’ll typically receive:
-
-- an offer letter
-- an invoice (tuition + one-time fees)
-- a contract or enrollment agreement
-
-Read the refund/withdrawal policies carefully.
-
----
-
-## Document checklist (prepare these early)
-
-Schools may ask for different items, but these are common:
-
-- Passport (or ID) for student
-- Birth certificate
-- Recent school reports (last 1–2 years)
-- Immunization record
-- Student photo
-- Parent/guardian ID
-
-Sometimes requested:
-
-- Teacher recommendation
-- Learning support reports (if applicable)
-- Visa / permit documents (varies by family situation)
-
-**Tip:** Keep a single folder with PDFs named clearly (e.g., `ChildName_BirthCertificate.pdf`). It makes admissions much smoother.
-
----
-
-## Timeline guidance
-
-A practical way to plan:
-
-- **2–6 weeks before start date:** tours + shortlisting
-- **1–4 weeks before:** application + assessment
-- **1–2 weeks before:** contract + payments + uniform ordering
-
-If you’re arriving in Bali close to term start, prioritize schools with:
-
-- clear communication
-- quick tours / trial days
-- transparent fee sheets
-
----
-
-## What to ask if you’re joining mid-year
-
-- “Do you accept mid-term entry?”
-- “Is tuition prorated?”
-- “What support is offered for transition?”
-
----
-
-## Next step
-
-Use the directory to shortlist by area and age range first:
-
-- Browse areas: [/areas](/areas)
-- Browse schools: [/schools](/schools)
-- Fees overview: [/fees](/fees)
+Последний совет: после каждого визита делайте короткое семейное обсуждение, чтобы быстрее выбрать школу.

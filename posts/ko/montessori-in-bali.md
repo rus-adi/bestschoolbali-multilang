@@ -1,128 +1,26 @@
 ---
-title: "Montessori Schools in Bali: What to Look For"
+title: "발리 몬테소리 학교, 무엇을 봐야 할까?"
 date: "2026-03-03"
-excerpt: "Montessori can mean very different things on the ground. Here’s how to spot a strong program (and ask the right questions) in Bali." 
+excerpt: "몬테소리는 실제 운영에서 매우 다를 수 있습니다. 발리에서 좋은 프로그램을 구별하는 방법을 안내합니다."
 category: "Curriculum"
 tags: ["Montessori", "Curriculum", "Early years", "Tour checklist"]
 image: "/img/banners/ubud.webp"
 ---
 
-“Montessori” is one of the most searched terms in school shortlists — and one of the easiest to misunderstand.
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-Some schools follow Montessori closely with trained guides, a prepared environment, and multi-age classrooms. Others use “Montessori-inspired” to describe a quieter classroom with wooden materials, but the day-to-day teaching looks more like traditional schooling.
+**한국어 — Montessori Schools in Bali: What to Look For**
 
-This guide helps you tell the difference in a respectful way, so you can find the best fit for your child.
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
----
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-## Start with the age range you need
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-Before you compare philosophy, confirm the basics:
+## 핵심 포인트
 
-- Does the campus offer your child’s age band (especially if you are looking beyond preschool)?
-- Is it a **true multi-age classroom** (e.g., 3–6) or single-year grouping?
-- What happens when a child moves into primary — is the approach consistent?
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
-If you are early in your search, you can explore Montessori-tagged schools here:
-
-- Browse Montessori schools: /curriculums/montessori
-- Explore Early Years options: /ages/early-years
-
----
-
-## A Montessori tour checklist that avoids awkwardness
-
-You do not need to “test” the school. Instead, ask for concrete examples.
-
-### 1) Guide training and classroom leadership
-
-Ask:
-
-- Who leads the classroom and what Montessori training do they have?
-- Are assistants trained to support Montessori routines or mainly supervise?
-- How does the school support new staff (mentoring, observations, coaching)?
-
-Strong programs can usually answer clearly, without defensiveness.
-
-### 2) The prepared environment
-
-In a prepared environment, you will notice:
-
-- Materials are complete sets (not random toys)
-- Children can access what they need without asking an adult
-- The room feels calm and purposeful, not “busy”
-
-If you see a lot of worksheets or whole-class instruction for 3–6 year olds, ask how that fits their Montessori approach.
-
-### 3) The daily work cycle
-
-Montessori thrives on long blocks of uninterrupted work.
-
-Ask:
-
-- How long is the work cycle (90 minutes? 2 hours?)
-- How often is it interrupted by specials, assemblies, or transitions?
-
-In Bali, many families also value outdoor learning. The best setups blend nature and Montessori without breaking the rhythm.
-
----
-
-## Language, literacy, and expectations
-
-Many families in Bali are multilingual. Montessori schools vary in how they support language development.
-
-Ask:
-
-- How do you support a child new to English?
-- How do you build early literacy without pushing too early?
-- What does “readiness” look like for moving into primary?
-
-If you are comparing international programs, it can help to understand how Montessori differs from other pathways:
-
-- Compare curriculums: /curriculums
-
----
-
-## Social development and classroom culture
-
-Look for:
-
-- Warm, firm boundaries (not permissive, not harsh)
-- Children helping each other naturally
-- Adults guiding conflict resolution instead of solving everything
-
-If your child is very social (or very shy), ask how the classroom supports independence without leaving children isolated.
-
----
-
-## Fees: what to ask so you compare accurately
-
-Montessori often includes materials and staffing that affect cost.
-
-When you compare schools, ask for the **total first-year cost**, including:
-
-- Registration or assessment fees
-- Materials fees
-- Capital/development fees (if any)
-- Lunch, transport, after-school care
-
-Use these pages to keep your comparisons grounded:
-
-- Fees overview: /fees
-- Budget bands: /budget
-
----
-
-## A simple shortlisting method
-
-If you are choosing between 3–6 schools, use this order:
-
-1) Area + commute
-2) Age coverage + class structure
-3) Classroom feel (prepared environment + work cycle)
-4) Staff stability and training
-5) Total first-year cost
-
-If you want help narrowing your list to the schools that match your child and your location, you can ask for guidance here:
-
-- Get guidance: /contact
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.
