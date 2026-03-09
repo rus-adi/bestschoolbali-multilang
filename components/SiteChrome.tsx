@@ -13,6 +13,20 @@ function SiteChromeInner({ children }: { children: React.ReactNode }) {
   const t = useT();
   const href = useLocaleHref();
 
+  const truncateLabel = (text: string, max = 18) =>
+    text.length > max ? `${text.slice(0, Math.max(0, max - 3)).trimEnd()}...` : text;
+
+  const navLinks = [
+    { key: 'nav.home', href: '/' },
+    { key: 'nav.schools', href: '/schools' },
+    { key: 'nav.types', href: '/types' },
+    { key: 'nav.curriculums', href: '/curriculums' },
+    { key: 'nav.areas', href: '/areas' },
+    { key: 'nav.guides', href: '/guides' },
+    { key: 'nav.contact', href: '/contact' },
+  ] as const;
+  const ctaLabel = t('nav.cta');
+
   const footerLinks = [
     ['footer.schools', '/schools'],
     ['footer.areas', '/areas'],
@@ -40,36 +54,23 @@ function SiteChromeInner({ children }: { children: React.ReactNode }) {
           </a>
 
           <nav id="site-nav" className="nav" data-nav>
-            <a className="navLink" href={href('/')}>
-              {t('nav.home')}
-            </a>
-            <a className="navLink" href={href('/schools')}>
-              {t('nav.schools')}
-            </a>
-            <a className="navLink" href={href('/types')}>
-              {t('nav.types')}
-            </a>
-            <a className="navLink" href={href('/curriculums')}>
-              {t('nav.curriculums')}
-            </a>
-            <a className="navLink" href={href('/areas')}>
-              {t('nav.areas')}
-            </a>
-            <a className="navLink" href={href('/guides')}>
-              {t('nav.guides')}
-            </a>
-            <a className="navLink" href={href('/contact')}>
-              {t('nav.contact')}
-            </a>
-            <a className="btn btnPrimary navCta" href={href('/contact')}>
-              {t('nav.cta')} <span aria-hidden="true">→</span>
+            {navLinks.map((item) => {
+              const full = t(item.key);
+              return (
+                <a key={item.key} className="navLink menuItem" href={href(item.href)} title={full}>
+                  {full}
+                </a>
+              );
+            })}
+            <a className="btn btnPrimary navCta" href={href('/contact')} title={ctaLabel}>
+              <span className="btnText">{truncateLabel(ctaLabel)}</span> <span aria-hidden="true">→</span>
             </a>
           </nav>
 
           <div className="headerActions">
             <LanguageSwitcher />
-            <a className="btn btnPrimary headerCta" href={href('/contact')}>
-              {t('nav.cta')} <span aria-hidden="true">→</span>
+            <a className="btn btnPrimary headerCta" href={href('/contact')} title={ctaLabel}>
+              <span className="btnText">{truncateLabel(ctaLabel)}</span> <span aria-hidden="true">→</span>
             </a>
             <NavToggle navId="site-nav" />
           </div>

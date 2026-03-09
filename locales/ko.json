@@ -161,7 +161,7 @@
     "badgeParents": "학부모 관점",
     "badgeGuidance": "Free guidance",
     "quickFilterInternational": "International Schools",
-    "quickFilterLocal": "Bali Local Schools",
+    "quickFilterLocal": "자연 학교",
     "quickFilterMontessoriIb": "Montessori & IB",
     "quickFilterAffordable": "Affordable & Premium",
     "sponsoredHeading": "Sponsored schools",
@@ -189,7 +189,14 @@
     "guideLink": "Read the Guides",
     "noPosts": "No posts yet.",
     "morePosts": "More posts",
-    "readMore": "더 읽기"
+    "readMore": "더 읽기",
+    "chipRow": {
+      "label": "빠른 필터",
+      "internationalSchools": "국제학교",
+      "natureSchool": "자연 학교",
+      "montessoriIb": "몬테소리 & IB",
+      "affordablePremium": "합리적 & 프리미엄"
+    }
   },
   "school": {
     "feesLabel": "Fees",

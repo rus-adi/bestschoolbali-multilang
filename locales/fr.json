@@ -161,7 +161,7 @@
     "badgeParents": "Perspectives des parents",
     "badgeGuidance": "Free guidance",
     "quickFilterInternational": "International Schools",
-    "quickFilterLocal": "Bali Local Schools",
+    "quickFilterLocal": "École nature",
     "quickFilterMontessoriIb": "Montessori & IB",
     "quickFilterAffordable": "Affordable & Premium",
     "sponsoredHeading": "Sponsored schools",
@@ -189,7 +189,14 @@
     "guideLink": "Read the Guides",
     "noPosts": "No posts yet.",
     "morePosts": "More posts",
-    "readMore": "Lire la suite"
+    "readMore": "Lire la suite",
+    "chipRow": {
+      "label": "Filtres rapides",
+      "internationalSchools": "Écoles internationales",
+      "natureSchool": "École nature",
+      "montessoriIb": "Montessori & IB",
+      "affordablePremium": "Abordable & Premium"
+    }
   },
   "school": {
     "feesLabel": "Fees",
