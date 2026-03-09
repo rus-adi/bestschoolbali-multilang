@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "./i18n/locales";
 
 export type FeeStatus = "estimate" | "listed";
 
@@ -73,21 +74,59 @@ type SchoolsFile = {
   schools: School[];
 };
 
+type SchoolsOverlayFile = {
+  schools?: Record<string, Partial<School>>;
+};
+
 const SCHOOLS_PATH = path.join(process.cwd(), "data", "schools.json");
 
-export function getAllSchools(): School[] {
+function normalizeLocale(locale?: string | Locale): Locale {
+  return isLocale(locale) ? locale : DEFAULT_LOCALE;
+}
+
+function deepMergeSchool(base: School, overlay?: Partial<School>): School {
+  if (!overlay) return base;
+  return {
+    ...base,
+    ...overlay,
+    details: {
+      ...(base.details ?? {}),
+      ...(overlay.details ?? {}),
+    },
+  };
+}
+
+function getOverlayById(locale: Locale): Record<string, Partial<School>> {
+  const overlayPath = path.join(process.cwd(), "data", "i18n", locale, "schools.json");
+  if (!fs.existsSync(overlayPath)) return {};
+
+  const raw = fs.readFileSync(overlayPath, "utf8");
+  const parsed = JSON.parse(raw) as SchoolsOverlayFile;
+  return parsed.schools ?? {};
+}
+
+export function getAllSchools(locale: string | Locale = DEFAULT_LOCALE): School[] {
   const raw = fs.readFileSync(SCHOOLS_PATH, "utf8");
   const parsed = JSON.parse(raw) as SchoolsFile;
   const schools = Array.isArray(parsed) ? (parsed as unknown as School[]) : (parsed.schools ?? []);
-  return schools.slice().sort((a, b) => a.name.localeCompare(b.name));
+
+  const normalized = normalizeLocale(locale);
+  if (normalized === DEFAULT_LOCALE) {
+    return schools.slice().sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  const overlayById = getOverlayById(normalized);
+  return schools
+    .map((school) => deepMergeSchool(school, overlayById[school.id]))
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export function getSchoolBySlug(slug: string): School | null {
-  const all = getAllSchools();
+export function getSchoolBySlug(slug: string, locale: string | Locale = DEFAULT_LOCALE): School | null {
+  const all = getAllSchools(locale);
   return all.find((s) => s.id === slug) ?? null;
 }
 
-export function getFeaturedSchool(): School | null {
+export function getFeaturedSchool(locale: string | Locale = DEFAULT_LOCALE): School | null {
   // Keep this stable for marketing; change the ID whenever you want a new featured school.
-  return getSchoolBySlug("green-school-bali") ?? (getAllSchools()[0] ?? null);
+  return getSchoolBySlug("green-school-bali", locale) ?? (getAllSchools(locale)[0] ?? null);
 }
