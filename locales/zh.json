@@ -88,8 +88,8 @@
     "selectCurriculum": "选择课程体系...",
     "selectBudget": "选择预算...",
     "searchSchools": "搜索学校",
-    "interest": "Interest",
-    "all": "All"
+    "interest": "意向",
+    "all": "全部"
   },
   "guidanceForm": {
     "contactType": "联系类型",
@@ -155,7 +155,7 @@
   "home": {
     "heroTitleLead": "找到",
     "heroTitleAccent": "巴厘岛最好的学校",
-    "heroTitleTail": "",
+    "heroTitleTail": "在巴厘岛",
     "heroSubtitle": "比较、探索，并为孩子选择最合适的教育",
     "badgeVerified": "Verified profiles",
     "badgeParents": "家长视角",
