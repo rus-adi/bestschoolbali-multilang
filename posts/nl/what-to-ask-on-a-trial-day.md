@@ -1,7 +1,7 @@
 ---
-title: "What to Ask on a Trial Day: A Parent’s Checklist"
+title: "Wat vraag je tijdens een proefdag? Checklist voor ouders"
 date: "2026-03-03"
-excerpt: "Trial days are most useful when you know what to observe. This checklist helps you evaluate fit without turning it into an interrogation." 
+excerpt: "Proefdagen zijn het nuttigst als je weet wat je moet observeren. Deze checklist helpt je gericht vergelijken."
 category: "Getting started"
 tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"

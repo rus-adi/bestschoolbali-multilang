@@ -1,7 +1,7 @@
 ---
-title: "Welcome to Best School Bali"
+title: "欢迎来到 Best School Bali"
 date: "2026-02-16"
-excerpt: "A quick way to use this directory to build a shortlist — without spending weeks opening random school websites."
+excerpt: "用最省时间的方式使用目录，快速建立可靠的学校候选清单。"
 category: "Getting started"
 tags: ["Shortlist", "Directory tips"]
 image: "/img/banners/hero-wide.webp"

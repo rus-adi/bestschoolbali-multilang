@@ -48,10 +48,10 @@
     "openDirectory": "打开完整目录",
     "addToCompare": "加入比较",
     "addedToCompare": "已加入比较",
-    "shareInterest": "Share Interest",
-    "contactAboutSchool": "Contact About This School",
-    "openInterestForm": "Open interest form",
-    "copyFailed": "Could not copy link."
+    "shareInterest": "分享意向",
+    "contactAboutSchool": "咨询这所学校",
+    "openInterestForm": "打开意向表单",
+    "copyFailed": "无法复制链接。"
   },
   "search": {
     "search": "搜索",
@@ -153,10 +153,10 @@
     "notFound": "Not found"
   },
   "home": {
-    "heroTitleLead": "Find the",
-    "heroTitleAccent": "Best School",
-    "heroTitleTail": "in Bali",
-    "heroSubtitle": "Compare, Explore & Choose the Perfect Education for Your Child",
+    "heroTitleLead": "找到",
+    "heroTitleAccent": "巴厘岛最好的学校",
+    "heroTitleTail": "",
+    "heroSubtitle": "比较、探索，并为孩子选择最合适的教育",
     "badgeVerified": "Verified profiles",
     "badgeParents": "Parent perspectives",
     "badgeGuidance": "Free guidance",

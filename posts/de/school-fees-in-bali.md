@@ -1,7 +1,7 @@
 ---
-title: "School Fees in Bali: How to Compare Total First‑Year Cost"
+title: "Schulgebühren in Bali: So vergleichen Sie die Gesamtkosten im ersten Jahr"
 date: "2026-02-20"
-excerpt: "Tuition is only part of the story. Here’s how to compare schools using a first-year total so you don’t get surprised by one‑time fees and extras."
+excerpt: "Nicht nur das Schulgeld zählt: So vergleichen Sie einmalige und laufende Zusatzkosten."
 category: "Fees"
 tags: ["Fees", "Budget", "What to ask"]
 image: "/img/banners/hero.webp"

@@ -1,7 +1,7 @@
 ---
-title: "School Fees in Bali: How to Compare Total First‑Year Cost"
+title: "Cuotas escolares en Bali: cómo comparar el costo total del primer año"
 date: "2026-02-20"
-excerpt: "Tuition is only part of the story. Here’s how to compare schools using a first-year total so you don’t get surprised by one‑time fees and extras."
+excerpt: "La matrícula no es todo: compara también pagos únicos y gastos recurrentes."
 category: "Fees"
 tags: ["Fees", "Budget", "What to ask"]
 image: "/img/banners/hero.webp"

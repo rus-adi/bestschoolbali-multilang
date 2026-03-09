@@ -1,7 +1,7 @@
 ---
-title: "IB vs British vs Cambridge: How to Choose a Curriculum (Without Overthinking)"
+title: "IB vs. British vs. Cambridge: Curriculum wählen ohne zu grübeln"
 date: "2026-02-22"
-excerpt: "A parent-friendly guide to common curriculum labels in Bali. Focuses on fit, transitions, and the questions that actually matter in admissions calls."
+excerpt: "Elternfreundlicher Leitfaden zu gängigen Curricula in Bali mit den wirklich wichtigen Fragen."
 category: "Curriculums"
 tags: ["IB", "British", "Cambridge", "Curriculum"]
 image: "/img/banners/hero.webp"

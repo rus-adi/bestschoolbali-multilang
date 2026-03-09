@@ -1,7 +1,7 @@
 ---
-title: "Canggu vs Ubud for Families: Choosing an Area for School"
+title: "家族向けエリア比較：チャングー vs ウブド"
 date: "2026-02-23"
-excerpt: "A practical way to choose between Canggu and Ubud when school commute and daily rhythm matter. Includes a shortlist method you can use in one afternoon."
+excerpt: "通学時間と生活リズムを重視して、チャングーとウブドを実用的に比較。"
 category: "Areas"
 tags: ["Canggu", "Ubud", "Commute"]
 image: "/img/banners/canggu.webp"

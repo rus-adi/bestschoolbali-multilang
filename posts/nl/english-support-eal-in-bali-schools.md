@@ -1,7 +1,7 @@
 ---
-title: "English Support (EAL) in Bali Schools: What Parents Should Ask"
+title: "Engelse ondersteuning (EAL) op scholen in Bali: wat ouders moeten vragen"
 date: "2026-03-03"
-excerpt: "If your child is new to English, the right support can change everything. Here’s how to evaluate EAL programs without guesswork." 
+excerpt: "Als je kind nieuw is in het Engels, kan de juiste ondersteuning alles veranderen. Zo beoordeel je EAL-programma’s."
 category: "Admissions"
 tags: ["Admissions", "EAL", "Language support", "Primary", "Secondary"]
 image: "/img/banners/sanur.webp"

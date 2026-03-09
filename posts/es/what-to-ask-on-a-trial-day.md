@@ -1,7 +1,7 @@
 ---
-title: "What to Ask on a Trial Day: A Parent’s Checklist"
+title: "Qué preguntar en un día de prueba: checklist para familias"
 date: "2026-03-03"
-excerpt: "Trial days are most useful when you know what to observe. This checklist helps you evaluate fit without turning it into an interrogation." 
+excerpt: "Un día de prueba es más útil cuando sabes qué observar. Esta checklist te ayuda a evaluar mejor el encaje."
 category: "Getting started"
 tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"

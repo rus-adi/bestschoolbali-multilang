@@ -1,7 +1,7 @@
 ---
-title: "School Fees in Bali: How to Compare Total First‑Year Cost"
+title: "رسوم المدارس في بالي: كيف تقارن تكلفة السنة الأولى كاملة"
 date: "2026-02-20"
-excerpt: "Tuition is only part of the story. Here’s how to compare schools using a first-year total so you don’t get surprised by one‑time fees and extras."
+excerpt: "الرسوم الدراسية ليست كل شيء؛ قارن أيضاً الرسوم لمرة واحدة والتكاليف المتكررة."
 category: "Fees"
 tags: ["Fees", "Budget", "What to ask"]
 image: "/img/banners/hero.webp"

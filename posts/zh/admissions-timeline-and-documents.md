@@ -1,7 +1,7 @@
 ---
-title: "Admissions in Bali: Timeline, Documents, and What Happens Next"
+title: "巴厘岛入学：时间线、材料与后续流程"
 date: "2026-02-21"
-excerpt: "A clear overview of the typical admissions process: inquiry → tour → application → assessment → offer. Includes a document checklist you can prepare in advance."
+excerpt: "清晰说明常见入学流程：咨询→参观→申请→评估→录取，并附材料清单。"
 category: "Admissions"
 tags: ["Admissions", "Documents", "Timeline"]
 image: "/img/banners/contact.webp"

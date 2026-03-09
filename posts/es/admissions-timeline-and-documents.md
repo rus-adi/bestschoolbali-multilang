@@ -1,7 +1,7 @@
 ---
-title: "Admissions in Bali: Timeline, Documents, and What Happens Next"
+title: "Admisiones en Bali: cronograma, documentos y siguientes pasos"
 date: "2026-02-21"
-excerpt: "A clear overview of the typical admissions process: inquiry → tour → application → assessment → offer. Includes a document checklist you can prepare in advance."
+excerpt: "Resumen claro del proceso típico de admisión con una lista de documentos para preparar."
 category: "Admissions"
 tags: ["Admissions", "Documents", "Timeline"]
 image: "/img/banners/contact.webp"

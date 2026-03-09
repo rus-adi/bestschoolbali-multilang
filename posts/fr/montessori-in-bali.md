@@ -1,7 +1,7 @@
 ---
-title: "Montessori Schools in Bali: What to Look For"
+title: "Écoles Montessori à Bali : que faut-il vérifier ?"
 date: "2026-03-03"
-excerpt: "Montessori can mean very different things on the ground. Here’s how to spot a strong program (and ask the right questions) in Bali." 
+excerpt: "Le Montessori peut prendre des formes très différentes sur le terrain. Voici comment repérer un programme solide à Bali."
 category: "Curriculum"
 tags: ["Montessori", "Curriculum", "Early years", "Tour checklist"]
 image: "/img/banners/ubud.webp"

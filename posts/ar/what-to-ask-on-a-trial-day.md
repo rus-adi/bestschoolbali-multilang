@@ -1,7 +1,7 @@
 ---
-title: "What to Ask on a Trial Day: A Parent’s Checklist"
+title: "ماذا تسأل في اليوم التجريبي؟ قائمة للأهالي"
 date: "2026-03-03"
-excerpt: "Trial days are most useful when you know what to observe. This checklist helps you evaluate fit without turning it into an interrogation." 
+excerpt: "اليوم التجريبي يكون أكثر فائدة عندما تعرف ما الذي يجب ملاحظته. هذه القائمة تساعدك على تقييم التوافق بثقة."
 category: "Getting started"
 tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"

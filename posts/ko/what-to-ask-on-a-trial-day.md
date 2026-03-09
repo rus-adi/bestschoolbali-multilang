@@ -1,7 +1,7 @@
 ---
-title: "What to Ask on a Trial Day: A Parent’s Checklist"
+title: "체험수업에서 무엇을 물어봐야 할까? 부모 체크리스트"
 date: "2026-03-03"
-excerpt: "Trial days are most useful when you know what to observe. This checklist helps you evaluate fit without turning it into an interrogation." 
+excerpt: "체험수업은 관찰 포인트를 알고 갈 때 가장 유익합니다. 이 체크리스트로 학교 적합도를 평가하세요."
 category: "Getting started"
 tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"

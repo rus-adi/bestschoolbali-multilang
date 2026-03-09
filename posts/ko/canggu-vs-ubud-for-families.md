@@ -1,7 +1,7 @@
 ---
-title: "Canggu vs Ubud for Families: Choosing an Area for School"
+title: "가족을 위한 지역 선택: 짱구 vs 우붓"
 date: "2026-02-23"
-excerpt: "A practical way to choose between Canggu and Ubud when school commute and daily rhythm matter. Includes a shortlist method you can use in one afternoon."
+excerpt: "통학과 생활 리듬을 기준으로 짱구와 우붓을 실용적으로 비교합니다."
 category: "Areas"
 tags: ["Canggu", "Ubud", "Commute"]
 image: "/img/banners/canggu.webp"

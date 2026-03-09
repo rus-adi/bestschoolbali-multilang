@@ -1,7 +1,7 @@
 ---
-title: "Montessori Schools in Bali: What to Look For"
+title: "巴厘岛蒙特梭利学校：家长应重点看什么"
 date: "2026-03-03"
-excerpt: "Montessori can mean very different things on the ground. Here’s how to spot a strong program (and ask the right questions) in Bali." 
+excerpt: "“蒙特梭利”在实际落地中差异很大。本文帮你识别巴厘岛真正扎实的项目。"
 category: "Curriculum"
 tags: ["Montessori", "Curriculum", "Early years", "Tour checklist"]
 image: "/img/banners/ubud.webp"

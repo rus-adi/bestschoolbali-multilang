@@ -89,7 +89,7 @@ function SiteChromeInner({ children }: { children: React.ReactNode }) {
               </React.Fragment>
             ))}
             <span aria-hidden="true">·</span>
-            <a href="https://wa.me/62111111" rel="nofollow">
+            <a href="https://wa.me/6285285408220" rel="nofollow">
               {t('footer.whatsApp')}
             </a>
           </div>

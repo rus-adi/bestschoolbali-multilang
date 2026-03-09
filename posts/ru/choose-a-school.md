@@ -1,7 +1,7 @@
 ---
-title: "How to Choose a School in Bali"
+title: "Как выбрать школу на Бали"
 date: "2026-02-10"
-excerpt: "A practical tour checklist + a short admissions call script that helps you compare schools without getting overwhelmed."
+excerpt: "Практичный чеклист для туров и короткий скрипт звонка в admissions для сравнения школ."
 category: "Getting started"
 tags: ["Tour checklist", "Admissions", "Questions to ask"]
 image: "/img/banners/hero.webp"

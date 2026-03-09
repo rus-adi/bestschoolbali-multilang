@@ -1,7 +1,7 @@
 ---
-title: "Montessori Schools in Bali: What to Look For"
+title: "발리 몬테소리 학교, 무엇을 봐야 할까?"
 date: "2026-03-03"
-excerpt: "Montessori can mean very different things on the ground. Here’s how to spot a strong program (and ask the right questions) in Bali." 
+excerpt: "몬테소리는 실제 운영에서 매우 다를 수 있습니다. 발리에서 좋은 프로그램을 구별하는 방법을 안내합니다."
 category: "Curriculum"
 tags: ["Montessori", "Curriculum", "Early years", "Tour checklist"]
 image: "/img/banners/ubud.webp"

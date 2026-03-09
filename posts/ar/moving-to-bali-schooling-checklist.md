@@ -1,7 +1,7 @@
 ---
-title: "Moving to Bali With Kids: A Schooling Checklist"
+title: "الانتقال إلى بالي مع الأطفال: قائمة تجهيز المدرسة"
 date: "2026-03-03"
-excerpt: "A realistic timeline for families relocating to Bali — what to do first, what to ask on tours, and how to avoid last-minute stress." 
+excerpt: "جدول زمني واقعي للعائلات المنتقلة إلى بالي: ما الذي يجب فعله أولاً وكيف تتجنب ضغط اللحظة الأخيرة."
 category: "Relocation"
 tags: ["Relocation", "Admissions", "Timeline", "Areas", "Fees"]
 image: "/img/banners/hero.webp"
