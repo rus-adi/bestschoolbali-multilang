@@ -312,5 +312,32 @@
     "feesOverview": "Kostenoverzicht",
     "getGuidance": "Advies krijgen",
     "viewAllPosts": "Bekijk alle berichten"
+  },
+  "comparePage": {
+    "title": "Scholen vergelijken",
+    "subtitle": "Kies een paar scholen en vergelijk kosten, leeftijden, curriculum-tags en locatie — open daarna de profielen voor details.",
+    "faq": {
+      "title": "FAQ",
+      "q1": "Wat is de beste manier om scholen eerlijk te vergelijken?",
+      "a1": "Gebruik voor elke school dezelfde vragenlijst. Vergelijk reistijd, leeftijd/groepsdekking, curriculumroute en de totale kosten van het eerste jaar (schoolgeld + eenmalige kosten + terugkerende extra’s).",
+      "q2": "Zijn de kosten op deze site exact?",
+      "a2": "De kosten zijn indicatieve bandbreedtes. Scholen kunnen prijzen op elk moment wijzigen. Vraag altijd de meest recente kostenlijst op en controleer wat is inbegrepen.",
+      "q3": "Hoeveel scholen moeten we op de shortlist zetten?",
+      "a3": "De meeste gezinnen kiezen 3–5 scholen en plannen rondleidingen dicht op elkaar zodat vergelijken makkelijker is.",
+      "q4": "Kunnen jullie ons helpen kiezen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar prioriteiten (curriculum, taalondersteuning, budget), dan helpen we met een shortlist en gerichte toelatingsvragen."
+    },
+    "sections": {
+      "area": {
+        "title": "Populaire gebiedsvergelijkingen",
+        "body": "Als je beslist waar je wilt wonen, helpen deze vergelijkingen je reistijd en schoolopties beter te begrijpen.",
+        "cta": "Bekijk gebiedsvergelijkingen"
+      },
+      "ages": {
+        "title": "Bladeren op leeftijd",
+        "body": "Liever starten met leeftijd/groepsdekking? Gebruik brede leeftijdsbanden en verfijn daarna op gebied en curriculum.",
+        "cta": "Bladeren op leeftijd"
+      }
+    }
   }
 }

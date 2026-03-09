@@ -3,8 +3,10 @@
 import React from 'react';
 import type { School } from '../lib/schools';
 import { slugify } from '../lib/slug';
+import { getSchoolLogo } from '../lib/schoolLogo';
 import { useLocaleHref, useT } from './I18nProvider';
 import SchoolInterestButton from './SchoolInterestButton';
+import SchoolLogoImage from './SchoolLogoImage';
 
 const STORAGE_KEY = 'bsb_compare_ids_v1';
 
@@ -205,7 +207,7 @@ export default function CompareClient({
           <div className="compareSelected" style={{ marginTop: 12 }}>
             {selected.map((s) => (
               <div key={s.id} className="compareChip">
-                <img src={`/img/schools/${s.id}.webp`} alt="" aria-hidden="true" />
+                <SchoolLogoImage src={getSchoolLogo(s)} schoolName={s.name} alt={`${s.name} logo`} />
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontWeight: 800, lineHeight: 1.2 }}>
                     <a href={href(`/schools/${s.id}`)}>{s.name}</a>

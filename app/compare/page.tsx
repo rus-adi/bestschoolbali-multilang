@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllSchools } from "../../lib/schools";
 import CompareClient from "../../components/CompareClient";
 import JsonLd from "../../components/JsonLd";
+import T from "../../components/T";
 
 export const dynamic = "error";
 
@@ -68,17 +69,17 @@ export default function ComparePage() {
   return (
     <div className="container">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
+        <a href="/"><T k="nav.home" /></a>
         <span aria-hidden="true">/</span>
-        <span>Compare</span>
+        <span><T k="footer.compare" /></span>
       </nav>
 
       <section className="hero" style={{ marginTop: 12 }}>
         <div className="heroInner">
           <div>
-            <h1>Compare schools</h1>
+            <h1><T k="comparePage.title" /></h1>
             <p className="small" style={{ marginTop: 6 }}>
-              Pick a few schools and compare fees, ages, curriculum tags, and area — then jump into profiles for details.
+              <T k="comparePage.subtitle" />
             </p>
           </div>
           <div className="heroMedia" aria-hidden="true">
@@ -90,13 +91,13 @@ export default function ComparePage() {
       <CompareClient schools={schoolsLite} />
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}><T k="comparePage.faq.title" /></h2>
         <div className="faqList">
-          {faqItems.map((f) => (
+          {faqItems.map((f, idx) => (
             <details key={f.q} className="faqItem">
-              <summary>{f.q}</summary>
+              <summary><T k={`comparePage.faq.q${idx + 1}`} /></summary>
               <div className="faqAnswer">
-                <p style={{ marginTop: 0 }}>{f.a}</p>
+                <p style={{ marginTop: 0 }}><T k={`comparePage.faq.a${idx + 1}`} /></p>
               </div>
             </details>
           ))}
@@ -105,21 +106,21 @@ export default function ComparePage() {
 
       <div className="grid" style={{ marginTop: 16 }}>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Popular area comparisons</h2>
+          <h2 style={{ marginTop: 0 }}><T k="comparePage.sections.area.title" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            If you’re deciding where to live, these comparisons help you understand commute and school options.
+            <T k="comparePage.sections.area.body" />
           </p>
           <a className="btn btnLink" href="/compare/areas">
-            Browse area comparisons <span aria-hidden="true">→</span>
+            <T k="comparePage.sections.area.cta" /> <span aria-hidden="true">→</span>
           </a>
         </div>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Browse by age</h2>
+          <h2 style={{ marginTop: 0 }}><T k="comparePage.sections.ages.title" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.
+            <T k="comparePage.sections.ages.body" />
           </p>
           <a className="btn btnLink" href="/ages">
-            Browse by age <span aria-hidden="true">→</span>
+            <T k="comparePage.sections.ages.cta" /> <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>

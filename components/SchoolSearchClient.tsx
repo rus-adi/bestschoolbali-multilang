@@ -3,8 +3,10 @@
 import React from 'react';
 import type { School } from '../lib/schools';
 import { slugify } from '../lib/slug';
+import { getSchoolLogo } from '../lib/schoolLogo';
 import { useLocaleHref, useT } from './I18nProvider';
 import SchoolInterestButton from './SchoolInterestButton';
+import SchoolLogoImage from './SchoolLogoImage';
 
 const COMPARE_STORAGE_KEY = 'bsb_compare_ids_v1';
 
@@ -257,13 +259,13 @@ export default function SchoolSearchClient({
 
       <div style={{ marginTop: 12 }} className="grid">
         {filtered.slice(0, maxResults).map((s) => {
-          const icon = `/img/schools/${s.id}.webp`;
+          const icon = getSchoolLogo(s);
           const tagsPreview = (s.curriculum_tags ?? []).slice(0, 5);
           const selected = compareIds.includes(s.id);
           return (
             <div key={s.id} className="card">
               <div className="schoolCardTop">
-                <img className="favicon" src={icon} alt={s.name} loading="lazy" />
+                <SchoolLogoImage className="favicon" src={icon} schoolName={s.name} alt={`${s.name} logo`} loading="lazy" />
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontWeight: 800, lineHeight: 1.25 }}>
                     <a href={href(`/schools/${s.id}`)}>{s.name}</a>

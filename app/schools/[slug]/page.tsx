@@ -7,11 +7,13 @@ import AddToCompareButton from "../../../components/AddToCompareButton";
 import SchoolInterestButton from "../../../components/SchoolInterestButton";
 import SchoolListCard from "../../../components/SchoolListCard";
 import T from "../../../components/T";
+import SchoolLogoImage from "../../../components/SchoolLogoImage";
 import { AGE_BANDS } from "../../../lib/ages";
 import { remark } from "remark";
 import html from "remark-html";
 import { recommendGuides } from "../../../lib/posts";
 import { getAreaComparisonPairs } from "../../../lib/areaComparisons";
+import { getSchoolLogo } from "../../../lib/schoolLogo";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -117,7 +119,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
 
   const areaSlug = slugify(school.area);
   const banner = bannerForAreaName(school.area);
-  const schoolImage = `/img/schools/${school.id}.webp`;
+  const schoolImage = getSchoolLogo(school);
   const typeSlug = school.type ? slugify(school.type) : null;
   const budgetSlug = school.budget_category ? slugify(school.budget_category) : null;
 
@@ -290,7 +292,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
         <img src={banner} alt="" aria-hidden="true" />
         <div className="schoolHeroOverlay">
           <div className="schoolHeroContent">
-            <img className="schoolHeroIcon" src={schoolImage} alt="" aria-hidden="true" />
+            <SchoolLogoImage className="schoolHeroIcon" src={schoolImage} schoolName={school.name} alt={`${school.name} logo`} />
             <div>
               <h1 style={{ margin: 0 }}>
                 {school.name}

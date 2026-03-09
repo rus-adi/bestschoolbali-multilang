@@ -2,9 +2,13 @@ import type { Metadata } from 'next';
 
 import BasePage, { metadata as baseMetadata } from '../../types/page';
 import { localizeMetadata } from '../../../lib/seo/i18n';
-import { isLocale, type Locale } from '../../../lib/i18n/locales';
+import { isLocale, LOCALES, type Locale } from '../../../lib/i18n/locales';
 
 export const dynamic = 'error';
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
