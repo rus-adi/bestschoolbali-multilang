@@ -9,12 +9,17 @@ function withFallback(value: string, key: string, fallback: string) {
   return value === key ? fallback : value;
 }
 
+function applyValues(template: string, values?: Record<string, string | number>) {
+  if (!values) return template;
+  return template.replace(/\{(.*?)\}/g, (_, key) => String(values[key] ?? `{${key}}`));
+}
+
 export default function TypesPageContent({ types }: { types: TypeEntry[] }) {
   const t = useT();
   const href = useLocaleHref();
 
   const tr = (key: string, fallback: string, values?: Record<string, string | number>) =>
-    withFallback(t(key, values), key, fallback);
+    applyValues(withFallback(t(key, values), key, fallback), values);
 
   const faqItems = [
     {
