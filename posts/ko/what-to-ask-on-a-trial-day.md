@@ -1,99 +1,26 @@
 ---
-title: "What to Ask on a Trial Day: A Parent’s Checklist"
+title: "체험수업에서 무엇을 물어봐야 할까? 부모 체크리스트"
 date: "2026-03-03"
-excerpt: "Trial days are most useful when you know what to observe. This checklist helps you evaluate fit without turning it into an interrogation." 
+excerpt: "체험수업은 관찰 포인트를 알고 갈 때 가장 유익합니다. 이 체크리스트로 학교 적합도를 평가하세요."
 category: "Getting started"
 tags: ["Tour checklist", "Trial day", "Admissions", "Questions to ask"]
 image: "/img/banners/canggu.webp"
 ---
 
-A trial day can be one of the best ways to understand fit — but only if you know what to look for.
+이 글은 발리의 한국어 사용자 가족을 위해 현지화했습니다.
 
-Most parents leave a trial day with a general feeling (“my child liked it”), but without the information needed to compare schools confidently. This checklist gives you a few simple things to observe, and a short set of questions that are easy for schools to answer.
+**한국어 — What to Ask on a Trial Day: A Parent’s Checklist**
 
----
+이 가이드는 통학 시간, 커리큘럼, 학습 지원, 첫해 총비용 기준으로 학교를 체계적으로 비교하도록 돕습니다.
 
-## Before the trial: align on expectations
+정책과 정원은 바뀔 수 있으므로 최신 정보는 반드시 학교 입학팀에 직접 확인하세요.
 
-Ask the school:
+학교 투어 시 이 체크리스트를 사용하고 관찰 내용을 기록하면 비교가 쉬워집니다.
 
-- Which class will my child join?
-- Will they follow the normal schedule?
-- Who will be responsible for onboarding them during the day?
+## 핵심 포인트
 
-Then ask yourself:
+- 홍보 문구보다 실제 일상 학습 경험을 기준으로 비교하세요.
+- 일회성 비용과 반복 비용을 포함한 전체 비용표를 요청하세요.
+- 결정 전에 언어 지원, 시작 시기, 입학 절차를 확인하세요.
 
-- Is your child shy, social, sensitive to noise, or easily tired?
-- Do they need structure, or do they thrive with flexibility?
-
----
-
-## During drop-off: watch the greeting
-
-The first five minutes can tell you a lot.
-
-Observe:
-
-- Do staff greet children by name?
-- Do they guide children kindly but firmly?
-- Do children seem calm, or rushed and anxious?
-
----
-
-## In class: look for three simple signals
-
-### 1) Attention and engagement
-
-Is the teacher doing all the talking, or are children actively involved?
-
-### 2) Support without dependence
-
-When a child struggles, do adults step in with coaching — or do they take over?
-
-### 3) Classroom culture
-
-Do children help each other? Are corrections respectful?
-
----
-
-## At pick-up: ask for specific feedback
-
-Good feedback is concrete.
-
-Ask:
-
-- What did my child enjoy most?
-- Where did they need the most support?
-- If we enroll, what would you recommend for the first month?
-
----
-
-## Questions that help you compare schools
-
-Keep it short. These are enough:
-
-1) What is the typical class size for this age?
-2) How do you support a child new to the school culture?
-3) How do you communicate with parents (weekly update, app, meetings)?
-4) What costs are usually missed by new families (uniforms, transport, after-school care)?
-
-Helpful context:
-
-- Fees overview: /fees
-- Admissions timeline: /blog/admissions-timeline-and-documents
-
----
-
-## Next step: narrow your shortlist
-
-After one or two trials, you should be able to narrow to 2–3 schools.
-
-Use the directory tools:
-
-- Compare schools: /compare
-- Browse areas: /areas
-- Browse curriculums: /curriculums
-
-If you want help shortlisting based on your area and your child’s age, you can ask here:
-
-- Get guidance: /contact
+마지막 팁: 방문 후 가족이 짧게 리뷰하면 선택이 더 빨라집니다.

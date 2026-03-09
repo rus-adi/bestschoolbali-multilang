@@ -116,6 +116,13 @@ a:hover {
   white-space: nowrap;
 }
 
+.menuItem {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .navLink:hover {
   background: var(--primary-soft);
   color: var(--text);
@@ -411,6 +418,15 @@ h3 {
   color: var(--text);
   text-decoration: none;
   font-weight: 650;
+  max-width: 100%;
+}
+
+.btnText {
+  display: inline-block;
+  max-width: 18ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -540,6 +556,16 @@ h3 {
 .homeHero p {
   text-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+@media (min-width: 1024px) {
+  .homeHero h1,
+  .homeHero p,
+  .homeHero .homeHeroTitle,
+  .homeHero .homeHeroSubtitle {
+    color: #ffffff !important;
+  }
+}
+
 
 .heroBadges {
   margin-top: 16px;
@@ -675,6 +701,15 @@ h3 {
   box-shadow: 0 12px 30px rgba(2, 6, 23, 0.06);
   color: var(--text);
   font-weight: 650;
+  max-width: 100%;
+}
+
+.chipText {
+  display: inline-block;
+  max-width: 18ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .chip:hover {

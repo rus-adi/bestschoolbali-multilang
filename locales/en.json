@@ -68,7 +68,7 @@
     "addAtLeastTwo": "add at least 2 to compare",
     "addSchools": "Add schools",
     "quickCompareNote": "Search by name, area, or curriculum tag. This is a quick comparison tool — always confirm the latest fee sheet and availability with admissions.",
-    "placeholderCompare": "Type a school name (e.g., Green School, Canggu, Montessori)",
+    "placeholderCompare": "Type a school name (e.g., Nature School, Canggu, Montessori)",
     "searchSchoolsToAdd": "Search schools to add",
     "suggestions": "Suggestions",
     "tipCompareToggle": "Tip: you can also add schools from the directory using the “Compare” toggle.",
@@ -161,7 +161,7 @@
     "badgeParents": "Parent perspectives",
     "badgeGuidance": "Free guidance",
     "quickFilterInternational": "International Schools",
-    "quickFilterLocal": "Bali Local Schools",
+    "quickFilterLocal": "Nature School",
     "quickFilterMontessoriIb": "Montessori & IB",
     "quickFilterAffordable": "Affordable & Premium",
     "sponsoredHeading": "Sponsored schools",
@@ -189,7 +189,14 @@
     "guideLink": "Read the Guides",
     "noPosts": "No posts yet.",
     "morePosts": "More posts",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "chipRow": {
+      "label": "Quick filters",
+      "internationalSchools": "International Schools",
+      "natureSchool": "Nature School",
+      "montessoriIb": "Montessori & IB",
+      "affordablePremium": "Affordable & Premium"
+    }
   },
   "school": {
     "feesLabel": "Fees",

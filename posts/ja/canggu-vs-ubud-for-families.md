@@ -1,77 +1,26 @@
 ---
-title: "Canggu vs Ubud for Families: Choosing an Area for School"
+title: "家族向けエリア比較：チャングー vs ウブド"
 date: "2026-02-23"
-excerpt: "A practical way to choose between Canggu and Ubud when school commute and daily rhythm matter. Includes a shortlist method you can use in one afternoon."
+excerpt: "通学時間と生活リズムを重視して、チャングーとウブドを実用的に比較。"
 category: "Areas"
 tags: ["Canggu", "Ubud", "Commute"]
 image: "/img/banners/canggu.webp"
 ---
 
-Families often ask a version of the same question:
+この記事はバリ在住の日本語ユーザー向けに調整しています。
 
-> “Should we live in Canggu or Ubud if school is a priority?”
+**日本語 — Canggu vs Ubud for Families: Choosing an Area for School**
 
-There’s no universal answer. The right choice depends on your daily routine, how much time you’re willing to spend in traffic, and the type of school environment you want.
+このガイドは、通学時間・カリキュラム・学習サポート・初年度総費用の観点で学校比較をしやすくするためのものです。
 
----
+方針や空き状況は変わるため、最新情報は必ず各校のAdmissionsに直接確認してください。
 
-## Start with commute (not vibes)
+学校見学ではこのチェックリストを使い、観察結果を記録して客観的に比較しましょう。
 
-A school that looks perfect online can become a daily stressor if the drive is unpredictable.
+## 重要ポイント
 
-Before you tour five schools, do this:
+- 宣伝よりも日々の学習体験を重視して比較する。
+- 一時費用と継続費用を含む総費用を必ず確認する。
+- 言語サポート、開始時期、入学手順を決定前に確認する。
 
-- Pick two or three candidate neighbourhoods.
-- Check commute times for **drop‑off** and **pick‑up**.
-- Keep a shortlist only if the routine feels sustainable.
-
----
-
-## A simple way to compare areas
-
-Think in three layers:
-
-### 1) Daily rhythm
-
-- Morning schedule: early starts vs flexible mornings
-- After school: activities, beach/outdoors, family time
-
-### 2) School style fit
-
-Some families prioritise:
-
-- structured academics
-- outdoor or nature-based learning
-- early years environments
-
-Use curriculum tags as a starting point, but always confirm what they mean in practice.
-
-### 3) Logistics
-
-- transport options
-- after school care availability
-- how often you need to go to other parts of Bali
-
----
-
-## How to shortlist schools in either area
-
-1. Open the area pages:
-   - [/areas/canggu](/areas/canggu)
-   - [/areas/ubud](/areas/ubud)
-2. Pick 6–10 schools that fit your child’s age.
-3. Filter by curriculum preference.
-4. Then apply a budget band:
-   - [/budget](/budget)
-
-Aim for 3–5 tours. More than that usually creates decision fatigue.
-
----
-
-## Next step
-
-If you tell us your preferred area and your child’s age, we can suggest a shortlist and a simple admissions call script.
-
-- Browse areas: [/areas](/areas)
-- Browse schools: [/schools](/schools)
-- Contact: [/contact](/contact)
+最後のヒント：見学後に家族で短く振り返ると判断が早くなります。
