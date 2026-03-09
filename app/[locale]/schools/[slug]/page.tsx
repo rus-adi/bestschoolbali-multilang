@@ -21,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
 
-  const base = await generateBaseMetadata({ params: { slug: params.slug } });
+  const base = await generateBaseMetadata({ params: { slug: params.slug }, locale: params.locale });
   return localizeMetadata(base, params.locale as Locale, `/schools/${params.slug}`, {
     noindex: params.locale !== 'en',
   });
@@ -32,5 +32,5 @@ export default function LocalizedPage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  return <BasePage params={{ slug: params.slug }} />;
+  return <BasePage params={{ slug: params.slug }} locale={params.locale} />;
 }

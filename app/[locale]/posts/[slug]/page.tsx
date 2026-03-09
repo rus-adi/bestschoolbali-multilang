@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { getAllPosts, getPostBySlug } from "../../../../lib/posts";
+import { getAllPostSlugs, getPostBySlug, hasPostTranslation } from "../../../../lib/posts";
 import PostDetailView from "../../../../components/PostDetailView";
-import { isLocale, type Locale } from "../../../../lib/i18n/locales";
+import { isLocale, LOCALES, type Locale } from "../../../../lib/i18n/locales";
+import { notFound } from "next/navigation";
 import { localizeMetadata } from "../../../../lib/seo/i18n";
 
 const SITE_URL = "https://bestschoolbali.com";
@@ -9,8 +10,10 @@ const SITE_URL = "https://bestschoolbali.com";
 export const dynamicParams = false;
 export const dynamic = "error";
 
-export function generateStaticParams(): { slug: string }[] {
-  return getAllPosts("en").map((p) => ({ slug: p.slug }));
+export function generateStaticParams(): Array<{ locale: string; slug: string }> {
+  return LOCALES.flatMap((locale) =>
+    getAllPostSlugs(locale).filter((slug) => hasPostTranslation(slug, locale)).map((slug) => ({ locale, slug })),
+  );
 }
 
 export async function generateMetadata({
@@ -20,6 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
 
+  if (!hasPostTranslation(params.slug, params.locale)) return {};
   const post = getPostBySlug(params.slug, params.locale);
   const title = post.title;
   const description = post.excerpt ?? "Guides for choosing a school in Bali.";
@@ -50,5 +54,6 @@ export default function LocalizedPostPage({
     return null;
   }
 
+  if (!hasPostTranslation(params.slug, params.locale)) notFound();
   return <PostDetailView slug={params.slug} locale={params.locale as Locale} />;
 }

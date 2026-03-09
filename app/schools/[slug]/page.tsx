@@ -24,8 +24,8 @@ export function generateStaticParams(): { slug: string }[] {
   return getAllSchools().map((s) => ({ slug: s.id }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const school = getSchoolBySlug(params.slug);
+export function generateMetadata({ params, locale = "en" }: { params: { slug: string }; locale?: string }): Metadata {
+  const school = getSchoolBySlug(params.slug, locale);
   if (!school) {
     return {
       title: "School not found",
@@ -89,8 +89,8 @@ async function renderMarkdown(md: string) {
   return { html: htmlStr, toc };
 }
 
-function relatedSchools(currentId: string) {
-  const all = getAllSchools();
+function relatedSchools(currentId: string, locale = "en") {
+  const all = getAllSchools(locale);
   const current = all.find((s) => s.id === currentId);
   if (!current) return [];
 
@@ -113,8 +113,8 @@ function relatedSchools(currentId: string) {
   return scored.slice(0, 6).map((x) => x.s);
 }
 
-export default async function SchoolPage({ params }: { params: { slug: string } }) {
-  const school = getSchoolBySlug(params.slug);
+export default async function SchoolPage({ params, locale = "en" }: { params: { slug: string }; locale?: string }) {
+  const school = getSchoolBySlug(params.slug, locale);
   if (!school) return <div className="container"><T k="common.notFound" /></div>;
 
   const areaSlug = slugify(school.area);
@@ -135,7 +135,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
   const profile = school.profile_md ? await renderMarkdown(school.profile_md) : null;
   const profileHtml = profile?.html ?? null;
   const toc = profile?.toc ?? [];
-  const similar = relatedSchools(school.id);
+  const similar = relatedSchools(school.id, locale);
 
   const otherAreas = Array.from(new Set(similar.map((s) => s.area).filter((a) => a && a !== school.area))).slice(0, 3);
   const comparePairs = getAreaComparisonPairs().filter(
@@ -145,6 +145,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
   );
 
   const guides = recommendGuides({
+    locale,
     area: school.area,
     curriculumTags: school.curriculum_tags ?? [],
     budget: school.budget_category,
@@ -172,67 +173,37 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
 
   const faqItems = [
     {
-      q: "What curriculum does this school offer?",
-      a: school.curriculum_tags?.length
-        ? `This school lists: ${school.curriculum_tags.join(", ")}. Confirm the current year’s scope, language of instruction, and how placement works for new students.`
-        : school.details?.curriculum
-          ? school.details.curriculum
-          : "Curriculum details are not listed here. Ask the school what framework they follow, the language of instruction, and whether they support student transitions.",
+      id: "curriculum",
+      qKey: "school.factsCurriculum",
+      a:
+        school.curriculum_tags?.length
+          ? school.curriculum_tags.join(", ")
+          : school.details?.curriculum || null,
     },
     {
-      q: "What ages or grade levels does the school accept?",
+      id: "ages",
+      qKey: "school.factsAges",
       a:
         school.age_min != null && school.age_max != null
-          ? `The directory lists ages ${school.age_min}–${school.age_max}. Confirm how those ages map to early years/primary/secondary at this campus.`
-          : "Age range is not listed. Ask which year levels they offer and the minimum age for entry.",
+          ? `${school.age_min}–${school.age_max}`
+          : null,
     },
     {
-      q: "How much are the fees, and what’s included?",
-      a: `The listing shows: ${school.fees?.display ?? "Call the school for fees."}${school.fees?.status === "estimate" ? " (estimate)" : ""}. Ask for the total first-year cost (tuition plus one-time fees, uniforms, transport, meals, exams).`,
+      id: "fees",
+      qKey: "school.feesLabel",
+      a: school.fees?.display ?? null,
     },
     {
-      q: "Where is the school located, and what is the commute like?",
-      a: `The school is listed in ${school.area}. Try a test commute at drop-off and pick-up times if you can, because traffic can change a lot by time of day.`,
+      id: "type",
+      qKey: "school.factsType",
+      a: school.type ?? null,
     },
     {
-      q: "How does admissions typically work?",
-      a: "Many schools follow: inquiry → campus tour → application → assessment/interview (if needed) → offer → deposit/contract. Ask about deadlines and waitlists.",
+      id: "address",
+      qKey: "school.factsAddress",
+      a: school.details?.address ?? null,
     },
-    {
-      q: "What documents should we prepare for enrollment?",
-      a: "Common requirements include passport/ID, birth certificate, recent school reports, immunization records, and a student photo. International families may also need visa/permit documents.",
-    },
-    {
-      q: "Can we visit the campus or do a trial day?",
-      a: "Many schools offer tours and sometimes trial days. Ask what classes your child can sit in, how long the trial is, and whether there is a fee.",
-    },
-    {
-      q: "Do they offer support for students new to English or Bahasa Indonesia?",
-      a: "Ask whether they have EAL/ELL support, how placement is assessed, and what extra support costs (if any).",
-    },
-    {
-      q: "What facilities and extracurriculars are available?",
-      a: "Ask for the current extracurricular list and whether activities are included or paid separately. If facilities matter (sports, arts, labs), request a campus tour.",
-    },
-    {
-      q: "Do they provide transport, meals, or after-school care?",
-      a: "Many schools offer optional transport and after-school programs. Confirm availability for your area and the exact fees.",
-    },
-    {
-      q: "How can we compare this school with others nearby?",
-      a: `Start by comparing schools in ${school.area}, then narrow by curriculum and budget. The “Similar schools” section below is a quick shortcut.`,
-    },
-  ];
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  ].filter((f) => Boolean(f.a));
 
   const schoolJsonLd = {
     "@context": "https://schema.org",
@@ -587,11 +558,11 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
         <h2 style={{ marginTop: 0 }}><T k="school.faqHeading" /></h2>
         <div className="faqList">
           {faqItems.map((f) => (
-            <details key={f.q} className="faqItem">
-              <summary>{f.q}</summary>
+            <details key={f.id} className="faqItem">
+              <summary><T k={f.qKey} /></summary>
               <div className="faqAnswer">
                 <p style={{ marginTop: 0 }}>{f.a}</p>
-                {f.q === "Where is the school located, and what is the commute like?" && mapUrl ? (
+                {f.id === "address" && mapUrl ? (
                   <p style={{ marginTop: 0 }}>
                     <T k="school.mapLinkLabel" />: <a href={mapUrl} target="_blank" rel="noreferrer"><T k="school.googleMaps" /></a>
                   </p>
@@ -619,7 +590,6 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
 
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={schoolJsonLd} />
-      <JsonLd data={faqJsonLd} />
     </div>
   );
 }

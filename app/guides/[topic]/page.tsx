@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { GUIDE_TOPICS, getPostsForTopic } from "../../../lib/guideTopics";
+import { hasPostTranslation } from "../../../lib/posts";
+import T from "../../../components/T";
 import { slugify } from "../../../lib/slug";
 import JsonLd from "../../../components/JsonLd";
 
@@ -26,10 +28,11 @@ export function generateMetadata({ params }: { params: { topic: string } }): Met
   };
 }
 
-export default function GuideTopicPage({ params }: { params: { topic: string } }) {
+export default function GuideTopicPage({ params, locale = "en" }: { params: { topic: string }; locale?: string }) {
   const slug = slugify(params.topic);
   const topic = GUIDE_TOPICS.find((t) => t.slug === slug);
-  const posts = getPostsForTopic(slug);
+  const allPosts = getPostsForTopic(slug, locale);
+  const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -47,13 +50,13 @@ export default function GuideTopicPage({ params }: { params: { topic: string } }
 
       <div className="inlineLinks" style={{ marginBottom: 12 }}>
         <a className="btn" href="/guides">
-          ← All guide topics
+          <T k="posts.backToGuides" />
         </a>
         <a className="btn" href="/schools">
-          Browse schools
+          <T k="guides.browseSchools" />
         </a>
         <a className="btn btnPrimary" href="/contact">
-          Get guidance
+          <T k="guides.getGuidance" />
         </a>
       </div>
 
@@ -79,7 +82,7 @@ export default function GuideTopicPage({ params }: { params: { topic: string } }
               </a>
             ))
           ) : (
-            <div className="small">No guides found for this topic yet.</div>
+            <div className="small"><T k="home.noPosts" /></div>
           )}
         </div>
       </div>
