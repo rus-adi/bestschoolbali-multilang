@@ -2,6 +2,7 @@ import type { School } from '../lib/schools';
 import T from './T';
 import SchoolInterestButton from './SchoolInterestButton';
 import { getSchoolLogo } from '../lib/schoolLogo';
+import SchoolLogoImage from './SchoolLogoImage';
 
 type Props = {
   school: School;
@@ -12,7 +13,7 @@ export default function SchoolTileCard({ school, tileBadges = [] }: Props) {
   return (
     <div className="schoolTileCard">
       <a className="schoolTile" href={`/schools/${school.id}`}>
-        <img src={getSchoolLogo(school)} alt={school.name} loading="lazy" />
+        <SchoolLogoImage src={getSchoolLogo(school)} schoolName={school.name} alt={`${school.name} logo`} loading="lazy" />
         <div className="schoolTileShade" aria-hidden="true" />
         <div className="schoolTileContent">
           <div className="schoolTileTitle">{school.name}</div>

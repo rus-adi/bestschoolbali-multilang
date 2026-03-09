@@ -6,6 +6,7 @@ import { slugify } from '../lib/slug';
 import { getSchoolLogo } from '../lib/schoolLogo';
 import { useLocaleHref, useT } from './I18nProvider';
 import SchoolInterestButton from './SchoolInterestButton';
+import SchoolLogoImage from './SchoolLogoImage';
 
 const COMPARE_STORAGE_KEY = 'bsb_compare_ids_v1';
 
@@ -264,7 +265,7 @@ export default function SchoolSearchClient({
           return (
             <div key={s.id} className="card">
               <div className="schoolCardTop">
-                <img className="favicon" src={icon} alt={s.name} loading="lazy" />
+                <SchoolLogoImage className="favicon" src={icon} schoolName={s.name} alt={`${s.name} logo`} loading="lazy" />
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontWeight: 800, lineHeight: 1.25 }}>
                     <a href={href(`/schools/${s.id}`)}>{s.name}</a>

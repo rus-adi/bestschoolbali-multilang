@@ -3,6 +3,7 @@ import type { School } from '../lib/schools';
 import T from './T';
 import SchoolInterestButton from './SchoolInterestButton';
 import { getSchoolLogo } from '../lib/schoolLogo';
+import SchoolLogoImage from './SchoolLogoImage';
 
 type Props = {
   school: School;
@@ -16,7 +17,7 @@ export default function SchoolListCard({ school, meta, feeText }: Props) {
   return (
     <div className="card schoolCard schoolCardWithActions">
       <a className="schoolCardMedia schoolCardMediaLink" href={`/schools/${school.id}`} aria-label={school.name}>
-        <img src={schoolImg} alt={school.name} loading="lazy" />
+        <SchoolLogoImage src={schoolImg} schoolName={school.name} alt={`${school.name} logo`} loading="lazy" />
       </a>
       <div className="schoolCardBody">
         <div className="schoolCardTitle">

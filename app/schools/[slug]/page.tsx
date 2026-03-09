@@ -7,6 +7,7 @@ import AddToCompareButton from "../../../components/AddToCompareButton";
 import SchoolInterestButton from "../../../components/SchoolInterestButton";
 import SchoolListCard from "../../../components/SchoolListCard";
 import T from "../../../components/T";
+import SchoolLogoImage from "../../../components/SchoolLogoImage";
 import { AGE_BANDS } from "../../../lib/ages";
 import { remark } from "remark";
 import html from "remark-html";
@@ -291,7 +292,7 @@ export default async function SchoolPage({ params }: { params: { slug: string } 
         <img src={banner} alt="" aria-hidden="true" />
         <div className="schoolHeroOverlay">
           <div className="schoolHeroContent">
-            <img className="schoolHeroIcon" src={schoolImage} alt={`${school.name} logo`} />
+            <SchoolLogoImage className="schoolHeroIcon" src={schoolImage} schoolName={school.name} alt={`${school.name} logo`} />
             <div>
               <h1 style={{ margin: 0 }}>
                 {school.name}
