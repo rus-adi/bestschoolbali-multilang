@@ -27,7 +27,7 @@ export function generateMetadata({ params }: { params: { topic: string } }): Met
   };
 }
 
-export default function GuideTopicPage({ params }: { params: { topic: string } }) {
+export default function GuideTopicPage({ params, locale = "en" }: { params: { topic: string }; locale?: string }) {
   const slug = slugify(params.topic);
   const topic = getGuideTopic(slug);
   const posts = getPostsForTopic(slug);
