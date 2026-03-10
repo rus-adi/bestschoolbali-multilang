@@ -4,6 +4,7 @@ import { slugify } from "../../../lib/slug";
 import JsonLd from "../../../components/JsonLd";
 import SchoolListCard from "../../../components/SchoolListCard";
 import { recommendGuides } from "../../../lib/posts";
+import T from "../../../components/T";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 
 export const dynamicParams = false;
@@ -15,8 +16,8 @@ export function generateStaticParams(): { type: string }[] {
   return getAllTypes().map((t) => ({ type: t.slug }));
 }
 
-export function generateMetadata({ params }: { params: { type: string } }): Metadata {
-  const name = resolveTypeSlug(params.type) ?? params.type;
+export function generateMetadata({ params, locale = "en" }: { params: { type: string }; locale?: string }): Metadata {
+  const name = resolveTypeSlug(params.type, locale) ?? params.type;
   const title = `${name} schools in Bali`;
   const description = `Browse ${name.toLowerCase()} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes.`;
 
@@ -54,11 +55,11 @@ function topCounts(items: string[], limit = 6): Array<{ name: string; count: num
     .slice(0, limit);
 }
 
-export default function TypeDetailPage({ params }: { params: { type: string } }) {
-  const typeName = resolveTypeSlug(params.type);
-  if (!typeName) return <div className="container">Not found</div>;
+export default function TypeDetailPage({ params, locale = "en" }: { params: { type: string }; locale?: string }) {
+  const typeName = resolveTypeSlug(params.type, locale);
+  if (!typeName) return <div className="container"><T k="common.notFound" /></div>;
 
-  const schools = sortSchoolsForMarketplace(schoolsInTypeSlug(params.type));
+  const schools = sortSchoolsForMarketplace(schoolsInTypeSlug(params.type, locale));
 
   const feeMins = schools.map((s) => s.fees?.min).filter((n): n is number => typeof n === "number");
   const feeMaxs = schools.map((s) => s.fees?.max).filter((n): n is number => typeof n === "number");
@@ -75,6 +76,7 @@ export default function TypeDetailPage({ params }: { params: { type: string } })
   const topBudgets = topCounts(schools.map((s) => s.budget_category ?? ""), 3);
 
   const guides = recommendGuides({
+    locale,
     curriculumTags: topCurriculums.map((t) => t.name).slice(0, 3),
     budget: topBudgets[0]?.name,
     limit: 3,

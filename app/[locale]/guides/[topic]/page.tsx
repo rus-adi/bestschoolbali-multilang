@@ -14,11 +14,13 @@ export function generateStaticParams() {
   return generateBaseStaticParams();
 }
 
+type LocalizedGuideTopicPageProps = {
+  params: { locale: string; topic: string };
+};
+
 export async function generateMetadata({
   params,
-}: {
-  params: { locale: string; topic: string };
-}): Promise<Metadata> {
+}: LocalizedGuideTopicPageProps): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
 
   const base = await generateBaseMetadata({ params: { topic: params.topic } });
@@ -29,8 +31,6 @@ export async function generateMetadata({
 
 export default function LocalizedPage({
   params,
-}: {
-  params: { locale: string; topic: string };
-}) {
+}: LocalizedGuideTopicPageProps) {
   return <BasePage params={{ topic: params.topic }} />;
 }

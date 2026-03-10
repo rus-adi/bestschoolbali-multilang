@@ -3,6 +3,7 @@ import { getAllAreas, resolveAreaSlug, schoolsInArea } from "../../../lib/taxono
 import { bannerForAreaName } from "../../../lib/banners";
 import JsonLd from "../../../components/JsonLd";
 import SchoolListCard from "../../../components/SchoolListCard";
+import T from "../../../components/T";
 import { recommendGuides } from "../../../lib/posts";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 import { slugify } from "../../../lib/slug";
@@ -18,8 +19,8 @@ export function generateStaticParams(): { area: string }[] {
   return getAllAreas().map((a) => ({ area: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: { area: string } }): Metadata {
-  const name = resolveAreaSlug(params.area) ?? params.area;
+export function generateMetadata({ params, locale = "en" }: { params: { area: string }; locale?: string }): Metadata {
+  const name = resolveAreaSlug(params.area, locale) ?? params.area;
   const title = `Schools in ${name}`;
   const description = `Browse schools in ${name}, Bali. Compare curriculum, ages, and fees, then contact schools for the latest availability.`;
   return {
@@ -43,13 +44,13 @@ function formatIdr(n: number) {
   }
 }
 
-export default function AreaDetailPage({ params }: { params: { area: string } }) {
-  const areaName = resolveAreaSlug(params.area);
-  if (!areaName) return <div className="container">Not found</div>;
+export default function AreaDetailPage({ params, locale = "en" }: { params: { area: string }; locale?: string }) {
+  const areaName = resolveAreaSlug(params.area, locale);
+  if (!areaName) return <div className="container"><T k="common.notFound" /></div>;
 
-  const schools = sortSchoolsForMarketplace(schoolsInArea(areaName));
+  const schools = sortSchoolsForMarketplace(schoolsInArea(areaName, locale));
   const banner = bannerForAreaName(areaName);
-  const guides = recommendGuides({ area: areaName, limit: 3 });
+  const guides = recommendGuides({ locale, area: areaName, limit: 3 });
 
   const feeMins = schools.map((s) => s.fees?.min).filter((n): n is number => typeof n === "number");
   const feeMaxs = schools.map((s) => s.fees?.max).filter((n): n is number => typeof n === "number");

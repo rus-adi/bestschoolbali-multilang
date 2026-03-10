@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TypesIndexPage() {
-  const types = getAllTypes();
+export default function TypesIndexPage({ locale = "en" }: { locale?: string }) {
+  const types = getAllTypes(locale);
   return <TypesPageContent types={types} />;
 }

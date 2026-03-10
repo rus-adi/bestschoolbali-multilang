@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getAllSchools } from "../../lib/schools";
+import T from "../../components/T";
 import { getAllAreas, getAllBudgets, getAllCurriculums } from "../../lib/taxonomy";
 import GuidanceFormClient from "../../components/GuidanceFormClient";
 
@@ -17,22 +18,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactPage() {
-  const schools = getAllSchools();
+export default function ContactPage({ locale = "en" }: { locale?: string }) {
+  const schools = getAllSchools(locale);
   const schoolsLite = schools.map((s) => ({ id: s.id, name: s.name, area: s.area }));
 
-  const areas = getAllAreas().map((a) => a.name);
-  const curriculums = getAllCurriculums().map((t) => t.tag);
-  const budgets = getAllBudgets().map((b) => b.name);
+  const areas = getAllAreas(locale).map((a) => a.name);
+  const curriculums = getAllCurriculums(locale).map((t) => t.tag);
+  const budgets = getAllBudgets(locale).map((b) => b.name);
 
   return (
     <div className="container">
       <section className="hero">
         <div className="heroInner">
           <div>
-            <h1>Contact</h1>
+            <h1><T k="nav.contact" /></h1>
             <p className="small" style={{ marginTop: 6 }}>
-              Parents: get a shortlist and a question list for admissions. Schools: claim and upgrade your profile.
+              <T k="guidanceForm.parentHelp" />
             </p>
           </div>
           <div className="heroMedia" aria-hidden="true">
@@ -42,14 +43,14 @@ export default function ContactPage() {
       </section>
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>Message us</h2>
+        <h2 style={{ marginTop: 0 }}><T k="actions.messageWhatsApp" /></h2>
         <GuidanceFormClient areas={areas} curriculums={curriculums} budgets={budgets} schools={schoolsLite} />
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>Prefer a direct WhatsApp link?</h2>
+        <h2 style={{ marginTop: 0 }}><T k="actions.sendWhatsApp" /></h2>
         <p className="small" style={{ marginTop: 0 }}>
-          You can also message directly. If you’re claiming a profile, please include an official school email.
+          <T k="guidanceForm.schoolHelp" />
         </p>
         <p style={{ marginBottom: 0 }}>
           <a className="btn btnPrimary" href="https://wa.me/6285285408220" rel="nofollow">
@@ -59,7 +60,7 @@ export default function ContactPage() {
       </div>
 
       <p className="small" style={{ marginTop: 16 }}>
-        By contacting us you agree to our <a href="/privacy">privacy</a> and <a href="/terms">terms</a>.
+        <T k="guidanceForm.messageOpensWhatsApp" />
       </p>
     </div>
   );

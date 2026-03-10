@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getAllPosts, getLatestPost } from '../lib/posts';
+import { getAllPosts, getLatestPost, hasPostTranslation } from '../lib/posts';
 import { getAllSchools, type School } from '../lib/schools';
 import { slugify } from '../lib/slug';
 import { getAllBudgets, getAllCurriculums } from '../lib/taxonomy';
@@ -41,10 +41,15 @@ function topSchools(all: School[]) {
   return all.slice(0, 4);
 }
 
-export default function HomePage() {
-  const latest = getLatestPost();
+export default function HomePage({ locale = "en" }: { locale?: string }) {
+  const allLocalePosts = getAllPosts(locale);
+  const latestLocalePost = getLatestPost(locale);
+  const posts =
+    locale === "en"
+      ? allLocalePosts
+      : allLocalePosts.filter((post) => hasPostTranslation(post.slug, locale));
+  const latest = locale === "en" ? latestLocalePost : (posts[0] ?? null);
   const schools = getAllSchools();
-  const posts = getAllPosts();
 
   const areas = uniqueSorted(schools.map((s) => s.area));
   const areaCounts = new Map<string, number>();
