@@ -6,6 +6,7 @@ import SchoolListCard from "../../../components/SchoolListCard";
 import { recommendGuides } from "../../../lib/posts";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 import { topAreasFromSchools, topCurriculumTagsFromSchools, topTypesFromSchools } from "../../../lib/aggregate";
+import { createServerT } from "../../../lib/i18n/serverT";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -16,7 +17,7 @@ export function generateStaticParams(): { band: string }[] {
   return getAllBudgets().map((b) => ({ band: b.slug }));
 }
 
-export function generateMetadata({ params }: { params: { band: string } }): Metadata {
+export function generateMetadata({ params, locale = "en" }: { params: { band: string }; locale?: string }): Metadata {
   const name = resolveBudgetSlug(params.band) ?? params.band;
   const title = `${name} schools in Bali`;
   const description = `Browse Bali schools in the ${name} budget band. Compare areas, curriculum tags, ages, and annual fee ranges, then confirm the latest total cost with admissions.`;
@@ -42,7 +43,8 @@ function formatIdr(n: number) {
   }
 }
 
-export default function BudgetBandPage({ params }: { params: { band: string } }) {
+export default async function BudgetBandPage({ params, locale = "en" }: { params: { band: string }; locale?: string }) {
+  const t = await createServerT(locale);
   const bandName = resolveBudgetSlug(params.band);
   if (!bandName) return <div className="container">Not found</div>;
 
@@ -77,28 +79,43 @@ export default function BudgetBandPage({ params }: { params: { band: string } })
 
   const faqItems = [
     {
-      q: `What does the “${bandName}” band mean?`,
-      a: "It’s a simple grouping based on annual tuition ranges. Exact fees vary by grade level and what’s included, so always request the current fee sheet from admissions.",
+      q: t("faq.budgetBand.q1", "What does the “{bandName}” band mean?", { bandName }),
+      a: t(
+        "faq.budgetBand.a1",
+        "It’s a simple grouping based on annual tuition ranges. Exact fees vary by grade level and what’s included, so always request the current fee sheet from admissions.",
+      ),
     },
     {
-      q: "What costs are usually not included in tuition?",
-      a: "Often: registration fees, uniforms, transport, meals, exams, some extracurriculars, learning materials, and capital levies. Ask for a full first‑year total.",
+      q: t("faq.budgetBand.q2", "What costs are usually not included in tuition?"),
+      a: t(
+        "faq.budgetBand.a2",
+        "Often: registration fees, uniforms, transport, meals, exams, some extracurriculars, learning materials, and capital levies. Ask for a full first‑year total.",
+      ),
     },
     {
-      q: "How do we shortlist within a budget band?",
-      a: "Start with area (commute), confirm age/grade coverage, then compare curriculum and support needs. After that, ask each school for a breakdown of one‑time fees and monthly/annual extras.",
+      q: t("faq.budgetBand.q3", "How do we shortlist within a budget band?"),
+      a: t(
+        "faq.budgetBand.a3",
+        "Start with area (commute), confirm age/grade coverage, then compare curriculum and support needs. After that, ask each school for a breakdown of one‑time fees and monthly/annual extras.",
+      ),
     },
     {
-      q: "Do schools offer sibling discounts or payment plans?",
-      a: "Some do. Ask whether there are sibling discounts, term-by-term payment options, and what happens if you start mid‑term.",
+      q: t("faq.budgetBand.q4", "Do schools offer sibling discounts or payment plans?"),
+      a: t(
+        "faq.budgetBand.a4",
+        "Some do. Ask whether there are sibling discounts, term-by-term payment options, and what happens if you start mid‑term.",
+      ),
     },
     {
-      q: "How often do fees change?",
-      a: "Schools can update fees each academic year and sometimes mid-year. Use this directory as a starting point and confirm details before enrolling.",
+      q: t("faq.budgetBand.q5", "How often do fees change?"),
+      a: t(
+        "faq.budgetBand.a5",
+        "Schools can update fees each academic year and sometimes mid-year. Use this directory as a starting point and confirm details before enrolling.",
+      ),
     },
   ];
 
-  const faqJsonLd = {
+const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqItems.map((f) => ({
@@ -267,7 +284,7 @@ export default function BudgetBandPage({ params }: { params: { band: string } })
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">

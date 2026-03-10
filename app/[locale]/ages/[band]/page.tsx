@@ -21,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
 
-  const base = await generateBaseMetadata({ params: { band: params.band } });
+  const base = await generateBaseMetadata({ params: { band: params.band }, locale: params.locale });
   return localizeMetadata(base, params.locale as Locale, `/ages/${params.band}`, {
     noindex: params.locale !== 'en',
   });
@@ -32,5 +32,5 @@ export default function LocalizedPage({
 }: {
   params: { locale: string; band: string };
 }) {
-  return <BasePage params={{ band: params.band }} />;
+  return <BasePage params={{ band: params.band }} locale={params.locale} />;
 }

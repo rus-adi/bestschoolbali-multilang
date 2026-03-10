@@ -6,6 +6,7 @@ import SchoolListCard from "../../../components/SchoolListCard";
 import { recommendGuides } from "../../../lib/posts";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 import { topAreasFromSchools, topBudgetsFromSchools, topCurriculumTagsFromSchools, topTypesFromSchools } from "../../../lib/aggregate";
+import { createServerT } from "../../../lib/i18n/serverT";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -16,7 +17,7 @@ export function generateStaticParams(): { tag: string }[] {
   return getAllCurriculums().map((t) => ({ tag: t.slug }));
 }
 
-export function generateMetadata({ params }: { params: { tag: string } }): Metadata {
+export function generateMetadata({ params, locale = "en" }: { params: { tag: string }; locale?: string }): Metadata {
   const tagName = resolveCurriculumSlug(params.tag) ?? params.tag;
   const title = `${tagName} schools in Bali`;
   const description = `Browse schools offering ${tagName} in Bali. Compare areas, ages, and fees, and open individual profiles for admissions details.`;
@@ -41,7 +42,8 @@ function formatIdr(n: number) {
   }
 }
 
-export default function CurriculumDetailPage({ params }: { params: { tag: string } }) {
+export default async function CurriculumDetailPage({ params, locale = "en" }: { params: { tag: string }; locale?: string }) {
+  const t = await createServerT(locale);
   const tagName = resolveCurriculumSlug(params.tag);
   if (!tagName) return <div className="container">Not found</div>;
 
@@ -81,24 +83,37 @@ export default function CurriculumDetailPage({ params }: { params: { tag: string
 
   const faqItems = [
     {
-      q: `What does “${tagName}” mean for a school in Bali?`,
-      a: `Schools use curriculum labels in different ways. Open a profile and confirm the grade levels offered, the exam pathway (if any), and the language of instruction.`,
+      q: t("faq.curriculumDetail.q1", "What does “{tagName}” mean for a school in Bali?", { tagName }),
+      a: t(
+        "faq.curriculumDetail.a1",
+        "Schools use curriculum labels in different ways. Open a profile and confirm the grade levels offered, the exam pathway (if any), and the language of instruction.",
+      ),
     },
     {
-      q: `How do we shortlist ${tagName} schools?`,
-      a: `Start with your area and commute, then confirm ages/grade levels and total first-year costs. A campus tour and a trial day (if offered) are usually the fastest way to sense fit.`,
+      q: t("faq.curriculumDetail.q2", "How do we shortlist {tagName} schools?", { tagName }),
+      a: t(
+        "faq.curriculumDetail.a2",
+        "Start with your area and commute, then confirm ages/grade levels and total first-year costs. A campus tour and a trial day (if offered) are usually the fastest way to sense fit.",
+      ),
     },
     {
-      q: `Do all ${tagName} schools have the same fees?`,
-      a: `No. Fees vary by campus, facilities, and age level. Use the fee range shown on each profile as a starting point and confirm the latest fee table with admissions.`,
+      q: t("faq.curriculumDetail.q3", "Do all {tagName} schools have the same fees?", { tagName }),
+      a: t(
+        "faq.curriculumDetail.a3",
+        "No. Fees vary by campus, facilities, and age level. Use the fee range shown on each profile as a starting point and confirm the latest fee table with admissions.",
+      ),
     },
     {
-      q: `Can we combine this curriculum with an area search?`,
-      a: `Yes. Browse by area first, then check which schools match ${tagName}. For a tighter shortlist, pick the areas you’d actually commute from.`,
+      q: t("faq.curriculumDetail.q4", "Can we combine this curriculum with an area search?"),
+      a: t(
+        "faq.curriculumDetail.a4",
+        "Yes. Browse by area first, then check which schools match {tagName}. For a tighter shortlist, pick the areas you’d actually commute from.",
+        { tagName },
+      ),
     },
   ];
 
-  const faqJsonLd = {
+const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqItems.map((f) => ({
@@ -268,7 +283,7 @@ export default function CurriculumDetailPage({ params }: { params: { tag: string
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">
