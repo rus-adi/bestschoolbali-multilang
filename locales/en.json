@@ -311,7 +311,8 @@
     "browseCurriculums": "Browse curriculums",
     "feesOverview": "Fees overview",
     "getGuidance": "Get guidance",
-    "viewAllPosts": "View all posts"
+    "viewAllPosts": "View all posts",
+    "hubSubtitle": "Practical guides for choosing a school in Bali — fees, areas, curriculums, and admissions."
   },
   "typesPage": {
     "title": "School types",
@@ -383,6 +384,134 @@
         "body": "Prefer to start with age/grade coverage? Use broad age bands, then narrow by area and curriculum.",
         "cta": "Browse by age"
       }
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "What does \"{typeName}\" mean in Bali?",
+      "a1": "Type labels are a browsing shortcut. Schools sometimes use different wording, so confirm the curriculum, language of instruction, and grade coverage directly with admissions.",
+      "q2": "How do we shortlist {typeName} options?",
+      "a2": "Start with commute/area, then confirm ages/grades and curriculum pathway. Finally compare total first-year cost so quotes are apples-to-apples.",
+      "q3": "Should we browse by type or use the directory filters first?",
+      "a3": "Use type labels for quick browsing, then switch to the directory if you want to filter by multiple criteria (area + curriculum + budget).",
+      "q4": "Can you help us choose between a few schools?",
+      "a4": "Yes. Share your area, child’s age, and a couple of priorities and we’ll help you shortlist and draft the admissions questions to send."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
+  },
+  "faq": {
+    "heading": "FAQ",
+    "areaDetail": {
+      "q1": "Which schools are in {areaName}?",
+      "a1": "This page lists schools tagged in {areaName}. Open a school profile to check ages, curriculum, and the most recent admissions notes.",
+      "q2": "What fee range is common in {areaName}?",
+      "a2WithRange": "Listed fee ranges in this area run from about Rp {minFee} to Rp {maxFee} per year, depending on program and age level.",
+      "a2": "Fees vary by school and grade level. Open individual profiles and confirm the latest fee table with admissions.",
+      "q3": "How should we shortlist schools in {areaName}?",
+      "a3": "Start with commute time, then filter by curriculum and age range. After that, compare total first-year costs (tuition plus one-time fees).",
+      "q4": "Can we visit or do a trial day?",
+      "a4": "Many schools offer a campus tour and some offer trial days. Ask what your child can join and whether there is a trial fee.",
+      "q5": "What should we confirm before enrolling?",
+      "a5": "Confirm start dates, language support, class sizes, and what fees include (registration, uniforms, transport, meals, exams)."
+    },
+    "ageBand": {
+      "q1": "Which schools cover {bandName} ages?",
+      "a1": "This page lists schools whose published age range overlaps roughly {min}–{max}. Confirm exact year levels, start dates, and placement with admissions.",
+      "q2": "Do schools accept mid-year transfers?",
+      "a2": "Some schools accept transfers mid-year, others prefer term starts. Ask about space in your target grade and whether assessments are required.",
+      "q3": "What should we confirm for placement?",
+      "a3": "Confirm the child’s current grade, language level, and learning support needs. Ask how the school places new students and what documentation is needed.",
+      "q4": "What fees should we compare for this age band?",
+      "a4": "Ask for the total first-year cost: tuition plus registration, materials, uniforms, transport, meals, and any program fees that apply to this age group.",
+      "q5": "How do we shortlist efficiently?",
+      "a5": "Pick a realistic commute, then shortlist 3–5 schools. Book tours close together and use the same question list so you can compare fairly."
+    },
+    "budgetBand": {
+      "q1": "What does the “{bandName}” band mean?",
+      "a1": "It’s a simple grouping based on annual tuition ranges. Exact fees vary by grade level and what’s included, so always request the current fee sheet from admissions.",
+      "q2": "What costs are usually not included in tuition?",
+      "a2": "Often: registration fees, uniforms, transport, meals, exams, some extracurriculars, learning materials, and capital levies. Ask for a full first‑year total.",
+      "q3": "How do we shortlist within a budget band?",
+      "a3": "Start with area (commute), confirm age/grade coverage, then compare curriculum and support needs. After that, ask each school for a breakdown of one‑time fees and monthly/annual extras.",
+      "q4": "Do schools offer sibling discounts or payment plans?",
+      "a4": "Some do. Ask whether there are sibling discounts, term-by-term payment options, and what happens if you start mid‑term.",
+      "q5": "How often do fees change?",
+      "a5": "Schools can update fees each academic year and sometimes mid-year. Use this directory as a starting point and confirm details before enrolling."
+    },
+    "curriculumDetail": {
+      "q1": "What does “{tagName}” mean for a school in Bali?",
+      "a1": "Schools use curriculum labels in different ways. Open a profile and confirm the grade levels offered, the exam pathway (if any), and the language of instruction.",
+      "q2": "How do we shortlist {tagName} schools?",
+      "a2": "Start with your area and commute, then confirm ages/grade levels and total first-year costs. A campus tour and a trial day (if offered) are usually the fastest way to sense fit.",
+      "q3": "Do all {tagName} schools have the same fees?",
+      "a3": "No. Fees vary by campus, facilities, and age level. Use the fee range shown on each profile as a starting point and confirm the latest fee table with admissions.",
+      "q4": "Can we combine this curriculum with an area search?",
+      "a4": "Yes. Browse by area first, then check which schools match {tagName}. For a tighter shortlist, pick the areas you’d actually commute from."
+    },
+    "compareAreasDetail": {
+      "q1": "Is {areaA} or {areaB} better for schools?",
+      "a1": "It depends on commute, your child’s age, and curriculum preference. Use this page to shortlist, then confirm availability and the latest fees with admissions.",
+      "q2": "How should we test commute time?",
+      "a2": "If possible, do a trial drive at drop‑off and pick‑up times. A route that looks short on a map can feel very different in school traffic.",
+      "q3": "What should we compare besides tuition?",
+      "a3": "Compare total first‑year cost (tuition + one‑time fees + recurring extras), language support, year levels offered, and how placement is handled for new students.",
+      "q4": "Can you help us shortlist?",
+      "a4": "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions."
     }
   }
 }

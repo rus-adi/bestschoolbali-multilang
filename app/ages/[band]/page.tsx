@@ -7,6 +7,7 @@ import T from "../../../components/T";
 import { recommendGuides } from "../../../lib/posts";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 import { topAreasFromSchools, topBudgetsFromSchools, topCurriculumTagsFromSchools, topTypesFromSchools } from "../../../lib/aggregate";
+import { createServerT } from "../../../lib/i18n/serverT";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -17,7 +18,7 @@ export function generateStaticParams(): { band: string }[] {
   return AGE_BANDS.map((b) => ({ band: b.slug }));
 }
 
-export function generateMetadata({ params }: { params: { band: string } }): Metadata {
+export function generateMetadata({ params, locale = "en" }: { params: { band: string }; locale?: string }): Metadata {
   const band = resolveAgeBandSlug(params.band);
   const name = band?.name ?? params.band;
 
@@ -45,7 +46,8 @@ function formatIdr(n: number) {
   }
 }
 
-export default function AgeBandPage({ params }: { params: { band: string } }) {
+export default async function AgeBandPage({ params, locale = "en" }: { params: { band: string }; locale?: string }) {
+  const t = await createServerT(locale);
   const band = resolveAgeBandSlug(params.band);
   if (!band) return <div className="container">Not found</div>;
 
@@ -81,28 +83,44 @@ export default function AgeBandPage({ params }: { params: { band: string } }) {
 
   const faqItems = [
     {
-      q: `Which schools cover ${band.name.toLowerCase()} ages?`,
-      a: `This page lists schools whose published age range overlaps roughly ${band.min}–${band.max}. Confirm exact year levels, start dates, and placement with admissions.`,
+      q: t("faq.ageBand.q1", "Which schools cover {bandName} ages?", { bandName: band.name.toLowerCase() }),
+      a: t(
+        "faq.ageBand.a1",
+        "This page lists schools whose published age range overlaps roughly {min}–{max}. Confirm exact year levels, start dates, and placement with admissions.",
+        { min: band.min, max: band.max },
+      ),
     },
     {
-      q: "Do schools accept mid-year transfers?",
-      a: "Some schools accept transfers mid-year, others prefer term starts. Ask about space in your target grade and whether assessments are required.",
+      q: t("faq.ageBand.q2", "Do schools accept mid-year transfers?"),
+      a: t(
+        "faq.ageBand.a2",
+        "Some schools accept transfers mid-year, others prefer term starts. Ask about space in your target grade and whether assessments are required.",
+      ),
     },
     {
-      q: "What should we confirm for placement?",
-      a: "Confirm the child’s current grade, language level, and learning support needs. Ask how the school places new students and what documentation is needed.",
+      q: t("faq.ageBand.q3", "What should we confirm for placement?"),
+      a: t(
+        "faq.ageBand.a3",
+        "Confirm the child’s current grade, language level, and learning support needs. Ask how the school places new students and what documentation is needed.",
+      ),
     },
     {
-      q: "What fees should we compare for this age band?",
-      a: "Ask for the total first-year cost: tuition plus registration, materials, uniforms, transport, meals, and any program fees that apply to this age group.",
+      q: t("faq.ageBand.q4", "What fees should we compare for this age band?"),
+      a: t(
+        "faq.ageBand.a4",
+        "Ask for the total first-year cost: tuition plus registration, materials, uniforms, transport, meals, and any program fees that apply to this age group.",
+      ),
     },
     {
-      q: "How do we shortlist efficiently?",
-      a: "Pick a realistic commute, then shortlist 3–5 schools. Book tours close together and use the same question list so you can compare fairly.",
+      q: t("faq.ageBand.q5", "How do we shortlist efficiently?"),
+      a: t(
+        "faq.ageBand.a5",
+        "Pick a realistic commute, then shortlist 3–5 schools. Book tours close together and use the same question list so you can compare fairly.",
+      ),
     },
   ];
 
-  const faqJsonLd = {
+const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqItems.map((f) => ({
@@ -289,7 +307,7 @@ export default function AgeBandPage({ params }: { params: { band: string } }) {
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">

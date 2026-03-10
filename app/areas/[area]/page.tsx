@@ -3,11 +3,13 @@ import { getAllAreas, resolveAreaSlug, schoolsInArea } from "../../../lib/taxono
 import { bannerForAreaName } from "../../../lib/banners";
 import JsonLd from "../../../components/JsonLd";
 import SchoolListCard from "../../../components/SchoolListCard";
+import T from "../../../components/T";
 import { recommendGuides } from "../../../lib/posts";
 import { sortSchoolsForMarketplace } from "../../../lib/sort";
 import { slugify } from "../../../lib/slug";
 import { getAreaComparisonPairs } from "../../../lib/areaComparisons";
 import { topBudgetsFromSchools, topCurriculumTagsFromSchools, topTypesFromSchools } from "../../../lib/aggregate";
+import { createServerT } from "../../../lib/i18n/serverT";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -18,8 +20,8 @@ export function generateStaticParams(): { area: string }[] {
   return getAllAreas().map((a) => ({ area: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: { area: string } }): Metadata {
-  const name = resolveAreaSlug(params.area) ?? params.area;
+export function generateMetadata({ params, locale = "en" }: { params: { area: string }; locale?: string }): Metadata {
+  const name = resolveAreaSlug(params.area, locale) ?? params.area;
   const title = `Schools in ${name}`;
   const description = `Browse schools in ${name}, Bali. Compare curriculum, ages, and fees, then contact schools for the latest availability.`;
   return {
@@ -43,13 +45,14 @@ function formatIdr(n: number) {
   }
 }
 
-export default function AreaDetailPage({ params }: { params: { area: string } }) {
-  const areaName = resolveAreaSlug(params.area);
-  if (!areaName) return <div className="container">Not found</div>;
+export default async function AreaDetailPage({ params, locale = "en" }: { params: { area: string }; locale?: string }) {
+  const t = await createServerT(locale);
+  const areaName = resolveAreaSlug(params.area, locale);
+  if (!areaName) return <div className="container"><T k="common.notFound" /></div>;
 
-  const schools = sortSchoolsForMarketplace(schoolsInArea(areaName));
+  const schools = sortSchoolsForMarketplace(schoolsInArea(areaName, locale));
   const banner = bannerForAreaName(areaName);
-  const guides = recommendGuides({ area: areaName, limit: 3 });
+  const guides = recommendGuides({ locale, area: areaName, limit: 3 });
 
   const feeMins = schools.map((s) => s.fees?.min).filter((n): n is number => typeof n === "number");
   const feeMaxs = schools.map((s) => s.fees?.max).filter((n): n is number => typeof n === "number");
@@ -81,24 +84,46 @@ export default function AreaDetailPage({ params }: { params: { area: string } })
 
   const faqItems = [
     {
-      q: `Which schools are in ${areaName}?`,
-      a: `This page lists schools tagged in ${areaName}. Open a school profile to check ages, curriculum, and the most recent admissions notes.`,
+      q: t("faq.areaDetail.q1", "Which schools are in {areaName}?", { areaName }),
+      a: t(
+        "faq.areaDetail.a1",
+        "This page lists schools tagged in {areaName}. Open a school profile to check ages, curriculum, and the most recent admissions notes.",
+        { areaName },
+      ),
     },
     {
-      q: `What fee range is common in ${areaName}?`,
-      a: minFee && maxFee ? `Listed fee ranges in this area run from about Rp ${formatIdr(minFee)} to Rp ${formatIdr(maxFee)} per year, depending on program and age level.` : `Fees vary by school and grade level. Open individual profiles and confirm the latest fee table with admissions.`,
+      q: t("faq.areaDetail.q2", "What fee range is common in {areaName}?", { areaName }),
+      a: minFee && maxFee
+        ? t(
+            "faq.areaDetail.a2WithRange",
+            "Listed fee ranges in this area run from about Rp {minFee} to Rp {maxFee} per year, depending on program and age level.",
+            { minFee: formatIdr(minFee), maxFee: formatIdr(maxFee) },
+          )
+        : t(
+            "faq.areaDetail.a2",
+            "Fees vary by school and grade level. Open individual profiles and confirm the latest fee table with admissions.",
+          ),
     },
     {
-      q: `How should we shortlist schools in ${areaName}?`,
-      a: `Start with commute time, then filter by curriculum and age range. After that, compare total first-year costs (tuition plus one-time fees).`,
+      q: t("faq.areaDetail.q3", "How should we shortlist schools in {areaName}?", { areaName }),
+      a: t(
+        "faq.areaDetail.a3",
+        "Start with commute time, then filter by curriculum and age range. After that, compare total first-year costs (tuition plus one-time fees).",
+      ),
     },
     {
-      q: `Can we visit or do a trial day?`,
-      a: `Many schools offer a campus tour and some offer trial days. Ask what your child can join and whether there is a trial fee.`,
+      q: t("faq.areaDetail.q4", "Can we visit or do a trial day?"),
+      a: t(
+        "faq.areaDetail.a4",
+        "Many schools offer a campus tour and some offer trial days. Ask what your child can join and whether there is a trial fee.",
+      ),
     },
     {
-      q: `What should we confirm before enrolling?`,
-      a: `Confirm start dates, language support, class sizes, and what fees include (registration, uniforms, transport, meals, exams).`,
+      q: t("faq.areaDetail.q5", "What should we confirm before enrolling?"),
+      a: t(
+        "faq.areaDetail.a5",
+        "Confirm start dates, language support, class sizes, and what fees include (registration, uniforms, transport, meals, exams).",
+      ),
     },
   ];
 
@@ -287,7 +312,7 @@ export default function AreaDetailPage({ params }: { params: { area: string } })
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">

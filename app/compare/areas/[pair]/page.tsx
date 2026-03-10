@@ -5,6 +5,7 @@ import { schoolsInArea } from "../../../../lib/taxonomy";
 import JsonLd from "../../../../components/JsonLd";
 import SchoolListCard from "../../../../components/SchoolListCard";
 import { sortSchoolsForMarketplace } from "../../../../lib/sort";
+import { createServerT } from "../../../../lib/i18n/serverT";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -15,7 +16,7 @@ export function generateStaticParams(): { pair: string }[] {
   return getAreaComparisonPairs().map((p) => ({ pair: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { pair: string } }): Metadata {
+export function generateMetadata({ params, locale = "en" }: { params: { pair: string }; locale?: string }): Metadata {
   const pair = resolveAreaPairSlug(params.pair);
   const a = pair?.a ?? "";
   const b = pair?.b ?? "";
@@ -81,7 +82,8 @@ function topTypes(schools: Array<{ type?: string }>, limit = 4) {
     .map(([t]) => t);
 }
 
-export default function AreaComparePage({ params }: { params: { pair: string } }) {
+export default async function AreaComparePage({ params, locale = "en" }: { params: { pair: string }; locale?: string }) {
+  const t = await createServerT(locale);
   const pair = resolveAreaPairSlug(params.pair);
   if (!pair) return <div className="container">Not found</div>;
 
@@ -117,24 +119,36 @@ export default function AreaComparePage({ params }: { params: { pair: string } }
 
   const faqItems = [
     {
-      q: `Is ${pair.a} or ${pair.b} better for schools?`,
-      a: "It depends on commute, your child’s age, and curriculum preference. Use this page to shortlist, then confirm availability and the latest fees with admissions.",
+      q: t("faq.compareAreasDetail.q1", "Is {areaA} or {areaB} better for schools?", { areaA: pair.a, areaB: pair.b }),
+      a: t(
+        "faq.compareAreasDetail.a1",
+        "It depends on commute, your child’s age, and curriculum preference. Use this page to shortlist, then confirm availability and the latest fees with admissions.",
+      ),
     },
     {
-      q: "How should we test commute time?",
-      a: "If possible, do a trial drive at drop‑off and pick‑up times. A route that looks short on a map can feel very different in school traffic.",
+      q: t("faq.compareAreasDetail.q2", "How should we test commute time?"),
+      a: t(
+        "faq.compareAreasDetail.a2",
+        "If possible, do a trial drive at drop‑off and pick‑up times. A route that looks short on a map can feel very different in school traffic.",
+      ),
     },
     {
-      q: "What should we compare besides tuition?",
-      a: "Compare total first‑year cost (tuition + one‑time fees + recurring extras), language support, year levels offered, and how placement is handled for new students.",
+      q: t("faq.compareAreasDetail.q3", "What should we compare besides tuition?"),
+      a: t(
+        "faq.compareAreasDetail.a3",
+        "Compare total first‑year cost (tuition + one‑time fees + recurring extras), language support, year levels offered, and how placement is handled for new students.",
+      ),
     },
     {
-      q: "Can you help us shortlist?",
-      a: "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions.",
+      q: t("faq.compareAreasDetail.q4", "Can you help us shortlist?"),
+      a: t(
+        "faq.compareAreasDetail.a4",
+        "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions.",
+      ),
     },
   ];
 
-  const faqJsonLd = {
+const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqItems.map((f) => ({
@@ -310,7 +324,7 @@ export default function AreaComparePage({ params }: { params: { pair: string } }
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>FAQ</h2>
+        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">
