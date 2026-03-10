@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import GuidesHubContent from "../../components/GuidesHubContent";
+import GuidesHubPageContent from "./GuidesHubPageContent";
 
 const SITE_URL = "https://bestschoolbali.com";
 
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function GuidesHubPage() {
-  return <GuidesHubContent />;
+  return <GuidesHubPageContent />;
 }

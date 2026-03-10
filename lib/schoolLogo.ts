@@ -7,7 +7,10 @@ export function getSchoolLogoPlaceholder(name: string): string {
   return `https://ui-avatars.com/api/?name=${encodedName}&size=${PLACEHOLDER_SIZE}&background=random`;
 }
 
-export function getSchoolLogo(school: Pick<School, "name" | "logo">): string {
+export function getSchoolLogo(school: Pick<School, "id" | "name" | "logo">): string {
+  const id = typeof school.id === "string" ? school.id.trim() : "";
+  if (id) return `/img/schools/${id}.webp`;
+
   const logo = typeof school.logo === "string" ? school.logo.trim() : "";
   if (logo) return logo;
   return getSchoolLogoPlaceholder(school.name || "School");

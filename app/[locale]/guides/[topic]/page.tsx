@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 
-import BasePage, {
+import {
   generateMetadata as generateBaseMetadata,
   generateStaticParams as generateBaseStaticParams,
 } from '../../../guides/[topic]/page';
+import GuideTopicPageContent from '../../../guides/[topic]/GuideTopicPageContent';
 import { localizeMetadata } from '../../../../lib/seo/i18n';
 import { isLocale, type Locale } from '../../../../lib/i18n/locales';
 
@@ -32,5 +33,5 @@ export async function generateMetadata({
 export default function LocalizedPage({
   params,
 }: LocalizedGuideTopicPageProps) {
-  return <BasePage params={{ topic: params.topic }} />;
+  return <GuideTopicPageContent params={{ topic: params.topic }} locale={params.locale} />;
 }
