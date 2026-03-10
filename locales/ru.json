@@ -350,28 +350,28 @@
     },
     "sections": {
       "combine": {
-        "title": "Combine type with area",
-        "body": "Type helps you narrow quickly, but commute is often the deciding factor. Pick an area first, then check type.",
-        "areasCta": "Browse areas",
-        "directoryCta": "Open directory"
+        "title": "Сочетайте тип школы с районом",
+        "body": "Тип помогает быстро сузить выбор, но время в дороге часто решает всё. Сначала выберите район, затем проверяйте тип школы.",
+        "areasCta": "Смотреть районы",
+        "directoryCta": "Открыть каталог"
       },
       "fees": {
-        "title": "Fees & budget",
-        "body": "Compare schools using total first‑year cost. Budget bands are the fastest way to filter early.",
-        "budgetCta": "Budget bands",
-        "feesCta": "Fees overview"
+        "title": "Стоимость и бюджет",
+        "body": "Сравнивайте школы по полной стоимости первого года. Бюджетные диапазоны — самый быстрый способ первичного отбора.",
+        "budgetCta": "Диапазоны бюджета",
+        "feesCta": "Обзор стоимости"
       }
     },
     "faq": {
       "title": "FAQ",
-      "q1": "What does a school type mean?",
-      "a1": "Type labels are a simple browsing shortcut. Schools sometimes use different wording, so always open a profile and confirm the exact program, language of instruction, and age/grade coverage.",
-      "q2": "Is ‘international school’ always the best option?",
-      "a2": "Not necessarily. Many families prioritize commute, community fit, and support. Use type as a starting point, then shortlist based on age range, curriculum pathway, and total first‑year cost.",
-      "q3": "How should we shortlist schools after choosing a type?",
-      "a3": "Pick your area first (traffic matters), then confirm ages/grade levels and curriculum. Finally, compare fees by asking for the full first‑year total (tuition + one‑time fees + recurring extras).",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. If you share your area, child’s age, and a couple of priorities (curriculum, budget, language support), we’ll suggest a shortlist and the exact questions to send to admissions."
+      "q1": "Что означает тип школы?",
+      "a1": "Метки типа — это удобный способ быстро ориентироваться. Школы могут использовать разные формулировки, поэтому в профиле всегда проверяйте программу, язык обучения и возраст/классы.",
+      "q2": "«Международная школа» всегда лучший вариант?",
+      "a2": "Не обязательно. Для многих семей важнее дорога, соответствие среде и поддержка. Используйте тип как отправную точку, а затем сравнивайте по возрасту, учебной программе и полной стоимости первого года.",
+      "q3": "Как составить шорт-лист после выбора типа?",
+      "a3": "Сначала выберите район (трафик важен), затем проверьте возраст/классы и программу. В конце сравните полную стоимость первого года (обучение + разовые сборы + регулярные допрасходы).",
+      "q4": "Вы можете помочь нам выбрать?",
+      "a4": "Да. Укажите район, возраст ребёнка и пару приоритетов (программа, бюджет, языковая поддержка), и мы предложим шорт-лист и точные вопросы для admissions."
     },
     "typeLabels": {
       "school": "School",
@@ -432,14 +432,14 @@
     },
     "faqHeading": "FAQ",
     "faq": {
-      "q1": "What does \"{typeName}\" mean in Bali?",
-      "a1": "Type labels are a browsing shortcut. Schools sometimes use different wording, so confirm the curriculum, language of instruction, and grade coverage directly with admissions.",
-      "q2": "How do we shortlist {typeName} options?",
-      "a2": "Start with commute/area, then confirm ages/grades and curriculum pathway. Finally compare total first-year cost so quotes are apples-to-apples.",
-      "q3": "Should we browse by type or use the directory filters first?",
-      "a3": "Use type labels for quick browsing, then switch to the directory if you want to filter by multiple criteria (area + curriculum + budget).",
-      "q4": "Can you help us choose between a few schools?",
-      "a4": "Yes. Share your area, child’s age, and a couple of priorities and we’ll help you shortlist and draft the admissions questions to send."
+      "q1": "Что означает «{typeName}» на Бали?",
+      "a1": "Метки типа — это ориентир для быстрого просмотра. Школы иногда используют разные термины, поэтому уточняйте учебную программу, язык обучения и охват классов напрямую у admissions.",
+      "q2": "Как отобрать варианты {typeName}?",
+      "a2": "Начните с дороги/района, затем подтвердите возраст/классы и траекторию программы. После этого сравните полную стоимость первого года, чтобы предложения были сопоставимы.",
+      "q3": "Сначала смотреть по типу или использовать фильтры каталога?",
+      "a3": "Используйте типы для быстрого обзора, а затем переходите в каталог, если хотите фильтровать по нескольким критериям (район + программа + бюджет).",
+      "q4": "Можете помочь выбрать между несколькими школами?",
+      "a4": "Да. Поделитесь районом, возрастом ребёнка и несколькими приоритетами — поможем составить шорт-лист и вопросы для admissions."
     },
     "footer": {
       "moreFilters": {

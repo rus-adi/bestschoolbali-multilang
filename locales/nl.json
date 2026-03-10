@@ -351,8 +351,8 @@
     "sections": {
       "combine": {
         "title": "Combineer type met regio",
-        "body": "Type helpt je snel te filteren, maar reistijd is vaak doorslaggevend. Kies eerst een regio en controleer daarna het type.",
-        "areasCta": "Bekijk regio's",
+        "body": "Type helpt je snel te filteren, maar reistijd is vaak doorslaggevend. Kies eerst een regio en kijk daarna naar het type.",
+        "areasCta": "Bekijk regio’s",
         "directoryCta": "Open overzicht"
       },
       "fees": {
@@ -365,13 +365,13 @@
     "faq": {
       "title": "FAQ",
       "q1": "Wat betekent een schooltype?",
-      "a1": "Typelabels zijn een snelle manier om te browsen. Scholen gebruiken soms andere termen, dus open altijd een profiel en controleer het exacte programma, de instructietaal en de leeftijds-/leerjaarindeling.",
-      "q2": "Is een ‘internationale school’ altijd de beste optie?",
-      "a2": "Niet altijd. Veel gezinnen prioriteren reistijd, community-fit en ondersteuning. Gebruik type als startpunt en maak daarna een shortlist op basis van leeftijd, curriculumroute en totale kosten in het eerste jaar.",
+      "a1": "Typelabels zijn een snelle manier om te oriënteren. Scholen gebruiken soms andere termen, dus controleer in het profiel altijd het exacte programma, de onderwijstaal en de leeftijds-/klasdekking.",
+      "q2": "Is een “internationale school” altijd de beste keuze?",
+      "a2": "Niet per se. Veel gezinnen geven prioriteit aan reistijd, aansluiting bij de gemeenschap en ondersteuning. Gebruik type als startpunt en selecteer daarna op leeftijdsgroep, curriculumroute en totale kosten in het eerste jaar.",
       "q3": "Hoe maken we een shortlist na het kiezen van een type?",
-      "a3": "Kies eerst je regio (verkeer telt), controleer daarna leeftijden/leerjaren en curriculum. Vergelijk ten slotte kosten door het volledige totaal voor het eerste jaar op te vragen (lesgeld + eenmalige kosten + terugkerende extra's).",
-      "q4": "Kunnen jullie helpen met kiezen?",
-      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar prioriteiten (curriculum, budget, taalondersteuning), dan stellen we een shortlist voor en de juiste vragen voor admissions."
+      "a3": "Kies eerst je regio (verkeer telt), controleer daarna leeftijden/klassen en curriculum. Vergelijk tot slot de volledige kosten van het eerste jaar (schoolgeld + eenmalige kosten + terugkerende extra’s).",
+      "q4": "Kunnen jullie ons helpen kiezen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar prioriteiten (curriculum, budget, taalondersteuning), dan stellen we een shortlist en concrete vragen voor toelating voor."
     },
     "typeLabels": {
       "school": "School",
@@ -433,13 +433,13 @@
     "faqHeading": "FAQ",
     "faq": {
       "q1": "Wat betekent \"{typeName}\" op Bali?",
-      "a1": "Typelabels zijn een snelle browsehulp. Scholen gebruiken soms andere termen, dus bevestig curriculum, instructietaal en leerjaarindeling rechtstreeks bij admissions.",
+      "a1": "Typelabels zijn een oriëntatiehulp. Scholen gebruiken soms andere benamingen, dus bevestig curriculum, onderwijstaal en klasdekking rechtstreeks bij toelating.",
       "q2": "Hoe maken we een shortlist van {typeName}-opties?",
-      "a2": "Begin met reistijd/regio, bevestig daarna leeftijden/leerjaren en curriculumroute. Vergelijk tot slot de totale kosten van het eerste jaar zodat offertes eerlijk vergelijkbaar zijn.",
-      "q3": "Moeten we per type browsen of eerst directoryfilters gebruiken?",
-      "a3": "Gebruik typelabels om snel te oriënteren en schakel daarna over naar de directory voor filters zoals regio, curriculum, budget en leeftijd.",
-      "q4": "Kunnen jullie helpen met het selecteren van scholen?",
-      "a4": "Ja. Deel je regio, de leeftijd van je kind en enkele prioriteiten; we helpen met een shortlist en conceptvragen voor admissions."
+      "a2": "Begin met reistijd/regio, bevestig daarna leeftijden/klassen en curriculumroute. Vergelijk vervolgens de totale kosten van het eerste jaar zodat offertes goed vergelijkbaar zijn.",
+      "q3": "Moeten we eerst op type zoeken of eerst de overzichtsfilters gebruiken?",
+      "a3": "Gebruik typelabels om snel te verkennen en stap daarna over op het overzicht als je op meerdere criteria wilt filteren (regio + curriculum + budget).",
+      "q4": "Kunnen jullie ons helpen kiezen tussen een paar scholen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en enkele prioriteiten; dan helpen we met shortlist en vragen voor toelating."
     },
     "footer": {
       "moreFilters": {

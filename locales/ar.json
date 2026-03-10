@@ -350,28 +350,28 @@
     },
     "sections": {
       "combine": {
-        "title": "Combine type with area",
-        "body": "Type helps you narrow quickly, but commute is often the deciding factor. Pick an area first, then check type.",
-        "areasCta": "Browse areas",
-        "directoryCta": "Open directory"
+        "title": "ادمج النوع مع المنطقة",
+        "body": "يساعدك نوع المدرسة على تضييق الخيارات بسرعة، لكن زمن التنقّل غالبًا هو العامل الحاسم. اختر المنطقة أولًا ثم تحقّق من النوع.",
+        "areasCta": "تصفح المناطق",
+        "directoryCta": "فتح الدليل"
       },
       "fees": {
-        "title": "Fees & budget",
-        "body": "Compare schools using total first‑year cost. Budget bands are the fastest way to filter early.",
-        "budgetCta": "Budget bands",
-        "feesCta": "Fees overview"
+        "title": "الرسوم والميزانية",
+        "body": "قارِن المدارس بناءً على التكلفة الإجمالية للسنة الأولى. نطاقات الميزانية هي أسرع طريقة للتصفية في البداية.",
+        "budgetCta": "نطاقات الميزانية",
+        "feesCta": "نظرة عامة على الرسوم"
       }
     },
     "faq": {
-      "title": "FAQ",
-      "q1": "What does a school type mean?",
-      "a1": "Type labels are a simple browsing shortcut. Schools sometimes use different wording, so always open a profile and confirm the exact program, language of instruction, and age/grade coverage.",
-      "q2": "Is ‘international school’ always the best option?",
-      "a2": "Not necessarily. Many families prioritize commute, community fit, and support. Use type as a starting point, then shortlist based on age range, curriculum pathway, and total first‑year cost.",
-      "q3": "How should we shortlist schools after choosing a type?",
-      "a3": "Pick your area first (traffic matters), then confirm ages/grade levels and curriculum. Finally, compare fees by asking for the full first‑year total (tuition + one‑time fees + recurring extras).",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. If you share your area, child’s age, and a couple of priorities (curriculum, budget, language support), we’ll suggest a shortlist and the exact questions to send to admissions."
+      "title": "الأسئلة الشائعة",
+      "q1": "ماذا يعني نوع المدرسة؟",
+      "a1": "تسميات النوع هي اختصار بسيط للتصفح. قد تستخدم المدارس مصطلحات مختلفة، لذلك تحقّق دائمًا من البرنامج الفعلي، ولغة التدريس، والفئات العمرية/الصفوف في ملف المدرسة.",
+      "q2": "هل «المدرسة الدولية» هي الخيار الأفضل دائمًا؟",
+      "a2": "ليس بالضرورة. كثير من العائلات تعطي الأولوية لوقت التنقّل، وملاءمة المجتمع، ومستوى الدعم. استخدم النوع كنقطة بداية ثم قارن حسب العمر، والمنهج، والتكلفة الإجمالية للسنة الأولى.",
+      "q3": "كيف نعد قائمة مختصرة بعد اختيار النوع؟",
+      "a3": "اختر المنطقة أولًا (المرور مهم)، ثم أكّد الأعمار/الصفوف والمنهج. أخيرًا قارن التكلفة الكاملة للسنة الأولى (الرسوم الدراسية + الرسوم لمرة واحدة + الإضافات المتكررة).",
+      "q4": "هل يمكنكم مساعدتنا في الاختيار؟",
+      "a4": "نعم. شاركنا المنطقة، وعمر الطفل، وبعض الأولويات (المنهج، الميزانية، دعم اللغة)، وسنقترح قائمة مختصرة وأسئلة دقيقة لإرسالها إلى القبول."
     },
     "typeLabels": {
       "school": "School",
@@ -432,14 +432,14 @@
     },
     "faqHeading": "FAQ",
     "faq": {
-      "q1": "What does \"{typeName}\" mean in Bali?",
-      "a1": "Type labels are a browsing shortcut. Schools sometimes use different wording, so confirm the curriculum, language of instruction, and grade coverage directly with admissions.",
-      "q2": "How do we shortlist {typeName} options?",
-      "a2": "Start with commute/area, then confirm ages/grades and curriculum pathway. Finally compare total first-year cost so quotes are apples-to-apples.",
-      "q3": "Should we browse by type or use the directory filters first?",
-      "a3": "Use type labels for quick browsing, then switch to the directory if you want to filter by multiple criteria (area + curriculum + budget).",
-      "q4": "Can you help us choose between a few schools?",
-      "a4": "Yes. Share your area, child’s age, and a couple of priorities and we’ll help you shortlist and draft the admissions questions to send."
+      "q1": "ماذا يعني \"{typeName}\" في بالي؟",
+      "a1": "تسميات النوع هي اختصار للتصفح. قد تستخدم المدارس مصطلحات مختلفة، لذا أكّد المنهج ولغة التدريس وتغطية الصفوف مباشرة مع قسم القبول.",
+      "q2": "كيف نختصر خيارات {typeName}؟",
+      "a2": "ابدأ بالتنقّل/المنطقة، ثم أكّد الأعمار/الصفوف ومسار المنهج. بعد ذلك قارن إجمالي تكلفة السنة الأولى حتى تكون العروض قابلة للمقارنة.",
+      "q3": "هل نبدأ بالتصفح حسب النوع أم نستخدم فلاتر الدليل أولًا؟",
+      "a3": "استخدم النوع للتصفح السريع، ثم انتقل إلى الدليل إذا أردت التصفية بعدة معايير (المنطقة + المنهج + الميزانية).",
+      "q4": "هل يمكنكم مساعدتنا في الاختيار بين عدة مدارس؟",
+      "a4": "نعم. شاركنا المنطقة، وعمر الطفل، وبعض الأولويات، وسنساعدك في إعداد قائمة مختصرة وصياغة أسئلة القبول."
     },
     "footer": {
       "moreFilters": {

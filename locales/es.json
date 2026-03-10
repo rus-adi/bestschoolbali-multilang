@@ -323,28 +323,28 @@
     },
     "sections": {
       "combine": {
-        "title": "Combine type with area",
-        "body": "Type helps you narrow quickly, but commute is often the deciding factor. Pick an area first, then check type.",
-        "areasCta": "Browse areas",
-        "directoryCta": "Open directory"
+        "title": "Combina tipo con zona",
+        "body": "El tipo te ayuda a filtrar rápido, pero el trayecto diario suele ser decisivo. Elige primero una zona y luego revisa el tipo.",
+        "areasCta": "Ver zonas",
+        "directoryCta": "Abrir directorio"
       },
       "fees": {
-        "title": "Fees & budget",
-        "body": "Compare schools using total first‑year cost. Budget bands are the fastest way to filter early.",
-        "budgetCta": "Budget bands",
-        "feesCta": "Fees overview"
+        "title": "Cuotas y presupuesto",
+        "body": "Compara colegios por el coste total del primer año. Los rangos de presupuesto son la forma más rápida de filtrar al inicio.",
+        "budgetCta": "Rangos de presupuesto",
+        "feesCta": "Resumen de cuotas"
       }
     },
     "faq": {
-      "title": "FAQ",
-      "q1": "What does a school type mean?",
-      "a1": "Type labels are a simple browsing shortcut. Schools sometimes use different wording, so always open a profile and confirm the exact program, language of instruction, and age/grade coverage.",
-      "q2": "Is ‘international school’ always the best option?",
-      "a2": "Not necessarily. Many families prioritize commute, community fit, and support. Use type as a starting point, then shortlist based on age range, curriculum pathway, and total first‑year cost.",
-      "q3": "How should we shortlist schools after choosing a type?",
-      "a3": "Pick your area first (traffic matters), then confirm ages/grade levels and curriculum. Finally, compare fees by asking for the full first‑year total (tuition + one‑time fees + recurring extras).",
-      "q4": "Can you help us choose?",
-      "a4": "Yes. If you share your area, child’s age, and a couple of priorities (curriculum, budget, language support), we’ll suggest a shortlist and the exact questions to send to admissions."
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué significa el tipo de colegio?",
+      "a1": "Las etiquetas de tipo son un atajo para explorar. Algunos colegios usan términos distintos, así que revisa siempre en el perfil el programa exacto, el idioma de enseñanza y las edades/cursos cubiertos.",
+      "q2": "¿Un “colegio internacional” es siempre la mejor opción?",
+      "a2": "No necesariamente. Muchas familias priorizan trayecto, encaje con la comunidad y apoyos. Usa el tipo como punto de partida y luego compara edades, currículo y coste total del primer año.",
+      "q3": "¿Cómo deberíamos hacer una lista corta después de elegir un tipo?",
+      "a3": "Elige primero la zona (el tráfico importa), luego confirma edades/cursos y currículo. Por último, compara el total real del primer año (matrícula + cuotas únicas + extras recurrentes).",
+      "q4": "¿Pueden ayudarnos a elegir?",
+      "a4": "Sí. Si compartes tu zona, la edad de tu hijo/a y un par de prioridades (currículo, presupuesto, apoyo de idioma), te sugerimos una lista corta y preguntas concretas para admisiones."
     },
     "typeLabels": {
       "school": "School",
@@ -432,14 +432,14 @@
     },
     "faqHeading": "FAQ",
     "faq": {
-      "q1": "What does \"{typeName}\" mean in Bali?",
-      "a1": "Type labels are a browsing shortcut. Schools sometimes use different wording, so confirm the curriculum, language of instruction, and grade coverage directly with admissions.",
-      "q2": "How do we shortlist {typeName} options?",
-      "a2": "Start with commute/area, then confirm ages/grades and curriculum pathway. Finally compare total first-year cost so quotes are apples-to-apples.",
-      "q3": "Should we browse by type or use the directory filters first?",
-      "a3": "Use type labels for quick browsing, then switch to the directory if you want to filter by multiple criteria (area + curriculum + budget).",
-      "q4": "Can you help us choose between a few schools?",
-      "a4": "Yes. Share your area, child’s age, and a couple of priorities and we’ll help you shortlist and draft the admissions questions to send."
+      "q1": "¿Qué significa “{typeName}” en Bali?",
+      "a1": "Las etiquetas de tipo son un atajo para explorar. Como algunos colegios usan términos distintos, confirma directamente con admisiones el currículo, el idioma de enseñanza y los cursos que cubren.",
+      "q2": "¿Cómo hacemos una lista corta de opciones {typeName}?",
+      "a2": "Empieza por trayecto/zona, luego confirma edades/cursos y ruta curricular. Al final compara el coste total del primer año para que las cotizaciones sean realmente comparables.",
+      "q3": "¿Conviene buscar por tipo o usar primero los filtros del directorio?",
+      "a3": "Usa el tipo para explorar rápido y después pasa al directorio si quieres filtrar por varios criterios (zona + currículo + presupuesto).",
+      "q4": "¿Pueden ayudarnos a elegir entre varios colegios?",
+      "a4": "Sí. Comparte tu zona, la edad de tu hijo/a y un par de prioridades, y te ayudamos con la lista corta y las preguntas para admisiones."
     },
     "footer": {
       "moreFilters": {
