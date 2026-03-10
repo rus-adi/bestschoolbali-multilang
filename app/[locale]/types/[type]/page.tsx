@@ -21,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
 
-  const base = await generateBaseMetadata({ params: { type: params.type } });
+  const base = await generateBaseMetadata({ params: { type: params.type }, locale: params.locale });
   return localizeMetadata(base, params.locale as Locale, `/types/${params.type}`, {
     noindex: params.locale !== 'en',
   });
@@ -32,5 +32,5 @@ export default function LocalizedPage({
 }: {
   params: { locale: string; type: string };
 }) {
-  return <BasePage params={{ type: params.type }} />;
+  return <BasePage params={{ type: params.type }} locale={params.locale} />;
 }
