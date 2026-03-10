@@ -342,8 +342,8 @@
     }
   },
   "typesPage": {
-    "title": "School types",
-    "subtitle": "Browse schools by type, then open profiles to confirm curriculum, ages, and fees.",
+    "title": "学校タイプ",
+    "subtitle": "タイプ別に学校を探し、プロフィールを開いてカリキュラム、対象年齢、費用を確認してください。",
     "cards": {
       "schoolsCount": "{count} schools",
       "browse": "Browse"

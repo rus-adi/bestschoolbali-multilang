@@ -342,8 +342,8 @@
     }
   },
   "typesPage": {
-    "title": "School types",
-    "subtitle": "Browse schools by type, then open profiles to confirm curriculum, ages, and fees.",
+    "title": "Schularten",
+    "subtitle": "Durchsuchen Sie Schulen nach Typ und öffnen Sie anschließend Profile, um Curriculum, Altersstufen und Gebühren zu prüfen.",
     "cards": {
       "schoolsCount": "{count} schools",
       "browse": "Browse"

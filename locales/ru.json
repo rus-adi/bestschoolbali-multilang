@@ -342,8 +342,8 @@
     }
   },
   "typesPage": {
-    "title": "School types",
-    "subtitle": "Browse schools by type, then open profiles to confirm curriculum, ages, and fees.",
+    "title": "Типы школ",
+    "subtitle": "Просматривайте школы по типу, затем открывайте профили, чтобы проверить программу, возрастные группы и стоимость.",
     "cards": {
       "schoolsCount": "{count} schools",
       "browse": "Browse"

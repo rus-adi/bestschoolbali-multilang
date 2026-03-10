@@ -343,7 +343,7 @@
   },
   "typesPage": {
     "title": "Schooltypen",
-    "subtitle": "Blader scholen per type en open daarna profielen om curriculum, leeftijden en kosten te bevestigen.",
+    "subtitle": "Bekijk scholen per type en open daarna profielen om curriculum, leeftijden en kosten te bevestigen.",
     "cards": {
       "schoolsCount": "{count} scholen",
       "browse": "Bekijken"

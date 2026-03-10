@@ -342,8 +342,8 @@
     }
   },
   "typesPage": {
-    "title": "School types",
-    "subtitle": "Browse schools by type, then open profiles to confirm curriculum, ages, and fees.",
+    "title": "학교 유형",
+    "subtitle": "유형별로 학교를 둘러본 뒤 프로필을 열어 커리큘럼, 연령, 학비를 확인하세요.",
     "cards": {
       "schoolsCount": "{count} schools",
       "browse": "Browse"
