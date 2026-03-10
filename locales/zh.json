@@ -340,5 +340,118 @@
         "cta": "按年龄浏览"
       }
     }
+  },
+  "typesPage": {
+    "title": "学校类型",
+    "subtitle": "按学校类型浏览，随后打开学校资料页以确认课程体系、年龄范围和费用。",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "将学校类型与区域结合",
+        "body": "学校类型可以帮助你快速缩小范围，但通勤时间往往才是决定因素。建议先选区域，再看类型。",
+        "areasCta": "查看区域",
+        "directoryCta": "打开目录"
+      },
+      "fees": {
+        "title": "费用与预算",
+        "body": "请按首年总成本比较学校。预算区间是前期筛选最快的方法。",
+        "budgetCta": "预算区间",
+        "feesCta": "费用总览"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "学校类型是什么意思？",
+      "a1": "类型标签只是便于浏览的快捷方式。不同学校用词可能不同，所以请在学校资料页确认具体课程、授课语言和覆盖年龄/年级。",
+      "q2": "“国际学校”一定是最佳选择吗？",
+      "a2": "不一定。很多家庭更看重通勤、社区匹配和支持服务。可先按类型初筛，再根据年龄段、课程路径和首年总成本做最终比较。",
+      "q3": "选定类型后，应该如何进一步筛选？",
+      "a3": "先选区域（交通很重要），再确认年龄/年级与课程体系。最后比较首年总费用（学费 + 一次性费用 + 持续性附加费用）。",
+      "q4": "你们可以帮我们做选择吗？",
+      "a4": "可以。告诉我们你的区域、孩子年龄和几个优先项（课程、预算、语言支持），我们会给出候选清单和应向招生部门提问的重点。"
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "在巴厘岛，“{typeName}”是什么意思？",
+      "a1": "类型标签只是浏览时的参考。学校对术语的使用可能不同，请直接向招生部门确认课程体系、授课语言和年级覆盖范围。",
+      "q2": "我们该如何筛选 {typeName} 选项？",
+      "a2": "先看通勤/区域，再确认年龄/年级和课程路径。最后比较首年总成本，确保各校报价可直接对比。",
+      "q3": "应该先按类型浏览，还是先用目录筛选？",
+      "a3": "先用类型标签快速浏览；如果需要按多个条件筛选（区域 + 课程 + 预算），再切换到目录筛选。",
+      "q4": "你们可以帮我们在几所学校中做选择吗？",
+      "a4": "可以。告诉我们你的区域、孩子年龄和几个优先项，我们会协助你缩小名单并整理发给招生部门的问题。"
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }

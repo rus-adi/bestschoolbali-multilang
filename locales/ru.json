@@ -340,5 +340,118 @@
         "cta": "Смотреть по возрасту"
       }
     }
+  },
+  "typesPage": {
+    "title": "Типы школ",
+    "subtitle": "Просматривайте школы по типу, затем открывайте профили, чтобы проверить программу, возрастные группы и стоимость.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "Сочетайте тип школы с районом",
+        "body": "Тип помогает быстро сузить выбор, но время в дороге часто решает всё. Сначала выберите район, затем проверяйте тип школы.",
+        "areasCta": "Смотреть районы",
+        "directoryCta": "Открыть каталог"
+      },
+      "fees": {
+        "title": "Стоимость и бюджет",
+        "body": "Сравнивайте школы по полной стоимости первого года. Бюджетные диапазоны — самый быстрый способ первичного отбора.",
+        "budgetCta": "Диапазоны бюджета",
+        "feesCta": "Обзор стоимости"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Что означает тип школы?",
+      "a1": "Метки типа — это удобный способ быстро ориентироваться. Школы могут использовать разные формулировки, поэтому в профиле всегда проверяйте программу, язык обучения и возраст/классы.",
+      "q2": "«Международная школа» всегда лучший вариант?",
+      "a2": "Не обязательно. Для многих семей важнее дорога, соответствие среде и поддержка. Используйте тип как отправную точку, а затем сравнивайте по возрасту, учебной программе и полной стоимости первого года.",
+      "q3": "Как составить шорт-лист после выбора типа?",
+      "a3": "Сначала выберите район (трафик важен), затем проверьте возраст/классы и программу. В конце сравните полную стоимость первого года (обучение + разовые сборы + регулярные допрасходы).",
+      "q4": "Вы можете помочь нам выбрать?",
+      "a4": "Да. Укажите район, возраст ребёнка и пару приоритетов (программа, бюджет, языковая поддержка), и мы предложим шорт-лист и точные вопросы для admissions."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "Что означает «{typeName}» на Бали?",
+      "a1": "Метки типа — это ориентир для быстрого просмотра. Школы иногда используют разные термины, поэтому уточняйте учебную программу, язык обучения и охват классов напрямую у admissions.",
+      "q2": "Как отобрать варианты {typeName}?",
+      "a2": "Начните с дороги/района, затем подтвердите возраст/классы и траекторию программы. После этого сравните полную стоимость первого года, чтобы предложения были сопоставимы.",
+      "q3": "Сначала смотреть по типу или использовать фильтры каталога?",
+      "a3": "Используйте типы для быстрого обзора, а затем переходите в каталог, если хотите фильтровать по нескольким критериям (район + программа + бюджет).",
+      "q4": "Можете помочь выбрать между несколькими школами?",
+      "a4": "Да. Поделитесь районом, возрастом ребёнка и несколькими приоритетами — поможем составить шорт-лист и вопросы для admissions."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }

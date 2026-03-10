@@ -340,5 +340,118 @@
         "cta": "연령별 보기"
       }
     }
+  },
+  "typesPage": {
+    "title": "학교 유형",
+    "subtitle": "유형별로 학교를 둘러본 뒤 프로필을 열어 커리큘럼, 연령, 학비를 확인하세요.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "유형과 지역을 함께 보기",
+        "body": "학교 유형으로 빠르게 좁힐 수 있지만, 실제로는 통학 시간이 결정적일 때가 많습니다. 먼저 지역을 고른 뒤 유형을 확인하세요.",
+        "areasCta": "지역 보기",
+        "directoryCta": "디렉터리 열기"
+      },
+      "fees": {
+        "title": "학비 및 예산",
+        "body": "첫해 총비용 기준으로 학교를 비교하세요. 예산 구간은 초기 단계에서 가장 빠른 필터입니다.",
+        "budgetCta": "예산 구간",
+        "feesCta": "학비 개요"
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "학교 유형은 무엇을 의미하나요?",
+      "a1": "유형 라벨은 탐색을 위한 간단한 기준입니다. 학교마다 표현이 다를 수 있으므로, 프로필에서 프로그램, 수업 언어, 연령/학년 범위를 꼭 확인하세요.",
+      "q2": "“국제학교”가 항상 가장 좋은 선택인가요?",
+      "a2": "반드시 그렇지는 않습니다. 많은 가정은 통학, 커뮤니티 적합성, 지원 체계를 더 중요하게 봅니다. 유형은 출발점으로 사용하고, 이후 연령대, 커리큘럼, 첫해 총비용을 기준으로 비교하세요.",
+      "q3": "유형을 고른 뒤에는 어떻게 학교를 추려야 하나요?",
+      "a3": "먼저 지역을 정하고(교통이 중요함), 다음으로 연령/학년과 커리큘럼을 확인하세요. 마지막으로 첫해 총비용(수업료+일회성 비용+반복 추가비용)을 비교하세요.",
+      "q4": "학교 선택을 도와주실 수 있나요?",
+      "a4": "네. 지역, 자녀 나이, 우선순위(커리큘럼, 예산, 언어 지원)를 알려주시면 추천 리스트와 입학팀에 보낼 질문을 제안해 드립니다."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "발리에서 “{typeName}”는 무엇을 의미하나요?",
+      "a1": "유형 라벨은 탐색을 위한 기준입니다. 학교마다 용어가 다를 수 있으니, 커리큘럼, 수업 언어, 학년 범위를 입학팀에 직접 확인하세요.",
+      "q2": "{typeName} 옵션은 어떻게 추려야 하나요?",
+      "a2": "먼저 통학/지역을 확인한 뒤, 연령/학년과 커리큘럼 경로를 확인하세요. 마지막으로 첫해 총비용을 비교해 견적 조건을 맞추세요.",
+      "q3": "유형으로 먼저 볼까요, 디렉터리 필터를 먼저 쓸까요?",
+      "a3": "빠르게 탐색할 때는 유형 라벨을 사용하고, 여러 기준(지역+커리큘럼+예산)으로 걸러야 하면 디렉터리를 사용하세요.",
+      "q4": "몇 개 학교 중 선택을 도와주실 수 있나요?",
+      "a4": "네. 지역, 자녀 나이, 우선순위를 알려주시면 후보를 추리고 입학팀에 보낼 질문 작성까지 도와드립니다."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }

@@ -340,5 +340,118 @@
         "cta": "Parcourir par âge"
       }
     }
+  },
+  "typesPage": {
+    "title": "Types d’école",
+    "subtitle": "Parcourez les écoles par type, puis ouvrez les profils pour confirmer le curriculum, les âges et les frais.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combiner le type et la zone",
+        "body": "Le type aide à filtrer rapidement, mais le temps de trajet est souvent décisif. Choisissez d’abord une zone, puis vérifiez le type.",
+        "areasCta": "Voir les zones",
+        "directoryCta": "Ouvrir le répertoire"
+      },
+      "fees": {
+        "title": "Frais et budget",
+        "body": "Comparez les écoles selon le coût total de la première année. Les tranches de budget sont le moyen le plus rapide de filtrer au début.",
+        "budgetCta": "Tranches de budget",
+        "feesCta": "Aperçu des frais"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Que signifie un type d’école ?",
+      "a1": "Les libellés de type sont un raccourci de navigation. Les écoles utilisent parfois des termes différents : vérifiez donc toujours dans le profil le programme exact, la langue d’enseignement et les âges/niveaux couverts.",
+      "q2": "Une « école internationale » est-elle toujours le meilleur choix ?",
+      "a2": "Pas forcément. De nombreuses familles privilégient le trajet, l’adéquation avec la communauté et l’accompagnement. Utilisez le type comme point de départ, puis comparez tranche d’âge, parcours curriculaire et coût total de la première année.",
+      "q3": "Comment établir une présélection après avoir choisi un type ?",
+      "a3": "Choisissez d’abord la zone (la circulation compte), puis confirmez âges/niveaux et curriculum. Enfin, comparez le coût total de la première année (frais de scolarité + frais ponctuels + extras récurrents).",
+      "q4": "Pouvez-vous nous aider à choisir ?",
+      "a4": "Oui. Partagez votre zone, l’âge de votre enfant et quelques priorités (curriculum, budget, soutien linguistique) : nous proposerons une présélection et les questions à envoyer aux admissions."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "Que signifie « {typeName} » à Bali ?",
+      "a1": "Les libellés de type servent de raccourci de navigation. Les écoles utilisent parfois des termes différents : confirmez directement avec les admissions le curriculum, la langue d’enseignement et les niveaux couverts.",
+      "q2": "Comment présélectionner les options {typeName} ?",
+      "a2": "Commencez par le trajet/la zone, puis confirmez âges/niveaux et parcours curriculaire. Ensuite, comparez le coût total de la première année pour mettre les devis sur une base comparable.",
+      "q3": "Faut-il d’abord parcourir par type ou utiliser les filtres du répertoire ?",
+      "a3": "Utilisez les types pour une exploration rapide, puis passez au répertoire si vous souhaitez filtrer par plusieurs critères (zone + curriculum + budget).",
+      "q4": "Pouvez-vous nous aider à choisir entre quelques écoles ?",
+      "a4": "Oui. Partagez votre zone, l’âge de votre enfant et quelques priorités, et nous vous aiderons à faire une présélection et à rédiger les questions à envoyer aux admissions."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }
