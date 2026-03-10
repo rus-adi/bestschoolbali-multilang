@@ -150,7 +150,8 @@
     "sponsored": "Patrocinado",
     "all": "Todos",
     "draft": "Borrador",
-    "notFound": "No encontrado"
+    "notFound": "No encontrado",
+    "vs": "vs."
   },
   "home": {
     "heroTitleLead": "Encuentra la",

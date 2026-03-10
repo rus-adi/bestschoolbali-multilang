@@ -150,7 +150,8 @@
     "sponsored": "Sponsored",
     "all": "All",
     "draft": "Draft",
-    "notFound": "Not found"
+    "notFound": "Not found",
+    "vs": "vs"
   },
   "home": {
     "heroTitleLead": "Find the",

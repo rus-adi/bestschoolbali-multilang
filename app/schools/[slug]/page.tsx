@@ -14,6 +14,7 @@ import html from "remark-html";
 import { recommendGuides } from "../../../lib/posts";
 import { getAreaComparisonPairs } from "../../../lib/areaComparisons";
 import { getSchoolLogo } from "../../../lib/schoolLogo";
+import { isLocale, localizeHref, type Locale } from "../../../lib/i18n/locales";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -114,6 +115,9 @@ function relatedSchools(currentId: string, locale = "en") {
 }
 
 export default async function SchoolPage({ params, locale = "en" }: { params: { slug: string }; locale?: string }) {
+  const localeValue: Locale = isLocale(locale) ? locale : "en";
+  const href = (path: string) => localizeHref(path, localeValue);
+
   const school = getSchoolBySlug(params.slug, locale);
   if (!school) return <div className="container"><T k="common.notFound" /></div>;
 
@@ -241,8 +245,8 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
     ].filter(Boolean),
   };
 
-  const claimUrl = `/claim/${school.id}`;
-  const feedbackUrl = `/parent-feedback/${school.id}`;
+  const claimUrl = href(`/claim/${school.id}`);
+  const feedbackUrl = href(`/parent-feedback/${school.id}`);
   const whatsappGuidance = `https://wa.me/6285285408220?text=${encodeURIComponent(
     `Hi — can you help me shortlist schools? I’m looking at ${school.name} in ${school.area}.`,
   )}`;
@@ -250,11 +254,11 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
   return (
     <div className="container">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/"><T k="nav.home" /></a>
+        <a href={href('/')}><T k="nav.home" /></a>
         <span aria-hidden="true">/</span>
-        <a href="/schools"><T k="nav.schools" /></a>
+        <a href={href('/schools')}><T k="nav.schools" /></a>
         <span aria-hidden="true">/</span>
-        <a href={`/areas/${areaSlug}`}>{school.area}</a>
+        <a href={href(`/areas/${areaSlug}`)}>{school.area}</a>
         <span aria-hidden="true">/</span>
         <span>{school.name}</span>
       </nav>
@@ -271,13 +275,13 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 {school.sponsorship?.sponsored ? <span className="pill pillSponsored"><T k="common.sponsored" /></span> : null}
               </h1>
               <div className="small" style={{ color: "rgba(255,255,255,0.88)" }}>
-                <a href={`/areas/${areaSlug}`} style={{ color: "inherit", textDecoration: "underline" }}>
+                <a href={href(`/areas/${areaSlug}`)} style={{ color: "inherit", textDecoration: "underline" }}>
                   {school.area}
                 </a>
                 {school.type ? (
                   <>
                     {" "}·{" "}
-                    <a href={`/types/${typeSlug}`} style={{ color: "inherit", textDecoration: "underline" }}>
+                    <a href={href(`/types/${typeSlug}`)} style={{ color: "inherit", textDecoration: "underline" }}>
                       {school.type}
                     </a>
                   </>
@@ -306,7 +310,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 <strong><T k="school.factsBudget" /></strong>
               </div>
               <div>
-                <a href={`/budget/${budgetSlug}`}>{school.budget_category}</a>
+                <a href={href(`/budget/${budgetSlug}`)}>{school.budget_category}</a>
               </div>
             </>
           ) : null}
@@ -317,7 +321,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 <strong><T k="school.factsType" /></strong>
               </div>
               <div>
-                <a href={`/types/${typeSlug}`}>{school.type}</a>
+                <a href={href(`/types/${typeSlug}`)}>{school.type}</a>
               </div>
             </>
           ) : null}
@@ -332,7 +336,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 {ageBands.length ? (
                   <div className="tagRow" style={{ marginTop: 8 }}>
                     {ageBands.map((b) => (
-                      <a key={b.slug} className="tag" href={`/ages/${b.slug}`}>
+                      <a key={b.slug} className="tag" href={href(`/ages/${b.slug}`)}>
                         {b.name}
                       </a>
                     ))}
@@ -350,7 +354,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
               <div>
                 <div className="tagRow" style={{ marginTop: 0 }}>
                   {school.curriculum_tags.map((t) => (
-                    <a key={t} className="tag" href={`/curriculums/${slugify(t)}`}>
+                    <a key={t} className="tag" href={href(`/curriculums/${slugify(t)}`)}>
                       {t}
                     </a>
                   ))}
@@ -444,7 +448,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
         <div className="card" style={{ marginTop: 16 }}>
           <div className="sectionHead">
             <h2 style={{ margin: 0 }}><T k="school.recommendedGuidesHeading" /></h2>
-            <a className="sectionLink" href="/posts">
+            <a className="sectionLink" href={href('/posts')}>
               <T k="school.viewAllGuides" />
             </a>
           </div>
@@ -452,11 +456,11 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
             {guides.map((g) => (
               <div key={g.slug} className="card soft">
                 <h3 style={{ marginTop: 0 }}>
-                  <a href={`/posts/${g.slug}`}>{g.title}</a>
+                  <a href={href(`/posts/${g.slug}`)}>{g.title}</a>
                 </h3>
                 <div className="small">{g.excerpt}</div>
                 <div className="inlineLinks" style={{ marginTop: 10 }}>
-                  <a className="btn btnLink" href={`/posts/${g.slug}`}>
+                  <a className="btn btnLink" href={href(`/posts/${g.slug}`)}>
                     <T k="home.readMore" /> <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -500,7 +504,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 school={s}
                 meta={
                   <>
-                    <a href={`/areas/${slugify(s.area)}`}>{s.area}</a>
+                    <a href={href(`/areas/${slugify(s.area)}`)}>{s.area}</a>
                     {s.type ? ` · ${s.type}` : ''}
                   </>
                 }
@@ -518,7 +522,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
           </p>
           <div className="tagRow" style={{ marginTop: 10 }}>
             {otherAreas.map((a) => (
-              <a key={a} className="tag" href={`/areas/${slugify(a)}`}>
+              <a key={a} className="tag" href={href(`/areas/${slugify(a)}`)}>
                 {a}
               </a>
             ))}
@@ -533,8 +537,8 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
                 {comparePairs.map((p) => {
                   const other = p.a === school.area ? p.b : p.a;
                   return (
-                    <a key={p.slug} className="tag" href={`/compare/areas/${p.slug}`}>
-                      {school.area} vs {other}
+                    <a key={p.slug} className="tag" href={href(`/compare/areas/${p.slug}`)}>
+                      {school.area} <T k="common.vs" /> {other}
                     </a>
                   );
                 })}
@@ -543,10 +547,10 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
           ) : null}
 
           <div className="inlineLinks" style={{ marginTop: 12 }}>
-            <a className="btn" href="/areas">
+            <a className="btn" href={href('/areas')}>
               <T k="school.browseAllAreas" />
             </a>
-            <a className="btn" href="/compare/areas">
+            <a className="btn" href={href('/compare/areas')}>
               <T k="school.compareAreas" />
             </a>
           </div>
@@ -582,7 +586,7 @@ export default async function SchoolPage({ params, locale = "en" }: { params: { 
           <a className="btn btnPrimary" href={claimUrl}>
             <T k="school.claimThisProfile" /> <span aria-hidden="true">→</span>
           </a>
-          <a className="btn" href="/for-schools/pricing">
+          <a className="btn" href={href('/for-schools/pricing')}>
             <T k="school.listingUpgrades" />
           </a>
         </div>

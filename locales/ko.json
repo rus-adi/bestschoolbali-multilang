@@ -150,7 +150,8 @@
     "sponsored": "스폰서",
     "all": "전체",
     "draft": "초안",
-    "notFound": "찾을 수 없음"
+    "notFound": "찾을 수 없음",
+    "vs": "대"
   },
   "home": {
     "heroTitleLead": "발리에서",

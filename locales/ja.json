@@ -150,7 +150,8 @@
     "sponsored": "スポンサー",
     "all": "すべて",
     "draft": "下書き",
-    "notFound": "見つかりません"
+    "notFound": "見つかりません",
+    "vs": "対"
   },
   "home": {
     "heroTitleLead": "バリで",

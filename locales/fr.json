@@ -150,7 +150,8 @@
     "sponsored": "Sponsorisé",
     "all": "Tous",
     "draft": "Brouillon",
-    "notFound": "Introuvable"
+    "notFound": "Introuvable",
+    "vs": "vs"
   },
   "home": {
     "heroTitleLead": "Trouvez la",

@@ -150,7 +150,8 @@
     "sponsored": "Спонсируемое",
     "all": "Все",
     "draft": "Черновик",
-    "notFound": "Не найдено"
+    "notFound": "Не найдено",
+    "vs": "против"
   },
   "home": {
     "heroTitleLead": "Найдите",
@@ -229,7 +230,7 @@
     "areaComparisonsHeading": "Сравнение районов",
     "browseAllAreas": "Смотреть все районы",
     "compareAreas": "Сравнить районы",
-    "faqHeading": "FAQ",
+    "faqHeading": "Часто задаваемые вопросы",
     "mapLinkLabel": "Ссылка на карту",
     "googleMaps": "Google Maps",
     "claimUpgradeHeading": "Заявить права и улучшить этот профиль",
