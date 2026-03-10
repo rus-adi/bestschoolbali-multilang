@@ -453,5 +453,34 @@
         "cta": "Get free guidance"
       }
     }
+  },
+  "curriculumsPage": {
+    "title": "Programmes scolaires",
+    "subtitle": "Explorez les écoles selon leur approche pédagogique.",
+    "cards": {
+      "schoolsCount": "{count} écoles",
+      "browse": "Voir"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combiner programme et zone",
+        "body": "Le programme est important, mais le trajet quotidien est souvent décisif. Choisissez d’abord une zone, puis faites une présélection.",
+        "areasCta": "Voir les zones",
+        "directoryCta": "Ouvrir le répertoire"
+      },
+      "types": {
+        "title": "Parcourir par type d’école",
+        "body": "Les libellés de type peuvent aider si vous recherchez quelque chose de précis (internationale, bilingue, Montessori, etc.).",
+        "typesCta": "Types d’école",
+        "areasCta": "Zones"
+      },
+      "fees": {
+        "title": "Frais et budget",
+        "body": "Comparez les écoles selon le coût total de la première année. Les tranches de budget permettent de réduire rapidement votre présélection.",
+        "budgetCta": "Tranches de budget",
+        "feesCta": "Aperçu des frais"
+      }
+    },
+    "tip": "Astuce : vous pouvez combiner le programme avec les filtres de zone et de budget sur la page du répertoire."
   }
 }

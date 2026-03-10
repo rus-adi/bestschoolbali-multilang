@@ -453,5 +453,34 @@
         "cta": "Get free guidance"
       }
     }
+  },
+  "curriculumsPage": {
+    "title": "Planes de estudio",
+    "subtitle": "Explora colegios según su enfoque curricular.",
+    "cards": {
+      "schoolsCount": "{count} colegios",
+      "browse": "Ver"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combina currículo con zona",
+        "body": "El currículo es importante, pero el trayecto diario suele ser decisivo. Elige primero una zona y luego haz una lista corta.",
+        "areasCta": "Ver zonas",
+        "directoryCta": "Abrir directorio"
+      },
+      "types": {
+        "title": "Explorar por tipo de colegio",
+        "body": "Las etiquetas de tipo pueden ayudarte si buscas algo específico (internacional, bilingüe, Montessori, etc.).",
+        "typesCta": "Tipos de colegio",
+        "areasCta": "Zonas"
+      },
+      "fees": {
+        "title": "Cuotas y presupuesto",
+        "body": "Compara colegios por el coste total del primer año. Los rangos de presupuesto son una forma rápida de reducir tu lista corta.",
+        "budgetCta": "Rangos de presupuesto",
+        "feesCta": "Resumen de cuotas"
+      }
+    },
+    "tip": "Consejo: Puedes combinar currículo con filtros de zona y presupuesto en la página del directorio."
   }
 }

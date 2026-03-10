@@ -453,5 +453,34 @@
         "cta": "Get free guidance"
       }
     }
+  },
+  "curriculumsPage": {
+    "title": "课程体系",
+    "subtitle": "按课程体系方向浏览学校。",
+    "cards": {
+      "schoolsCount": "{count} 所学校",
+      "browse": "查看"
+    },
+    "sections": {
+      "combine": {
+        "title": "将课程体系与区域结合",
+        "body": "课程体系很重要，但日常通勤往往才是决定因素。先选区域，再做候选筛选。",
+        "areasCta": "查看区域",
+        "directoryCta": "打开目录"
+      },
+      "types": {
+        "title": "按学校类型浏览",
+        "body": "如果你在找特定方向（国际、双语、蒙特梭利等），学校类型标签会很有帮助。",
+        "typesCta": "学校类型",
+        "areasCta": "区域"
+      },
+      "fees": {
+        "title": "费用与预算",
+        "body": "请按首年总成本比较学校。预算区间是快速缩小候选名单的好方法。",
+        "budgetCta": "预算区间",
+        "feesCta": "费用总览"
+      }
+    },
+    "tip": "提示：你可以在目录页将课程体系与区域、预算筛选组合使用。"
   }
 }

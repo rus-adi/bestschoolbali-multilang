@@ -453,5 +453,34 @@
         "cta": "Get free guidance"
       }
     }
+  },
+  "curriculumsPage": {
+    "title": "Lehrpläne",
+    "subtitle": "Entdecken Sie Schulen nach Lehrplanansatz.",
+    "cards": {
+      "schoolsCount": "{count} Schulen",
+      "browse": "Ansehen"
+    },
+    "sections": {
+      "combine": {
+        "title": "Lehrplan mit Region kombinieren",
+        "body": "Der Lehrplan ist wichtig, aber der tägliche Fahrweg ist oft entscheidend. Wählen Sie zuerst eine Region und erstellen Sie dann eine Shortlist.",
+        "areasCta": "Regionen ansehen",
+        "directoryCta": "Verzeichnis öffnen"
+      },
+      "types": {
+        "title": "Nach Schultyp stöbern",
+        "body": "Typ-Bezeichnungen helfen, wenn Sie etwas Bestimmtes suchen (international, bilingual, Montessori usw.).",
+        "typesCta": "Schularten",
+        "areasCta": "Regionen"
+      },
+      "fees": {
+        "title": "Gebühren und Budget",
+        "body": "Vergleichen Sie Schulen anhand der gesamten Erstjahreskosten. Budgetspannen sind ein schneller Weg, Ihre Shortlist einzugrenzen.",
+        "budgetCta": "Budgetspannen",
+        "feesCta": "Gebührenübersicht"
+      }
+    },
+    "tip": "Tipp: Auf der Verzeichnisseite können Sie Lehrplan mit Regionen- und Budgetfiltern kombinieren."
   }
 }
