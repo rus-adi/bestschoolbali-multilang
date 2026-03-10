@@ -1,11 +1,15 @@
 import type { Metadata } from 'next';
 
 import { metadata as baseMetadata } from '../../guides/page';
-import GuidesHubContent from '../../../components/GuidesHubContent';
+import GuidesHubPageContent from '../../guides/GuidesHubPageContent';
 import { localizeMetadata } from '../../../lib/seo/i18n';
-import { isLocale, type Locale } from '../../../lib/i18n/locales';
+import { isLocale, LOCALES, type Locale } from '../../../lib/i18n/locales';
 
 export const dynamic = 'error';
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
@@ -20,5 +24,5 @@ export async function generateMetadata({
 }
 
 export default function LocalizedPage({ params }: { params: { locale: string } }) {
-  return <GuidesHubContent locale={params.locale} />;
+  return <GuidesHubPageContent locale={params.locale} />;
 }

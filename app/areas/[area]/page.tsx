@@ -10,6 +10,7 @@ import { slugify } from "../../../lib/slug";
 import { getAreaComparisonPairs } from "../../../lib/areaComparisons";
 import { topBudgetsFromSchools, topCurriculumTagsFromSchools, topTypesFromSchools } from "../../../lib/aggregate";
 import { createServerT } from "../../../lib/i18n/serverT";
+import { isLocale, localizeHref, type Locale } from "../../../lib/i18n/locales";
 
 export const dynamicParams = false;
 export const dynamic = "error";
@@ -47,6 +48,8 @@ function formatIdr(n: number) {
 
 export default async function AreaDetailPage({ params, locale = "en" }: { params: { area: string }; locale?: string }) {
   const t = await createServerT(locale);
+  const localeValue: Locale = isLocale(locale) ? locale : "en";
+  const href = (path: string) => localizeHref(path, localeValue);
   const areaName = resolveAreaSlug(params.area, locale);
   if (!areaName) return <div className="container"><T k="common.notFound" /></div>;
 
@@ -148,12 +151,16 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
     })),
   };
 
+  const schoolCountText = schools.length === 1
+    ? `${schools.length} ${t("typesDetail.hero.schoolSingular", "school")} ${t("typesDetail.hero.listed", "listed.")}`
+    : `${schools.length} ${t("typesDetail.hero.schoolPlural", "schools")} ${t("typesDetail.hero.listed", "listed.")}`;
+
   return (
     <div className="container">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
+        <a href={href("/")}>{t("nav.home", "Home")}</a>
         <span aria-hidden="true">/</span>
-        <a href="/areas">Areas</a>
+        <a href={href("/areas")}>{t("nav.areas", "Areas")}</a>
         <span aria-hidden="true">/</span>
         <span>{areaName}</span>
       </nav>
@@ -163,7 +170,7 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
           <div>
             <h1>Schools in {areaName}</h1>
             <p className="small" style={{ marginTop: 6 }}>
-              {schools.length} {schools.length === 1 ? "school" : "schools"} listed.
+              {schoolCountText}
               {minFee && maxFee ? ` Fee ranges here span roughly Rp ${formatIdr(minFee)}–Rp ${formatIdr(maxFee)} /year.` : ""}
             </p>
           </div>
@@ -187,7 +194,7 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
               </div>
               <div className="tagRow" style={{ marginTop: 8 }}>
                 {topCurriculums.map((t) => (
-                  <a key={t.slug} className="tag" href={`/curriculums/${t.slug}`}>
+                  <a key={t.slug} className="tag" href={href(`/curriculums/${t.slug}`)}>
                     {t.name} ({t.count})
                   </a>
                 ))}
@@ -202,7 +209,7 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
               </div>
               <div className="tagRow" style={{ marginTop: 8 }}>
                 {topTypes.map((t) => (
-                  <a key={t.slug} className="tag" href={`/types/${t.slug}`}>
+                  <a key={t.slug} className="tag" href={href(`/types/${t.slug}`)}>
                     {t.name} ({t.count})
                   </a>
                 ))}
@@ -217,7 +224,7 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
               </div>
               <div className="tagRow" style={{ marginTop: 8 }}>
                 {topBudgets.map((b) => (
-                  <a key={b.slug} className="tag" href={`/budget/${b.slug}`}>
+                  <a key={b.slug} className="tag" href={href(`/budget/${b.slug}`)}>
                     {b.name} ({b.count})
                   </a>
                 ))}
@@ -226,20 +233,20 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
           ) : null}
 
           <div className="inlineLinks" style={{ marginTop: 12 }}>
-            <a className="btn" href="/schools">
-              Open directory
+            <a className="btn" href={href("/schools")}>
+              {t("actions.openDirectory", "Open directory")}
             </a>
-            <a className="btn" href="/fees">
-              Fees overview
+            <a className="btn" href={href("/fees")}>
+              {t("search.feesOverview", "Fees overview")}
             </a>
-            <a className="btn" href="/compare">
-              Compare schools
+            <a className="btn" href={href("/compare")}>
+              {t("search.compareSchools", "Compare schools")}
             </a>
           </div>
         </div>
 
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Compare areas</h2>
+          <h2 style={{ marginTop: 0 }}>{t("school.compareAreas", "Compare areas")}</h2>
           <p className="small" style={{ marginTop: 0 }}>
             Families often cross-shop nearby areas. These pages compare practical trade-offs like commute and school mix.
           </p>
@@ -249,7 +256,7 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
               {comparePairs.map((p) => {
                 const other = p.a === areaName ? p.b : p.a;
                 return (
-                  <a key={p.slug} className="tag" href={`/compare/areas/${p.slug}`}>
+                  <a key={p.slug} className="tag" href={href(`/compare/areas/${p.slug}`)}>
                     {areaName} vs {other}
                   </a>
                 );
@@ -262,11 +269,11 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
           )}
 
           <div className="inlineLinks" style={{ marginTop: 12 }}>
-            <a className="btn" href="/compare/areas">
-              Browse comparisons
+            <a className="btn" href={href("/compare/areas")}>
+              {t("guidesPage.sections.compareAreas.areaComparisons", "Area comparisons")}
             </a>
-            <a className="btn" href="/contact">
-              Get guidance
+            <a className="btn" href={href("/contact")}>
+              {t("guidesPage.sections.contact.getGuidance", "Get guidance")}
             </a>
           </div>
         </div>
@@ -290,20 +297,20 @@ export default async function AreaDetailPage({ params, locale = "en" }: { params
       {guides.length ? (
         <div className="card" style={{ marginTop: 16 }}>
           <div className="sectionHead">
-            <h2 style={{ margin: 0 }}>Recommended guides</h2>
-            <a className="sectionLink" href="/posts">
-              View all guides
+            <h2 style={{ margin: 0 }}>{t("typesDetail.guides.title", "Recommended guides")}</h2>
+            <a className="sectionLink" href={href("/posts")}>
+              {t("typesDetail.guides.viewAll", "View all guides")}
             </a>
           </div>
           <div className="grid" style={{ marginTop: 14 }}>
             {guides.map((g) => (
               <div key={g.slug} className="card soft">
                 <h3 style={{ marginTop: 0 }}>
-                  <a href={`/posts/${g.slug}`}>{g.title}</a>
+                  <a href={href(`/posts/${g.slug}`)}>{g.title}</a>
                 </h3>
                 <div className="small">{g.excerpt}</div>
-                <a className="btn btnLink" href={`/posts/${g.slug}`}>
-                  Read <span aria-hidden="true">→</span>
+                <a className="btn btnLink" href={href(`/posts/${g.slug}`)}>
+                  {t("typesDetail.guides.read", "Read")} <span aria-hidden="true">→</span>
                 </a>
               </div>
             ))}

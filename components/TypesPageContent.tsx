@@ -146,11 +146,11 @@ export default function TypesPageContent({ types }: { types: TypeEntry[] }) {
         </div>
       </div>
 
-      <div className="card" style={{ marginTop: 16 }}>
+      <section style={{ marginTop: 16 }}>
         <h2 style={{ marginTop: 0 }}>{tr('typesPage.faq.title', 'FAQ')}</h2>
-        <div className="faqList">
+        <div className="grid" style={{ marginTop: 12 }}>
           {faqItems.map((f) => (
-            <details key={f.q} className="faqItem">
+            <details key={f.q} className="card faqItem">
               <summary>{f.q}</summary>
               <div className="faqAnswer">
                 <p style={{ marginTop: 0 }}>{f.a}</p>
@@ -158,7 +158,7 @@ export default function TypesPageContent({ types }: { types: TypeEntry[] }) {
             </details>
           ))}
         </div>
-      </div>
+      </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
