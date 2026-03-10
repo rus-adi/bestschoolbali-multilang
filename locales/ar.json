@@ -340,5 +340,118 @@
         "cta": "تصفح حسب العمر"
       }
     }
+  },
+  "typesPage": {
+    "title": "أنواع المدارس",
+    "subtitle": "تصفّح المدارس حسب النوع، ثم افتح الملفات للتأكد من المنهج، والأعمار، والرسوم.",
+    "cards": {
+      "schoolsCount": "{count} مدارس",
+      "browse": "تصفح"
+    },
+    "sections": {
+      "combine": {
+        "title": "ادمج النوع مع المنطقة",
+        "body": "يساعدك نوع المدرسة على تضييق الخيارات بسرعة، لكن زمن التنقّل غالبًا هو العامل الحاسم. اختر المنطقة أولًا ثم تحقّق من النوع.",
+        "areasCta": "تصفح المناطق",
+        "directoryCta": "فتح الدليل"
+      },
+      "fees": {
+        "title": "الرسوم والميزانية",
+        "body": "قارِن المدارس بناءً على التكلفة الإجمالية للسنة الأولى. نطاقات الميزانية هي أسرع طريقة للتصفية في البداية.",
+        "budgetCta": "نطاقات الميزانية",
+        "feesCta": "نظرة عامة على الرسوم"
+      }
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "q1": "ماذا يعني نوع المدرسة؟",
+      "a1": "تسميات النوع هي اختصار بسيط للتصفح. قد تستخدم المدارس مصطلحات مختلفة، لذلك تحقّق دائمًا من البرنامج الفعلي، ولغة التدريس، والفئات العمرية/الصفوف في ملف المدرسة.",
+      "q2": "هل «المدرسة الدولية» هي الخيار الأفضل دائمًا؟",
+      "a2": "ليس بالضرورة. كثير من العائلات تعطي الأولوية لوقت التنقّل، وملاءمة المجتمع، ومستوى الدعم. استخدم النوع كنقطة بداية ثم قارن حسب العمر، والمنهج، والتكلفة الإجمالية للسنة الأولى.",
+      "q3": "كيف نعد قائمة مختصرة بعد اختيار النوع؟",
+      "a3": "اختر المنطقة أولًا (المرور مهم)، ثم أكّد الأعمار/الصفوف والمنهج. أخيرًا قارن التكلفة الكاملة للسنة الأولى (الرسوم الدراسية + الرسوم لمرة واحدة + الإضافات المتكررة).",
+      "q4": "هل يمكنكم مساعدتنا في الاختيار؟",
+      "a4": "نعم. شاركنا المنطقة، وعمر الطفل، وبعض الأولويات (المنهج، الميزانية، دعم اللغة)، وسنقترح قائمة مختصرة وأسئلة دقيقة لإرسالها إلى القبول."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "ماذا يعني \"{typeName}\" في بالي؟",
+      "a1": "تسميات النوع هي اختصار للتصفح. قد تستخدم المدارس مصطلحات مختلفة، لذا أكّد المنهج ولغة التدريس وتغطية الصفوف مباشرة مع قسم القبول.",
+      "q2": "كيف نختصر خيارات {typeName}؟",
+      "a2": "ابدأ بالتنقّل/المنطقة، ثم أكّد الأعمار/الصفوف ومسار المنهج. بعد ذلك قارن إجمالي تكلفة السنة الأولى حتى تكون العروض قابلة للمقارنة.",
+      "q3": "هل نبدأ بالتصفح حسب النوع أم نستخدم فلاتر الدليل أولًا؟",
+      "a3": "استخدم النوع للتصفح السريع، ثم انتقل إلى الدليل إذا أردت التصفية بعدة معايير (المنطقة + المنهج + الميزانية).",
+      "q4": "هل يمكنكم مساعدتنا في الاختيار بين عدة مدارس؟",
+      "a4": "نعم. شاركنا المنطقة، وعمر الطفل، وبعض الأولويات، وسنساعدك في إعداد قائمة مختصرة وصياغة أسئلة القبول."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }

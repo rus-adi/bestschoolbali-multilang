@@ -340,5 +340,118 @@
         "cta": "年齢で探す"
       }
     }
+  },
+  "typesPage": {
+    "title": "学校タイプ",
+    "subtitle": "タイプ別に学校を探し、プロフィールを開いてカリキュラム、対象年齢、費用を確認してください。",
+    "cards": {
+      "schoolsCount": "{count} 校",
+      "browse": "見る"
+    },
+    "sections": {
+      "combine": {
+        "title": "タイプとエリアを組み合わせる",
+        "body": "学校タイプで素早く絞り込めますが、最終的には通学時間が決め手になることが多いです。まずエリアを選び、その後タイプを確認しましょう。",
+        "areasCta": "エリアを見る",
+        "directoryCta": "ディレクトリを開く"
+      },
+      "fees": {
+        "title": "費用と予算",
+        "body": "初年度の総費用で学校を比較しましょう。予算帯での絞り込みは、最初の候補整理に最も有効です。",
+        "budgetCta": "予算帯",
+        "feesCta": "費用の概要"
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "q1": "学校タイプとは何ですか？",
+      "a1": "タイプラベルは閲覧時の目安です。学校によって表現が異なる場合があるため、必ずプロフィールでプログラム内容、授業言語、対象年齢・学年を確認してください。",
+      "q2": "「インターナショナルスクール」は常に最適ですか？",
+      "a2": "必ずしもそうではありません。多くの家庭では通学のしやすさ、コミュニティとの相性、サポート体制を重視します。タイプは出発点として使い、その後に年齢帯、カリキュラム、初年度総費用で比較しましょう。",
+      "q3": "タイプを選んだ後、どう絞り込めばよいですか？",
+      "a3": "まずエリアを決め（渋滞は重要）、次に対象年齢・学年とカリキュラムを確認します。最後に初年度総費用（授業料＋一時金＋継続的な追加費用）を比較してください。",
+      "q4": "学校選びを手伝ってもらえますか？",
+      "a4": "はい。エリア、お子さまの年齢、優先事項（カリキュラム・予算・言語サポート）を共有いただければ、候補校と入学担当へ送る質問を提案します。"
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "バリで「{typeName}」とは何を意味しますか？",
+      "a1": "タイプラベルは閲覧時の目安です。学校ごとに表現が異なる場合があるため、カリキュラム、授業言語、学年範囲は入学担当に直接確認してください。",
+      "q2": "{typeName} の候補はどう絞り込めばよいですか？",
+      "a2": "まず通学ルート/エリアを確認し、次に対象年齢・学年とカリキュラムの進路を確認します。最後に初年度総費用を比較して、見積もり条件をそろえましょう。",
+      "q3": "タイプで探すのと、先にディレクトリのフィルターを使うのはどちらが良いですか？",
+      "a3": "まずタイプで素早く探し、その後複数条件（エリア＋カリキュラム＋予算）で絞りたい場合はディレクトリを使ってください。",
+      "q4": "いくつかの学校で迷っています。選定を手伝ってもらえますか？",
+      "a4": "はい。エリア、お子さまの年齢、優先事項を共有いただければ、候補の絞り込みと入学担当へ送る質問作成をお手伝いします。"
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }
