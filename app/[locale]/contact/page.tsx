@@ -18,6 +18,6 @@ export async function generateMetadata({
   });
 }
 
-export default function LocalizedPage() {
-  return <BasePage />;
+export default function LocalizedPage({ params }: { params: { locale: string } }) {
+  return <BasePage locale={params.locale} />;
 }

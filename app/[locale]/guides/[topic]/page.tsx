@@ -32,5 +32,5 @@ export default function LocalizedPage({
 }: {
   params: { locale: string; topic: string };
 }) {
-  return <BasePage params={{ topic: params.topic }} />;
+  return <BasePage params={{ topic: params.topic }} locale={params.locale} />;
 }
