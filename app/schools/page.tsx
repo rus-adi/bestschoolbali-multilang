@@ -4,6 +4,7 @@ import SchoolSearchClient from "../../components/SchoolSearchClient";
 import type { Metadata } from "next";
 import JsonLd from "../../components/JsonLd";
 import T from "../../components/T";
+import { isLocale, localizeHref, type Locale } from "../../lib/i18n/locales";
 
 export const dynamic = "error";
 
@@ -21,28 +22,43 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SchoolsPage() {
-  const schools = sortSchoolsForMarketplace(getAllSchools());
+export default function SchoolsPage({ locale = "en" }: { locale?: string }) {
+  const localeValue: Locale = isLocale(locale) ? locale : "en";
+  const href = (path: string) => localizeHref(path, localeValue);
+
+  const schools = sortSchoolsForMarketplace(getAllSchools(localeValue));
 
   // Avoid sending long profile markdown to the client.
   const schoolsLite = schools.map(({ profile_md, details, highlights, parent_perspectives, ...rest }) => rest);
 
   const faqItems = [
     {
-      q: "How do we shortlist schools in Bali?",
-      a: "Start with commute/area, then match age range and curriculum. After that, compare total first-year cost and ask about admissions steps and availability.",
+      qKey: "schoolsPage.faq.q1",
+      qDefault: "How do we shortlist schools in Bali?",
+      aKey: "schoolsPage.faq.a1",
+      aDefault:
+        "Start with commute/area, then match age range and curriculum. After that, compare total first-year cost and ask about admissions steps and availability.",
     },
     {
-      q: "Are the fees exact?",
-      a: "Fees are best-effort annual ranges. Schools can update fees at any time, so always request the latest fee sheet and confirm what’s included.",
+      qKey: "schoolsPage.faq.q2",
+      qDefault: "Are the fees exact?",
+      aKey: "schoolsPage.faq.a2",
+      aDefault:
+        "Fees are best-effort annual ranges. Schools can update fees at any time, so always request the latest fee sheet and confirm what’s included.",
     },
     {
-      q: "What should we ask during a school tour?",
-      a: "Ask about class sizes, language support, learning support options, start dates, and what fees include (registration, uniforms, transport, meals, exams).",
+      qKey: "schoolsPage.faq.q3",
+      qDefault: "What should we ask during a school tour?",
+      aKey: "schoolsPage.faq.a3",
+      aDefault:
+        "Ask about class sizes, language support, learning support options, start dates, and what fees include (registration, uniforms, transport, meals, exams).",
     },
     {
-      q: "Can you help us choose a shortlist?",
-      a: "Yes. Share your area, your child’s age, and a couple of preferences and we’ll suggest a shortlist plus a simple question list to send to admissions.",
+      qKey: "schoolsPage.faq.q4",
+      qDefault: "Can you help us choose a shortlist?",
+      aKey: "schoolsPage.faq.a4",
+      aDefault:
+        "Yes. Share your area, your child’s age, and a couple of preferences and we’ll suggest a shortlist plus a simple question list to send to admissions.",
     },
   ];
 
@@ -51,8 +67,8 @@ export default function SchoolsPage() {
     "@type": "FAQPage",
     mainEntity: faqItems.map((f) => ({
       "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      name: f.qDefault,
+      acceptedAnswer: { "@type": "Answer", text: f.aDefault },
     })),
   };
 
@@ -93,7 +109,7 @@ export default function SchoolsPage() {
           <p className="small" style={{ marginTop: 0 }}>
             <T k="schoolsPage.browseBudgetIntro" />
           </p>
-          <a className="btn btnLink" href="/budget">
+          <a className="btn btnLink" href={href('/budget')}>
             <T k="schoolsPage.viewBudgetBands" /> <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -102,7 +118,7 @@ export default function SchoolsPage() {
           <p className="small" style={{ marginTop: 0 }}>
             <T k="schoolsPage.browseAgeIntro" />
           </p>
-          <a className="btn btnLink" href="/ages">
+          <a className="btn btnLink" href={href('/ages')}>
             <T k="schoolsPage.browseByAge" /> <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -111,7 +127,7 @@ export default function SchoolsPage() {
           <p className="small" style={{ marginTop: 0 }}>
             <T k="schoolsPage.browseTypeIntro" />
           </p>
-          <a className="btn btnLink" href="/types">
+          <a className="btn btnLink" href={href('/types')}>
             <T k="schoolsPage.browseSchoolTypes" /> <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -120,7 +136,7 @@ export default function SchoolsPage() {
           <p className="small" style={{ marginTop: 0 }}>
             <T k="schoolsPage.compareToolIntro" />
           </p>
-          <a className="btn btnLink" href="/compare">
+          <a className="btn btnLink" href={href('/compare')}>
             <T k="schoolsPage.compareSchools" /> <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -130,10 +146,10 @@ export default function SchoolsPage() {
             <T k="schoolsPage.feesGuideIntro" />
           </p>
           <div className="inlineLinks">
-            <a className="btn" href="/fees">
+            <a className="btn" href={href('/fees')}>
               <T k="schoolsPage.feesOverview" />
             </a>
-            <a className="btn" href="/fees/estimate">
+            <a className="btn" href={href('/fees/estimate')}>
               <T k="schoolsPage.feeNotes" />
             </a>
           </div>
@@ -144,10 +160,10 @@ export default function SchoolsPage() {
         <h2 style={{ marginTop: 0 }}><T k="schoolsPage.faqHeading" /></h2>
         <div className="faqList">
           {faqItems.map((f) => (
-            <details key={f.q} className="faqItem">
-              <summary>{f.q}</summary>
+            <details key={f.qKey} className="faqItem">
+              <summary><T k={f.qKey} /></summary>
               <div className="faqAnswer">
-                <p style={{ marginTop: 0 }}>{f.a}</p>
+                <p style={{ marginTop: 0 }}><T k={f.aKey} /></p>
               </div>
             </details>
           ))}

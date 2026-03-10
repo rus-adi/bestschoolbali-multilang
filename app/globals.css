@@ -56,12 +56,15 @@ a:hover {
 
 /* Header */
 .siteHeader {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 1000;
   border-bottom: 1px solid var(--border);
   background: rgba(246, 251, 251, 0.82);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  transform: translateZ(0);
 }
 
 .headerInner {

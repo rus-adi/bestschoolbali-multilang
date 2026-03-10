@@ -150,7 +150,8 @@
     "sponsored": "Gesponsert",
     "all": "Alle",
     "draft": "Entwurf",
-    "notFound": "Nicht gefunden"
+    "notFound": "Nicht gefunden",
+    "vs": "vs."
   },
   "home": {
     "heroTitleLead": "Finde die",
@@ -257,7 +258,17 @@
     "feesOverview": "Gebührenübersicht",
     "feeNotes": "Gebührenhinweise",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Gebühren werden als bestmögliche Jahresbereiche angezeigt. Bitte bestätigen Sie diese direkt bei jeder Schule."
+    "feesDisclaimer": "Gebühren werden als bestmögliche Jahresbereiche angezeigt. Bitte bestätigen Sie diese direkt bei jeder Schule.",
+    "faq": {
+      "q1": "Wie erstellen wir eine Shortlist von Schulen auf Bali?",
+      "a1": "Starten Sie mit Fahrzeit/Region, prüfen Sie dann Altersstufe und Lehrplan. Vergleichen Sie anschließend die gesamten Erstjahreskosten und fragen Sie nach Aufnahmeprozess und Verfügbarkeit.",
+      "q2": "Sind die Gebühren exakt?",
+      "a2": "Gebühren sind bestmögliche Jahresbandbreiten. Schulen können Gebühren jederzeit anpassen, daher immer die aktuelle Gebührenliste anfordern und Leistungen prüfen.",
+      "q3": "Was sollten wir bei einer Schulbesichtigung fragen?",
+      "a3": "Fragen Sie nach Klassengrößen, Sprachförderung, Lernunterstützung, Startterminen und was in den Gebühren enthalten ist (Anmeldung, Uniformen, Transport, Mahlzeiten, Prüfungen).",
+      "q4": "Können Sie uns bei einer Shortlist helfen?",
+      "a4": "Ja. Teilen Sie Ihre Region, das Alter Ihres Kindes und ein paar Präferenzen, dann schlagen wir eine Shortlist und eine einfache Fragenliste für Admissions vor."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Elternnotiz",
@@ -340,5 +351,192 @@
         "cta": "Nach Alter durchsuchen"
       }
     }
+  },
+  "typesPage": {
+    "title": "Schularten",
+    "subtitle": "Durchsuchen Sie Schulen nach Typ und öffnen Sie anschließend Profile, um Curriculum, Altersstufen und Gebühren zu prüfen.",
+    "cards": {
+      "schoolsCount": "{count} Schulen",
+      "browse": "Ansehen"
+    },
+    "sections": {
+      "combine": {
+        "title": "Typ mit Region kombinieren",
+        "body": "Der Schultyp hilft beim schnellen Eingrenzen, aber der tägliche Fahrweg ist oft entscheidend. Wählen Sie zuerst eine Region und prüfen Sie dann den Typ.",
+        "areasCta": "Regionen ansehen",
+        "directoryCta": "Verzeichnis öffnen"
+      },
+      "fees": {
+        "title": "Gebühren & Budget",
+        "body": "Vergleichen Sie Schulen anhand der gesamten Erstjahreskosten. Budgetspannen sind der schnellste Filter für die erste Auswahl.",
+        "budgetCta": "Budgetspannen",
+        "feesCta": "Gebührenübersicht"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Was bedeutet ein Schultyp?",
+      "a1": "Typ-Bezeichnungen sind eine einfache Orientierung beim Browsen. Schulen verwenden teils andere Begriffe, daher sollten Sie im Profil immer Programm, Unterrichtssprache und Alters-/Klassenstufen prüfen.",
+      "q2": "Ist eine „internationale Schule“ immer die beste Wahl?",
+      "a2": "Nicht unbedingt. Für viele Familien sind Fahrzeit, passendes Umfeld und Unterstützung wichtiger. Nutzen Sie den Typ als Startpunkt und vergleichen Sie dann Altersstufen, Curriculum und Gesamtkosten im ersten Jahr.",
+      "q3": "Wie sollten wir Schulen nach der Typwahl eingrenzen?",
+      "a3": "Wählen Sie zuerst die Region (Verkehr ist wichtig), prüfen Sie dann Alters-/Klassenstufen und Curriculum. Vergleichen Sie am Ende die vollständigen Erstjahreskosten (Schulgeld + einmalige Gebühren + laufende Zusatzkosten).",
+      "q4": "Können Sie uns bei der Auswahl helfen?",
+      "a4": "Ja. Teilen Sie Region, Alter Ihres Kindes und ein paar Prioritäten (Curriculum, Budget, Sprachunterstützung), dann schlagen wir eine Shortlist und passende Fragen für die Admissions vor."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "Was bedeutet „{typeName}“ auf Bali?",
+      "a1": "Typ-Bezeichnungen sind eine Orientierung beim Browsen. Schulen verwenden teils unterschiedliche Begriffe, daher sollten Sie Curriculum, Unterrichtssprache und Klassenstufen direkt mit der Admissions-Abteilung bestätigen.",
+      "q2": "Wie erstellen wir eine Shortlist für {typeName}?",
+      "a2": "Starten Sie mit Fahrweg/Region, prüfen Sie dann Alters-/Klassenstufen und den Curriculum-Pfad. Vergleichen Sie zum Schluss die gesamten Kosten im ersten Jahr, damit Angebote wirklich vergleichbar sind.",
+      "q3": "Sollen wir zuerst nach Typ stöbern oder direkt Verzeichnisfilter nutzen?",
+      "a3": "Nutzen Sie Typ-Bezeichnungen für einen schnellen Überblick und wechseln Sie dann ins Verzeichnis, wenn Sie nach mehreren Kriterien filtern möchten (Region + Curriculum + Budget).",
+      "q4": "Können Sie uns bei der Wahl zwischen einigen Schulen helfen?",
+      "a4": "Ja. Teilen Sie Region, Alter Ihres Kindes und ein paar Prioritäten, dann helfen wir bei der Shortlist und formulieren die Fragen für die Admissions."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
+  },
+  "curriculumsPage": {
+    "title": "Lehrpläne",
+    "subtitle": "Entdecken Sie Schulen nach Lehrplanansatz.",
+    "cards": {
+      "schoolsCount": "{count} Schulen",
+      "browse": "Ansehen"
+    },
+    "sections": {
+      "combine": {
+        "title": "Lehrplan mit Region kombinieren",
+        "body": "Der Lehrplan ist wichtig, aber der tägliche Fahrweg ist oft entscheidend. Wählen Sie zuerst eine Region und erstellen Sie dann eine Shortlist.",
+        "areasCta": "Regionen ansehen",
+        "directoryCta": "Verzeichnis öffnen"
+      },
+      "types": {
+        "title": "Nach Schultyp stöbern",
+        "body": "Typ-Bezeichnungen helfen, wenn Sie etwas Bestimmtes suchen (international, bilingual, Montessori usw.).",
+        "typesCta": "Schularten",
+        "areasCta": "Regionen"
+      },
+      "fees": {
+        "title": "Gebühren und Budget",
+        "body": "Vergleichen Sie Schulen anhand der gesamten Erstjahreskosten. Budgetspannen sind ein schneller Weg, Ihre Shortlist einzugrenzen.",
+        "budgetCta": "Budgetspannen",
+        "feesCta": "Gebührenübersicht"
+      }
+    },
+    "tip": "Tipp: Auf der Verzeichnisseite können Sie Lehrplan mit Regionen- und Budgetfiltern kombinieren."
+  },
+  "feesPage": {
+    "title": "Schulgebühren auf Bali",
+    "subtitle": "Gebühren sind ständig in Bewegung. Dieses Verzeichnis zeigt bestmögliche Spannen als Startpunkt — die aktuelle Gebührenliste sollten Sie anschließend direkt mit Admissions bestätigen.",
+    "meaning": {
+      "title": "Was die Gebührenzahlen meist bedeuten",
+      "body": "Viele Schulen nennen Unterrichtsgebühren pro Jahr. Was Familien oft fehlt, ist die “Gesamtsumme im ersten Jahr” — Unterricht plus einmalige Anmeldung, Uniformen, Transport, Mahlzeiten, Prüfungen und Aktivitäten.",
+      "listedLabel": "Listed",
+      "listedBody": "öffentlich verfügbare Gebührenspanne (trotzdem immer den neuesten Stand bestätigen).",
+      "estimateLabel": "Estimate",
+      "estimateBody": "bestmögliche Spanne auf Basis verfügbarer Informationen; immer die aktuelle Gebührentabelle der Schule anfordern."
+    },
+    "coverage": {
+      "title": "Verzeichnisabdeckung",
+      "body": "Von {total} Schulen im Verzeichnis haben {listed} öffentlich gelistete Spannen und {estimate} sind bestmögliche Schätzungen.",
+      "seeFeeNotes": "Gebührenhinweise ansehen",
+      "browseByBudget": "Nach Budget durchsuchen",
+      "getFreeGuidance": "Kostenlose Beratung"
+    },
+    "budgetBand": {
+      "title": "Nach Budgetband durchsuchen",
+      "body": "Budgetbänder helfen beim schnellen Eingrenzen. Innerhalb jedes Bandes gibt es weiterhin Unterschiede nach Altersstufe und enthaltenen Leistungen.",
+      "labels": {
+        "budget": "Budget",
+        "mid-range": "Mittleres Segment",
+        "premium": "Premium",
+        "luxury": "Luxus"
+      }
+    },
+    "questions": {
+      "title": "Fragen an jede Schule",
+      "q1": "Wie hoch sind die gesamten Erstjahreskosten (Unterricht + einmalige Gebühren)?",
+      "q2": "Was ist enthalten (Uniformen, Mahlzeiten, Transport, Bücher, Prüfungen, Aktivitäten)?",
+      "q3": "Gibt es Rabatte (Geschwister, Einstieg unterjährig) oder Zahlungspläne?",
+      "q4": "Welche Erstattungen gelten, wenn sich Pläne ändern?",
+      "q5": "Gibt es zusätzliche Förderkosten (EAL/Lernunterstützung)?"
+    },
+    "shortlist": {
+      "title": "Lieber eine kurze Liste?",
+      "body": "Nennen Sie uns Ihre Region, das Alter Ihres Kindes und das gewünschte Curriculum. Wir helfen bei der Shortlist und bereiten ein einfaches Skript für Admissions-Anrufe vor.",
+      "browseAllSchools": "Alle Schulen ansehen",
+      "howWeLabelFees": "Wie wir Gebühren kennzeichnen",
+      "getFreeGuidance": "Kostenlose Beratung"
+    },
+    "disclaimer": "Hinweis: Gebührendaten ändern sich häufig. Bitte immer direkt bei der Schule bestätigen."
   }
 }
