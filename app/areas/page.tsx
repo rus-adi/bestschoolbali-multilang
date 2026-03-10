@@ -1,4 +1,5 @@
 import { getAllAreas } from "../../lib/taxonomy";
+import T from "../../components/T";
 import type { Metadata } from "next";
 
 export const dynamic = "error";
@@ -19,17 +20,17 @@ const AREA_THUMBS = new Set([
   "ubud",
 ]);
 
-export default function AreasPage() {
-  const areas = getAllAreas();
+export default function AreasPage({ locale = "en" }: { locale?: string }) {
+  const areas = getAllAreas(locale);
 
   return (
     <div className="container">
       <section className="hero">
         <div className="heroInner">
           <div>
-            <h1>Areas</h1>
+            <h1><T k="nav.areas" /></h1>
             <p className="small" style={{ marginTop: 6 }}>
-              Browse schools by area in Bali.
+              <T k="schoolsPage.heroSubtitle" />
             </p>
           </div>
           <div className="heroMedia" aria-hidden="true">
@@ -48,7 +49,7 @@ export default function AreasPage() {
               <img src={thumb} alt="" loading="lazy" />
               <div className="areaTileBody">
                 <div className="areaTileTitle">{a.name}</div>
-                <div className="areaTileMeta">{count} Schools</div>
+                <div className="areaTileMeta"><T k="home.schoolsCount" values={{ count }} /></div>
               </div>
             </a>
           );
@@ -57,41 +58,41 @@ export default function AreasPage() {
 
       <div className="grid" style={{ marginTop: 16 }}>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Filter by budget band</h2>
+          <h2 style={{ marginTop: 0 }}><T k="schoolsPage.browseBudgetHeading" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            After choosing an area, budget bands are the quickest way to narrow the shortlist.
+            <T k="schoolsPage.browseBudgetIntro" />
           </p>
           <a className="btn btnLink" href="/budget">
-            Browse budget bands <span aria-hidden="true">→</span>
+            <T k="schoolsPage.viewBudgetBands" /> <span aria-hidden="true">→</span>
           </a>
         </div>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Browse by school type</h2>
+          <h2 style={{ marginTop: 0 }}><T k="schoolsPage.browseTypeHeading" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            If you already know you want an international school or a Montessori approach, start with type.
+            <T k="schoolsPage.browseTypeIntro" />
           </p>
           <a className="btn btnLink" href="/types">
-            Browse types <span aria-hidden="true">→</span>
+            <T k="schoolsPage.browseSchoolTypes" /> <span aria-hidden="true">→</span>
           </a>
         </div>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Fees guide</h2>
+          <h2 style={{ marginTop: 0 }}><T k="schoolsPage.feesGuideHeading" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            Learn what’s usually included (and what’s not) so you can compare total cost fairly.
+            <T k="schoolsPage.feesGuideIntro" />
           </p>
           <div className="inlineLinks">
             <a className="btn" href="/fees">
-              Fees overview
+              <T k="schoolsPage.feesOverview" />
             </a>
             <a className="btn" href="/fees/estimate">
-              Fee notes
+              <T k="schoolsPage.feeNotes" />
             </a>
           </div>
         </div>
       </div>
 
       <p className="small" style={{ marginTop: 16 }}>
-        Tip: After choosing an area, you can narrow results further by curriculum and budget in the directory.
+        <T k="schoolsPage.feesDisclaimer" />
       </p>
     </div>
   );
