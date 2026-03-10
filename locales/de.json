@@ -493,5 +493,50 @@
       }
     },
     "tip": "Tipp: Auf der Verzeichnisseite können Sie Lehrplan mit Regionen- und Budgetfiltern kombinieren."
+  },
+  "feesPage": {
+    "title": "Schulgebühren auf Bali",
+    "subtitle": "Gebühren sind ständig in Bewegung. Dieses Verzeichnis zeigt bestmögliche Spannen als Startpunkt — die aktuelle Gebührenliste sollten Sie anschließend direkt mit Admissions bestätigen.",
+    "meaning": {
+      "title": "Was die Gebührenzahlen meist bedeuten",
+      "body": "Viele Schulen nennen Unterrichtsgebühren pro Jahr. Was Familien oft fehlt, ist die “Gesamtsumme im ersten Jahr” — Unterricht plus einmalige Anmeldung, Uniformen, Transport, Mahlzeiten, Prüfungen und Aktivitäten.",
+      "listedLabel": "Listed",
+      "listedBody": "öffentlich verfügbare Gebührenspanne (trotzdem immer den neuesten Stand bestätigen).",
+      "estimateLabel": "Estimate",
+      "estimateBody": "bestmögliche Spanne auf Basis verfügbarer Informationen; immer die aktuelle Gebührentabelle der Schule anfordern."
+    },
+    "coverage": {
+      "title": "Verzeichnisabdeckung",
+      "body": "Von {total} Schulen im Verzeichnis haben {listed} öffentlich gelistete Spannen und {estimate} sind bestmögliche Schätzungen.",
+      "seeFeeNotes": "Gebührenhinweise ansehen",
+      "browseByBudget": "Nach Budget durchsuchen",
+      "getFreeGuidance": "Kostenlose Beratung"
+    },
+    "budgetBand": {
+      "title": "Nach Budgetband durchsuchen",
+      "body": "Budgetbänder helfen beim schnellen Eingrenzen. Innerhalb jedes Bandes gibt es weiterhin Unterschiede nach Altersstufe und enthaltenen Leistungen.",
+      "labels": {
+        "budget": "Budget",
+        "mid-range": "Mittleres Segment",
+        "premium": "Premium",
+        "luxury": "Luxus"
+      }
+    },
+    "questions": {
+      "title": "Fragen an jede Schule",
+      "q1": "Wie hoch sind die gesamten Erstjahreskosten (Unterricht + einmalige Gebühren)?",
+      "q2": "Was ist enthalten (Uniformen, Mahlzeiten, Transport, Bücher, Prüfungen, Aktivitäten)?",
+      "q3": "Gibt es Rabatte (Geschwister, Einstieg unterjährig) oder Zahlungspläne?",
+      "q4": "Welche Erstattungen gelten, wenn sich Pläne ändern?",
+      "q5": "Gibt es zusätzliche Förderkosten (EAL/Lernunterstützung)?"
+    },
+    "shortlist": {
+      "title": "Lieber eine kurze Liste?",
+      "body": "Nennen Sie uns Ihre Region, das Alter Ihres Kindes und das gewünschte Curriculum. Wir helfen bei der Shortlist und bereiten ein einfaches Skript für Admissions-Anrufe vor.",
+      "browseAllSchools": "Alle Schulen ansehen",
+      "howWeLabelFees": "Wie wir Gebühren kennzeichnen",
+      "getFreeGuidance": "Kostenlose Beratung"
+    },
+    "disclaimer": "Hinweis: Gebührendaten ändern sich häufig. Bitte immer direkt bei der Schule bestätigen."
   }
 }

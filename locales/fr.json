@@ -493,5 +493,50 @@
       }
     },
     "tip": "Astuce : vous pouvez combiner le programme avec les filtres de zone et de budget sur la page du répertoire."
+  },
+  "feesPage": {
+    "title": "Frais scolaires à Bali",
+    "subtitle": "Les frais évoluent constamment. Cet annuaire affiche des fourchettes indicatives comme point de départ — puis confirmez la grille la plus récente directement avec les admissions.",
+    "meaning": {
+      "title": "Ce que signifient généralement les montants",
+      "body": "De nombreuses écoles indiquent des frais de scolarité annuels. Ce que les familles oublient souvent, c’est le “total première année” — scolarité + inscription ponctuelle, uniformes, transport, repas, examens et activités.",
+      "listedLabel": "Publié",
+      "listedBody": "fourchette de frais disponible publiquement (à confirmer malgré tout).",
+      "estimateLabel": "Estimation",
+      "estimateBody": "fourchette indicative basée sur les informations disponibles ; demandez toujours la grille actuelle de l’école."
+    },
+    "coverage": {
+      "title": "Couverture de l’annuaire",
+      "body": "Sur {total} écoles dans l’annuaire, {listed} ont des fourchettes publiées et {estimate} sont des estimations indicatives.",
+      "seeFeeNotes": "Voir les notes de frais",
+      "browseByBudget": "Parcourir par budget",
+      "getFreeGuidance": "Obtenir un conseil gratuit"
+    },
+    "budgetBand": {
+      "title": "Parcourir par tranche de budget",
+      "body": "Les tranches de budget permettent de filtrer rapidement. Dans chaque tranche, il existe encore des différences selon l’âge et ce qui est inclus.",
+      "labels": {
+        "budget": "Économique",
+        "mid-range": "Moyen",
+        "premium": "Premium",
+        "luxury": "Luxe"
+      }
+    },
+    "questions": {
+      "title": "Questions à poser à chaque école",
+      "q1": "Quel est le coût total de la première année (scolarité + frais ponctuels) ?",
+      "q2": "Qu’est-ce qui est inclus (uniformes, repas, transport, livres, examens, activités) ?",
+      "q3": "Y a-t-il des réductions (fratrie, entrée en cours d’année) ou des plans de paiement ?",
+      "q4": "Quels remboursements s’appliquent si les plans changent ?",
+      "q5": "Y a-t-il des frais supplémentaires de soutien (EAL/soutien pédagogique) ?"
+    },
+    "shortlist": {
+      "title": "Besoin d’une shortlist ?",
+      "body": "Indiquez votre zone, l’âge de votre enfant et le curriculum souhaité. Nous vous aidons à établir une shortlist et un script simple pour les appels d’admission.",
+      "browseAllSchools": "Voir toutes les écoles",
+      "howWeLabelFees": "Comment nous étiquetons les frais",
+      "getFreeGuidance": "Obtenir un conseil gratuit"
+    },
+    "disclaimer": "Avertissement : les données de frais changent fréquemment. Vérifiez toujours directement auprès de l’école."
   }
 }

@@ -464,5 +464,50 @@
         "cta": "Gratis advies"
       }
     }
+  },
+  "feesPage": {
+    "title": "Schoolkosten op Bali",
+    "subtitle": "Kosten veranderen voortdurend. Deze directory toont best-effort bandbreedtes als startpunt — bevestig daarna altijd de meest recente kostenlijst direct bij toelating.",
+    "meaning": {
+      "title": "Wat de kosten meestal betekenen",
+      "body": "Veel scholen noemen collegegeld per jaar. Wat gezinnen vaak missen is het “totaal van het eerste jaar” — collegegeld plus eenmalige inschrijving, uniformen, vervoer, maaltijden, examens en activiteiten.",
+      "listedLabel": "Vermeld",
+      "listedBody": "een openbaar beschikbare kostenrange (controleer alsnog de laatste stand).",
+      "estimateLabel": "Schatting",
+      "estimateBody": "best-effort range op basis van beschikbare info; vraag altijd de actuele kostentabel van de school op."
+    },
+    "coverage": {
+      "title": "Dekkingsgraad van de directory",
+      "body": "Van de {total} scholen in de directory hebben {listed} openbaar vermelde ranges en {estimate} best-effort schattingen.",
+      "seeFeeNotes": "Bekijk kostennotities",
+      "browseByBudget": "Bladeren op budget",
+      "getFreeGuidance": "Gratis advies"
+    },
+    "budgetBand": {
+      "title": "Bladeren op budgetklasse",
+      "body": "Budgetklassen helpen je snel te filteren. Binnen elke klasse zie je nog verschillen per leeftijdsniveau en wat is inbegrepen.",
+      "labels": {
+        "budget": "Budget",
+        "mid-range": "Middenklasse",
+        "premium": "Premium",
+        "luxury": "Luxe"
+      }
+    },
+    "questions": {
+      "title": "Vragen voor elke school",
+      "q1": "Wat zijn de totale kosten van het eerste jaar (collegegeld + eenmalige kosten)?",
+      "q2": "Wat is inbegrepen (uniformen, maaltijden, vervoer, boeken, examens, activiteiten)?",
+      "q3": "Zijn er kortingen (broers/zussen, instroom halverwege het jaar) of betalingsplannen?",
+      "q4": "Welke terugbetalingen gelden als plannen veranderen?",
+      "q5": "Zijn er extra ondersteuningskosten (EAL/leerondersteuning)?"
+    },
+    "shortlist": {
+      "title": "Liever een korte lijst?",
+      "body": "Vertel ons je regio, de leeftijd van je kind en het gewenste curriculum. We helpen je met een shortlist en een simpel script voor toelatingsgesprekken.",
+      "browseAllSchools": "Bekijk alle scholen",
+      "howWeLabelFees": "Hoe wij kosten labelen",
+      "getFreeGuidance": "Gratis advies"
+    },
+    "disclaimer": "Disclaimer: kostengegevens veranderen regelmatig. Controleer altijd rechtstreeks bij de school."
   }
 }

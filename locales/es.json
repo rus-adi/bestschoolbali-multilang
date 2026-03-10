@@ -493,5 +493,50 @@
       }
     },
     "tip": "Consejo: Puedes combinar currículo con filtros de zona y presupuesto en la página del directorio."
+  },
+  "feesPage": {
+    "title": "Cuotas escolares en Bali",
+    "subtitle": "Las cuotas cambian constantemente. Este directorio muestra rangos orientativos como punto de partida; después confirma la tabla más reciente directamente con admisiones.",
+    "meaning": {
+      "title": "Qué suelen significar las cifras de cuotas",
+      "body": "Muchos colegios citan la matrícula por año. Lo que muchas familias pasan por alto es el “total del primer año”: matrícula más inscripción única, uniformes, transporte, comidas, exámenes y actividades.",
+      "listedLabel": "Publicado",
+      "listedBody": "rango de cuotas disponible públicamente (aun así confirma el más reciente).",
+      "estimateLabel": "Estimación",
+      "estimateBody": "rango orientativo basado en la información disponible; solicita siempre la tabla actual del colegio."
+    },
+    "coverage": {
+      "title": "Cobertura del directorio",
+      "body": "De {total} colegios en el directorio, {listed} tienen rangos públicos y {estimate} son estimaciones orientativas.",
+      "seeFeeNotes": "Ver notas de cuotas",
+      "browseByBudget": "Explorar por presupuesto",
+      "getFreeGuidance": "Asesoría gratuita"
+    },
+    "budgetBand": {
+      "title": "Explorar por rango de presupuesto",
+      "body": "Los rangos de presupuesto te ayudan a filtrar rápido. Dentro de cada rango aún habrá diferencias por edad y por lo que incluye.",
+      "labels": {
+        "budget": "Económico",
+        "mid-range": "Intermedio",
+        "premium": "Premium",
+        "luxury": "Lujo"
+      }
+    },
+    "questions": {
+      "title": "Preguntas para cada colegio",
+      "q1": "¿Cuál es el coste total del primer año (matrícula + cuotas únicas)?",
+      "q2": "¿Qué incluye (uniformes, comidas, transporte, libros, exámenes, actividades)?",
+      "q3": "¿Hay descuentos (hermanos, ingreso a mitad de año) o planes de pago?",
+      "q4": "¿Qué reembolsos aplican si cambian los planes?",
+      "q5": "¿Hay cuotas adicionales de apoyo (EAL/apoyo de aprendizaje)?"
+    },
+    "shortlist": {
+      "title": "¿Prefieres una lista corta?",
+      "body": "Cuéntanos tu zona, la edad de tu hijo/a y el currículo que buscas. Te ayudamos con una lista corta y un guion simple para llamadas de admisión.",
+      "browseAllSchools": "Ver todos los colegios",
+      "howWeLabelFees": "Cómo etiquetamos las cuotas",
+      "getFreeGuidance": "Asesoría gratuita"
+    },
+    "disclaimer": "Aviso: los datos de cuotas cambian con frecuencia. Confirma siempre directamente con el colegio."
   }
 }
