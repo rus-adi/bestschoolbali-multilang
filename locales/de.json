@@ -340,5 +340,118 @@
         "cta": "Nach Alter durchsuchen"
       }
     }
+  },
+  "typesPage": {
+    "title": "School types",
+    "subtitle": "Browse schools by type, then open profiles to confirm curriculum, ages, and fees.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combine type with area",
+        "body": "Type helps you narrow quickly, but commute is often the deciding factor. Pick an area first, then check type.",
+        "areasCta": "Browse areas",
+        "directoryCta": "Open directory"
+      },
+      "fees": {
+        "title": "Fees & budget",
+        "body": "Compare schools using total first‑year cost. Budget bands are the fastest way to filter early.",
+        "budgetCta": "Budget bands",
+        "feesCta": "Fees overview"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What does a school type mean?",
+      "a1": "Type labels are a simple browsing shortcut. Schools sometimes use different wording, so always open a profile and confirm the exact program, language of instruction, and age/grade coverage.",
+      "q2": "Is ‘international school’ always the best option?",
+      "a2": "Not necessarily. Many families prioritize commute, community fit, and support. Use type as a starting point, then shortlist based on age range, curriculum pathway, and total first‑year cost.",
+      "q3": "How should we shortlist schools after choosing a type?",
+      "a3": "Pick your area first (traffic matters), then confirm ages/grade levels and curriculum. Finally, compare fees by asking for the full first‑year total (tuition + one‑time fees + recurring extras).",
+      "q4": "Can you help us choose?",
+      "a4": "Yes. If you share your area, child’s age, and a couple of priorities (curriculum, budget, language support), we’ll suggest a shortlist and the exact questions to send to admissions."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Preschool",
+      "international-school": "International school",
+      "learning-centre": "Learning centre",
+      "early-years": "Early years",
+      "montessori-school": "Montessori school",
+      "childcare": "Childcare",
+      "academy": "Academy",
+      "homeschool-program": "Homeschool program",
+      "waldorf-school": "Waldorf school"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName} schools in Bali",
+      "description": "Browse {typeName} options in Bali. Compare areas, ages, curriculum tags, and fee ranges, then open school profiles for admissions notes."
+    },
+    "hero": {
+      "title": "{typeName} schools in Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "schools",
+      "listed": "listed.",
+      "feeRange": "Typical annual ranges span roughly Rp {minFee}–Rp {maxFee}.",
+      "ageRange": "Ages span about {minAge}–{maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Where you’ll find these schools",
+        "empty": "Area tags aren’t available for these listings."
+      },
+      "curriculums": {
+        "title": "Common curriculum tags",
+        "empty": "Curriculum tags aren’t listed for these schools."
+      },
+      "budgets": {
+        "title": "Budget bands",
+        "empty": "Budget bands aren’t available for these listings.",
+        "browse": "Browse budget",
+        "feesOverview": "Fees overview"
+      },
+      "nextSteps": {
+        "title": "Next steps",
+        "body": "Once you’ve shortlisted by commute and age range, open 3–5 profiles and compare the full first-year cost.",
+        "openDirectory": "Open directory",
+        "compareSchools": "Compare schools",
+        "freeGuidance": "Get free guidance"
+      }
+    },
+    "card": {
+      "ages": "Ages {min}–{max}"
+    },
+    "guides": {
+      "title": "Recommended guides",
+      "viewAll": "View all guides",
+      "read": "Read"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "What does \"{typeName}\" mean in Bali?",
+      "a1": "Type labels are a browsing shortcut. Schools sometimes use different wording, so confirm the curriculum, language of instruction, and grade coverage directly with admissions.",
+      "q2": "How do we shortlist {typeName} options?",
+      "a2": "Start with commute/area, then confirm ages/grades and curriculum pathway. Finally compare total first-year cost so quotes are apples-to-apples.",
+      "q3": "Should we browse by type or use the directory filters first?",
+      "a3": "Use type labels for quick browsing, then switch to the directory if you want to filter by multiple criteria (area + curriculum + budget).",
+      "q4": "Can you help us choose between a few schools?",
+      "a4": "Yes. Share your area, child’s age, and a couple of priorities and we’ll help you shortlist and draft the admissions questions to send."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Want to filter further?",
+        "body": "Use the directory to combine area + curriculum + budget filters.",
+        "openDirectory": "Open directory"
+      },
+      "shortlist": {
+        "title": "Need a shortlist?",
+        "body": "Tell us your child’s age, your area, and a rough budget. We’ll suggest a shortlist and a question list for tours.",
+        "cta": "Get free guidance"
+      }
+    }
   }
 }
