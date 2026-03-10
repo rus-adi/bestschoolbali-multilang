@@ -1,4 +1,4 @@
-import { getAllPosts, getGuideCategories } from "../lib/posts";
+import { getAllPosts, getGuideCategories, hasPostTranslation } from "../lib/posts";
 import type { Locale } from "../lib/i18n/locales";
 import { localizeHref } from "../lib/i18n/locales";
 import T from "./T";
@@ -8,8 +8,18 @@ function href(pathname: string, locale?: Locale) {
 }
 
 export default function PostsIndexView({ locale }: { locale?: Locale }) {
-  const posts = getAllPosts(locale);
-  const categories = getGuideCategories(locale);
+  const allPosts = getAllPosts(locale);
+  const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
+
+  const categoryCounts = new Map<string, number>();
+  for (const p of posts) {
+    const c = (p.category ?? "").trim();
+    if (!c) continue;
+    categoryCounts.set(c, (categoryCounts.get(c) ?? 0) + 1);
+  }
+  const categories = Array.from(categoryCounts.entries())
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
   const groups = new Map<string, typeof posts>();
   for (const p of posts) {
