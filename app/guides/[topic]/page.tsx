@@ -9,11 +9,15 @@ const SITE_URL = "https://bestschoolbali.com";
 export const dynamicParams = false;
 export const dynamic = "error";
 
+type GuideTopicPageProps = {
+  params: { topic: string };
+};
+
 export function generateStaticParams(): { topic: string }[] {
   return GUIDE_TOPICS.map((t) => ({ topic: t.slug }));
 }
 
-export function generateMetadata({ params }: { params: { topic: string } }): Metadata {
+export function generateMetadata({ params }: GuideTopicPageProps): Metadata {
   const slug = slugify(params.topic);
   const topic = getGuideTopic(slug);
   const title = topic ? `${topic.name} — Guides` : "Guides";
@@ -27,7 +31,7 @@ export function generateMetadata({ params }: { params: { topic: string } }): Met
   };
 }
 
-export default function GuideTopicPage({ params, locale = "en" }: { params: { topic: string }; locale?: string }) {
+export default function GuideTopicPage({ params }: GuideTopicPageProps) {
   const slug = slugify(params.topic);
   const topic = getGuideTopic(slug);
   const posts = getPostsForTopic(slug);
