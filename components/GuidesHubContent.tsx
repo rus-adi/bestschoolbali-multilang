@@ -1,8 +1,12 @@
 import { getAllPosts, hasPostTranslation } from "../lib/posts";
 import { getGuideTopicsWithCounts } from "../lib/guideTopics";
 import T from "./T";
+import { isLocale, localizeHref, type Locale } from "../lib/i18n/locales";
 
 export default function GuidesHubContent({ locale = "en" }: { locale?: string }) {
+  const localeValue: Locale = isLocale(locale) ? locale : "en";
+  const href = (path: string) => localizeHref(path, localeValue);
+
   const topics = getGuideTopicsWithCounts(locale);
   const allPosts = getAllPosts(locale);
   const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
@@ -16,11 +20,11 @@ export default function GuidesHubContent({ locale = "en" }: { locale?: string })
         </p>
 
         <div className="inlineLinks" style={{ marginTop: 12 }}>
-          <a className="btn" href="/schools"><T k="guides.browseSchools" /></a>
-          <a className="btn" href="/areas"><T k="guides.browseAreas" /></a>
-          <a className="btn" href="/curriculums"><T k="guides.browseCurriculums" /></a>
-          <a className="btn" href="/fees"><T k="guides.feesOverview" /></a>
-          <a className="btn btnPrimary" href="/contact"><T k="guides.getGuidance" /></a>
+          <a className="btn" href={href('/schools')}><T k="guides.browseSchools" /></a>
+          <a className="btn" href={href('/areas')}><T k="guides.browseAreas" /></a>
+          <a className="btn" href={href('/curriculums')}><T k="guides.browseCurriculums" /></a>
+          <a className="btn" href={href('/fees')}><T k="guides.feesOverview" /></a>
+          <a className="btn btnPrimary" href={href('/contact')}><T k="guides.getGuidance" /></a>
         </div>
       </div>
 
@@ -30,7 +34,7 @@ export default function GuidesHubContent({ locale = "en" }: { locale?: string })
           <p className="small" style={{ marginTop: 0 }}><T k="posts.directoryShortcutsBody" /></p>
           <div className="grid" style={{ marginTop: 12 }}>
             {topics.map((t) => (
-              <a key={t.slug} className="card" href={`/guides/${t.slug}`}>
+              <a key={t.slug} className="card" href={href(`/guides/${t.slug}`)}>
                 <div style={{ fontWeight: 800 }}>{t.name}</div>
                 <div className="small" style={{ marginTop: 6 }}>{t.description}</div>
                 <div className="small" style={{ marginTop: 10 }}>
@@ -46,7 +50,7 @@ export default function GuidesHubContent({ locale = "en" }: { locale?: string })
           <p className="small" style={{ marginTop: 0 }}><T k="posts.suggestedProfilesBody" /></p>
           <div className="grid" style={{ marginTop: 12 }}>
             {posts.slice(0, 8).map((p) => (
-              <a key={p.slug} className="card" href={`/posts/${p.slug}`}>
+              <a key={p.slug} className="card" href={href(`/posts/${p.slug}`)}>
                 <div style={{ fontWeight: 800 }}>{p.title}</div>
                 <div className="small" style={{ marginTop: 6 }}>{p.excerpt}</div>
                 <div className="small" style={{ marginTop: 10 }}>
@@ -57,7 +61,7 @@ export default function GuidesHubContent({ locale = "en" }: { locale?: string })
             ))}
           </div>
           <div className="inlineLinks" style={{ marginTop: 12 }}>
-            <a className="btn" href="/posts"><T k="guides.viewAllPosts" /></a>
+            <a className="btn" href={href('/posts')}><T k="guides.viewAllPosts" /></a>
           </div>
         </section>
       </div>

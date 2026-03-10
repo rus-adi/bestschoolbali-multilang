@@ -150,7 +150,8 @@
     "sponsored": "Sponsored",
     "all": "All",
     "draft": "Draft",
-    "notFound": "Not found"
+    "notFound": "Not found",
+    "vs": "vs"
   },
   "home": {
     "heroTitleLead": "Find the",
@@ -257,7 +258,17 @@
     "feesOverview": "Fees overview",
     "feeNotes": "Fee notes",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Fees are shown as best-effort annual ranges. Please confirm directly with each school."
+    "feesDisclaimer": "Fees are shown as best-effort annual ranges. Please confirm directly with each school.",
+    "faq": {
+      "q1": "How do we shortlist schools in Bali?",
+      "a1": "Start with commute/area, then match age range and curriculum. After that, compare total first-year cost and ask about admissions steps and availability.",
+      "q2": "Are the fees exact?",
+      "a2": "Fees are best-effort annual ranges. Schools can update fees at any time, so always request the latest fee sheet and confirm what’s included.",
+      "q3": "What should we ask during a school tour?",
+      "a3": "Ask about class sizes, language support, learning support options, start dates, and what fees include (registration, uniforms, transport, meals, exams).",
+      "q4": "Can you help us choose a shortlist?",
+      "a4": "Yes. Share your area, your child’s age, and a couple of preferences and we’ll suggest a shortlist plus a simple question list to send to admissions."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Parent note",
@@ -513,5 +524,79 @@
       "q4": "Can you help us shortlist?",
       "a4": "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions."
     }
+  },
+  "curriculumsPage": {
+    "title": "Curriculums",
+    "subtitle": "Explore schools by curriculum approach.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combine curriculum with area",
+        "body": "Curriculum is important, but daily commute is often the deciding factor. Pick an area first, then shortlist.",
+        "areasCta": "Browse areas",
+        "directoryCta": "Open directory"
+      },
+      "types": {
+        "title": "Browse by school type",
+        "body": "Type labels can help if you’re looking for something specific (international, bilingual, Montessori, etc.).",
+        "typesCta": "School types",
+        "areasCta": "Areas"
+      },
+      "fees": {
+        "title": "Fees and budget",
+        "body": "Compare schools using total first-year cost. Budget bands are a quick way to narrow your shortlist.",
+        "budgetCta": "Budget bands",
+        "feesCta": "Fees overview"
+      }
+    },
+    "tip": "Tip: You can combine curriculum with area and budget filters on the directory page."
+  },
+  "feesPage": {
+    "title": "School fees in Bali",
+    "subtitle": "Fees are a moving target. This directory shows best-effort ranges as a starting point — then you confirm the latest fee sheet directly with admissions.",
+    "meaning": {
+      "title": "What the fee numbers usually mean",
+      "body": "Many schools quote tuition per year. The part families miss is the “first-year total” — tuition plus one‑time registration, uniforms, transport, meals, exams, and activities.",
+      "listedLabel": "Listed",
+      "listedBody": "a fee range publicly available (still confirm the latest).",
+      "estimateLabel": "Estimate",
+      "estimateBody": "best-effort range based on available info; always request the school’s current fee table."
+    },
+    "coverage": {
+      "title": "Directory coverage",
+      "body": "Out of {total} schools in the directory, {listed} have publicly listed ranges and {estimate} are best-effort estimates.",
+      "seeFeeNotes": "See fee notes",
+      "browseByBudget": "Browse by budget",
+      "getFreeGuidance": "Get free guidance"
+    },
+    "budgetBand": {
+      "title": "Browse by budget band",
+      "body": "Budget bands help you narrow quickly. Within any band, you’ll still see differences by age level and what’s included.",
+      "labels": {
+        "budget": "Budget",
+        "mid-range": "Mid-range",
+        "premium": "Premium",
+        "luxury": "Luxury"
+      }
+    },
+    "questions": {
+      "title": "Questions to ask every school",
+      "q1": "What is the total first-year cost (tuition + one-time fees)?",
+      "q2": "What is included (uniforms, meals, transport, books, exams, activities)?",
+      "q3": "Are there discounts (siblings, mid-year entry) or payment plans?",
+      "q4": "What refunds apply if plans change?",
+      "q5": "Are there additional support fees (EAL/learning support)?"
+    },
+    "shortlist": {
+      "title": "Prefer a short list?",
+      "body": "Tell us your area, your child’s age, and the curriculum you want. We’ll help you shortlist and prepare a simple script for admissions calls.",
+      "browseAllSchools": "Browse all schools",
+      "howWeLabelFees": "How we label fees",
+      "getFreeGuidance": "Get free guidance"
+    },
+    "disclaimer": "Disclaimer: fee data changes frequently. Always confirm directly with the school."
   }
 }
