@@ -26,6 +26,18 @@ function SiteChromeInner({ children }: { children: React.ReactNode }) {
     { key: 'nav.contact', href: '/contact' },
   ] as const;
   const ctaLabel = t('nav.cta');
+  const [showBackToTop, setShowBackToTop] = React.useState(false);
+
+  React.useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 360);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const footerLinks = [
     ['footer.schools', '/schools'],
@@ -78,6 +90,18 @@ function SiteChromeInner({ children }: { children: React.ReactNode }) {
       </header>
 
       <main>{children}</main>
+
+
+
+      <button
+        type="button"
+        className={`backToTopBtn${showBackToTop ? ' isVisible' : ''}`}
+        onClick={handleBackToTop}
+        aria-label="Back to top"
+        title="Back to top"
+      >
+        ↑
+      </button>
 
       <footer className="siteFooter">
         <div className="container footerInner">
