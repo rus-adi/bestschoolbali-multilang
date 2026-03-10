@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
-import BasePage, { metadata as baseMetadata } from '../../guides/page';
+import { metadata as baseMetadata } from '../../guides/page';
+import GuidesHubContent from '../../../components/GuidesHubContent';
 import { localizeMetadata } from '../../../lib/seo/i18n';
 import { isLocale, type Locale } from '../../../lib/i18n/locales';
 
@@ -19,5 +20,5 @@ export async function generateMetadata({
 }
 
 export default function LocalizedPage({ params }: { params: { locale: string } }) {
-  return <BasePage locale={params.locale} />;
+  return <GuidesHubContent locale={params.locale} />;
 }

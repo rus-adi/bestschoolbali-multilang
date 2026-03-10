@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { GUIDE_TOPICS, getGuideTopic, getPostsForTopic } from "../../../lib/guideTopics";
-import { hasPostTranslation } from "../../../lib/posts";
 import T from "../../../components/T";
 import { slugify } from "../../../lib/slug";
 import JsonLd from "../../../components/JsonLd";
@@ -31,8 +30,7 @@ export function generateMetadata({ params }: { params: { topic: string } }): Met
 export default function GuideTopicPage({ params, locale = "en" }: { params: { topic: string }; locale?: string }) {
   const slug = slugify(params.topic);
   const topic = getGuideTopic(slug);
-  const allPosts = getPostsForTopic(slug, locale);
-  const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
+  const posts = getPostsForTopic(slug);
 
   const breadcrumb = {
     "@context": "https://schema.org",
