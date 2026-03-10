@@ -340,5 +340,118 @@
         "cta": "Bladeren op leeftijd"
       }
     }
+  },
+  "typesPage": {
+    "title": "Schooltypen",
+    "subtitle": "Blader scholen per type en open daarna profielen om curriculum, leeftijden en kosten te bevestigen.",
+    "cards": {
+      "schoolsCount": "{count} scholen",
+      "browse": "Bekijken"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combineer type met regio",
+        "body": "Type helpt je snel te filteren, maar reistijd is vaak doorslaggevend. Kies eerst een regio en kijk daarna naar het type.",
+        "areasCta": "Bekijk regio’s",
+        "directoryCta": "Open overzicht"
+      },
+      "fees": {
+        "title": "Kosten & budget",
+        "body": "Vergelijk scholen op totale kosten in het eerste jaar. Budgetklassen zijn de snelste manier om vroeg te filteren.",
+        "budgetCta": "Budgetklassen",
+        "feesCta": "Kostenoverzicht"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Wat betekent een schooltype?",
+      "a1": "Typelabels zijn een snelle manier om te oriënteren. Scholen gebruiken soms andere termen, dus controleer in het profiel altijd het exacte programma, de onderwijstaal en de leeftijds-/klasdekking.",
+      "q2": "Is een “internationale school” altijd de beste keuze?",
+      "a2": "Niet per se. Veel gezinnen geven prioriteit aan reistijd, aansluiting bij de gemeenschap en ondersteuning. Gebruik type als startpunt en selecteer daarna op leeftijdsgroep, curriculumroute en totale kosten in het eerste jaar.",
+      "q3": "Hoe maken we een shortlist na het kiezen van een type?",
+      "a3": "Kies eerst je regio (verkeer telt), controleer daarna leeftijden/klassen en curriculum. Vergelijk tot slot de volledige kosten van het eerste jaar (schoolgeld + eenmalige kosten + terugkerende extra’s).",
+      "q4": "Kunnen jullie ons helpen kiezen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar prioriteiten (curriculum, budget, taalondersteuning), dan stellen we een shortlist en concrete vragen voor toelating voor."
+    },
+    "typeLabels": {
+      "school": "School",
+      "preschool": "Peuterschool",
+      "international-school": "Internationale school",
+      "learning-centre": "Leercentrum",
+      "early-years": "Vroege jaren",
+      "montessori-school": "Montessorischool",
+      "childcare": "Kinderopvang",
+      "academy": "Academie",
+      "homeschool-program": "Thuisonderwijsprogramma",
+      "waldorf-school": "Waldorfschool"
+    }
+  },
+  "typesDetail": {
+    "meta": {
+      "title": "{typeName}-scholen op Bali",
+      "description": "Bekijk {typeName}-opties op Bali. Vergelijk regio's, leeftijden, curriculumtags en kosten, en open daarna schoolprofielen voor toelichtingen over toelating."
+    },
+    "hero": {
+      "title": "{typeName}-scholen op Bali",
+      "schoolSingular": "school",
+      "schoolPlural": "scholen",
+      "listed": "vermeld.",
+      "feeRange": "Typische jaarkosten liggen ongeveer tussen Rp {minFee} en Rp {maxFee}.",
+      "ageRange": "Leeftijden lopen ongeveer van {minAge} tot {maxAge}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Waar je deze scholen vindt",
+        "empty": "Er zijn geen regiotags beschikbaar voor deze vermeldingen."
+      },
+      "curriculums": {
+        "title": "Veelvoorkomende curriculumtags",
+        "empty": "Er zijn geen curriculumtags vermeld voor deze scholen."
+      },
+      "budgets": {
+        "title": "Budgetklassen",
+        "empty": "Er zijn geen budgetklassen beschikbaar voor deze vermeldingen.",
+        "browse": "Bekijk budget",
+        "feesOverview": "Kostenoverzicht"
+      },
+      "nextSteps": {
+        "title": "Volgende stappen",
+        "body": "Als je hebt voorgeselecteerd op reistijd en leeftijd, open dan 3–5 profielen en vergelijk de volledige kosten van het eerste jaar.",
+        "openDirectory": "Open overzicht",
+        "compareSchools": "Vergelijk scholen",
+        "freeGuidance": "Gratis advies"
+      }
+    },
+    "card": {
+      "ages": "Leeftijden {min}–{max}"
+    },
+    "guides": {
+      "title": "Aanbevolen gidsen",
+      "viewAll": "Bekijk alle gidsen",
+      "read": "Lezen"
+    },
+    "faqHeading": "FAQ",
+    "faq": {
+      "q1": "Wat betekent \"{typeName}\" op Bali?",
+      "a1": "Typelabels zijn een oriëntatiehulp. Scholen gebruiken soms andere benamingen, dus bevestig curriculum, onderwijstaal en klasdekking rechtstreeks bij toelating.",
+      "q2": "Hoe maken we een shortlist van {typeName}-opties?",
+      "a2": "Begin met reistijd/regio, bevestig daarna leeftijden/klassen en curriculumroute. Vergelijk vervolgens de totale kosten van het eerste jaar zodat offertes goed vergelijkbaar zijn.",
+      "q3": "Moeten we eerst op type zoeken of eerst de overzichtsfilters gebruiken?",
+      "a3": "Gebruik typelabels om snel te verkennen en stap daarna over op het overzicht als je op meerdere criteria wilt filteren (regio + curriculum + budget).",
+      "q4": "Kunnen jullie ons helpen kiezen tussen een paar scholen?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en enkele prioriteiten; dan helpen we met shortlist en vragen voor toelating."
+    },
+    "footer": {
+      "moreFilters": {
+        "title": "Verder filteren?",
+        "body": "Gebruik de directory om regio + curriculum + budgetfilters te combineren.",
+        "openDirectory": "Open overzicht"
+      },
+      "shortlist": {
+        "title": "Hulp bij shortlist?",
+        "body": "Vertel ons de leeftijd van je kind, je regio en een globaal budget. Dan stellen we een shortlist en vragenlijst voor schoolbezoeken voor.",
+        "cta": "Gratis advies"
+      }
+    }
   }
 }
