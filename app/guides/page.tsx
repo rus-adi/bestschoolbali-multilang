@@ -24,8 +24,7 @@ export default function GuidesHubPage({ locale = "en" }: { locale?: string }) {
       <div className="card">
         <h1 style={{ marginTop: 0 }}><T k="guides.title" /></h1>
         <p className="small" style={{ marginTop: 8 }}>
-          If you are new to Bali schooling, start with a shortlist, then confirm age coverage and curriculum, and only then
-          compare total first-year cost. These guides are written to help you ask better questions and avoid surprises.
+          <T k="guides.hubSubtitle" />
         </p>
 
         <div className="inlineLinks" style={{ marginTop: 12 }}>
@@ -49,9 +48,9 @@ export default function GuidesHubPage({ locale = "en" }: { locale?: string }) {
 
       <div className="grid" style={{ marginTop: 16 }}>
         <section className="card">
-          <h2 style={{ marginTop: 0 }}>Topics</h2>
+          <h2 style={{ marginTop: 0 }}><T k="posts.browseByTopic" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            Use these topic pages as hubs — each one links into the directory pages that stay up to date.
+            <T k="posts.directoryShortcutsBody" />
           </p>
           <div className="grid" style={{ marginTop: 12 }}>
             {topics.map((t) => (
@@ -61,7 +60,7 @@ export default function GuidesHubPage({ locale = "en" }: { locale?: string }) {
                   {t.description}
                 </div>
                 <div className="small" style={{ marginTop: 10 }}>
-                  {t.count} guide{t.count === 1 ? "" : "s"}
+                  {t.count} <T k="posts.articleCountLabel" values={{ count: t.count }} />
                 </div>
               </a>
             ))}
@@ -69,9 +68,9 @@ export default function GuidesHubPage({ locale = "en" }: { locale?: string }) {
         </section>
 
         <section className="card">
-          <h2 style={{ marginTop: 0 }}>Latest guides</h2>
+          <h2 style={{ marginTop: 0 }}><T k="guides.title" /></h2>
           <p className="small" style={{ marginTop: 0 }}>
-            Newest additions. If you are researching a specific school, open its profile for the most current details.
+            <T k="posts.suggestedProfilesBody" />
           </p>
 
           <div className="grid" style={{ marginTop: 12 }}>

@@ -29,8 +29,8 @@ function uniqSorted(items: string[]) {
   return Array.from(new Set(items.filter(Boolean))).sort((a, b) => a.localeCompare(b));
 }
 
-export function getAllAreas(): AreaEntry[] {
-  const schools = getAllSchools();
+export function getAllAreas(locale = "en"): AreaEntry[] {
+  const schools = getAllSchools(locale);
 
   // Prefer explicit "areas" array when present; fall back to "area".
   const allAreas = schools.flatMap((s) => (s.areas?.length ? s.areas : [s.area])).filter(Boolean);
@@ -47,21 +47,21 @@ export function getAllAreas(): AreaEntry[] {
   return areas.map((name) => ({ name, slug: slugify(name), count: counts.get(name) ?? 0 }));
 }
 
-export function resolveAreaSlug(slug: string): string | null {
-  const match = getAllAreas().find((a) => a.slug === slug);
+export function resolveAreaSlug(slug: string, locale = "en"): string | null {
+  const match = getAllAreas(locale).find((a) => a.slug === slug);
   return match?.name ?? null;
 }
 
-export function schoolsInArea(areaName: string): School[] {
-  const schools = getAllSchools();
+export function schoolsInArea(areaName: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   return schools.filter((s) => {
     const list = s.areas?.length ? s.areas : [s.area];
     return list.some((a) => a === areaName);
   });
 }
 
-export function getAllCurriculums(): CurriculumEntry[] {
-  const schools = getAllSchools();
+export function getAllCurriculums(locale = "en"): CurriculumEntry[] {
+  const schools = getAllSchools(locale);
 
   // Normalize by slug so we don't accidentally create duplicate pages
   // (e.g., "Nature-Based" vs "Nature-based").
@@ -102,24 +102,24 @@ export function getAllCurriculums(): CurriculumEntry[] {
   return entries.sort((a, b) => a.tag.localeCompare(b.tag));
 }
 
-export function resolveCurriculumSlug(slug: string): string | null {
-  const match = getAllCurriculums().find((t) => t.slug === slug);
+export function resolveCurriculumSlug(slug: string, locale = "en"): string | null {
+  const match = getAllCurriculums(locale).find((t) => t.slug === slug);
   return match?.tag ?? null;
 }
 
-export function schoolsWithCurriculum(tag: string): School[] {
-  const schools = getAllSchools();
+export function schoolsWithCurriculum(tag: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   const tagSlug = slugify(tag);
   return schools.filter((s) => (s.curriculum_tags ?? []).some((t) => slugify(t) === tagSlug));
 }
 
-export function schoolsWithCurriculumSlug(slug: string): School[] {
-  const schools = getAllSchools();
+export function schoolsWithCurriculumSlug(slug: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   return schools.filter((s) => (s.curriculum_tags ?? []).some((t) => slugify(t) === slug));
 }
 
-export function getAllBudgets(): BudgetEntry[] {
-  const schools = getAllSchools();
+export function getAllBudgets(locale = "en"): BudgetEntry[] {
+  const schools = getAllSchools(locale);
   const counts = new Map<string, number>();
   for (const s of schools) {
     const b = String(s.budget_category ?? "").trim();
@@ -140,23 +140,23 @@ export function getAllBudgets(): BudgetEntry[] {
   return names.map((name) => ({ name, slug: slugify(name), count: counts.get(name) ?? 0 }));
 }
 
-export function resolveBudgetSlug(slug: string): string | null {
-  const match = getAllBudgets().find((b) => b.slug === slug);
+export function resolveBudgetSlug(slug: string, locale = "en"): string | null {
+  const match = getAllBudgets(locale).find((b) => b.slug === slug);
   return match?.name ?? null;
 }
 
-export function schoolsInBudget(budgetName: string): School[] {
-  const schools = getAllSchools();
+export function schoolsInBudget(budgetName: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   return schools.filter((s) => String(s.budget_category ?? "") === budgetName);
 }
 
-export function schoolsInBudgetSlug(slug: string): School[] {
-  const name = resolveBudgetSlug(slug);
-  return name ? schoolsInBudget(name) : [];
+export function schoolsInBudgetSlug(slug: string, locale = "en"): School[] {
+  const name = resolveBudgetSlug(slug, locale);
+  return name ? schoolsInBudget(name, locale) : [];
 }
 
-export function getAllTypes(): TypeEntry[] {
-  const schools = getAllSchools();
+export function getAllTypes(locale = "en"): TypeEntry[] {
+  const schools = getAllSchools(locale);
 
   // Normalize by slug so we don't accidentally create duplicate pages
   // (e.g., "International school" vs "International School").
@@ -194,17 +194,17 @@ export function getAllTypes(): TypeEntry[] {
   return entries.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
 
-export function resolveTypeSlug(slug: string): string | null {
-  const match = getAllTypes().find((t) => t.slug === slug);
+export function resolveTypeSlug(slug: string, locale = "en"): string | null {
+  const match = getAllTypes(locale).find((t) => t.slug === slug);
   return match?.name ?? null;
 }
 
-export function schoolsInType(typeName: string): School[] {
-  const schools = getAllSchools();
+export function schoolsInType(typeName: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   return schools.filter((s) => String(s.type ?? "") === typeName);
 }
 
-export function schoolsInTypeSlug(slug: string): School[] {
-  const schools = getAllSchools();
+export function schoolsInTypeSlug(slug: string, locale = "en"): School[] {
+  const schools = getAllSchools(locale);
   return schools.filter((s) => slugify(String(s.type ?? "")) === slug);
 }

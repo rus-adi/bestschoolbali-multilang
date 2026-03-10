@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GUIDE_TOPICS, getPostsForTopic } from "../../../lib/guideTopics";
+import { GUIDE_TOPICS, getGuideTopic, getPostsForTopic } from "../../../lib/guideTopics";
 import { hasPostTranslation } from "../../../lib/posts";
 import T from "../../../components/T";
 import { slugify } from "../../../lib/slug";
@@ -16,7 +16,7 @@ export function generateStaticParams(): { topic: string }[] {
 
 export function generateMetadata({ params }: { params: { topic: string } }): Metadata {
   const slug = slugify(params.topic);
-  const topic = GUIDE_TOPICS.find((t) => t.slug === slug);
+  const topic = getGuideTopic(slug);
   const title = topic ? `${topic.name} — Guides` : "Guides";
   const description = topic
     ? topic.description
@@ -30,7 +30,7 @@ export function generateMetadata({ params }: { params: { topic: string } }): Met
 
 export default function GuideTopicPage({ params, locale = "en" }: { params: { topic: string }; locale?: string }) {
   const slug = slugify(params.topic);
-  const topic = GUIDE_TOPICS.find((t) => t.slug === slug);
+  const topic = getGuideTopic(slug);
   const allPosts = getPostsForTopic(slug, locale);
   const posts = locale === "en" ? allPosts : allPosts.filter((p) => hasPostTranslation(p.slug, locale));
 
@@ -61,10 +61,9 @@ export default function GuideTopicPage({ params, locale = "en" }: { params: { to
       </div>
 
       <div className="card">
-        <h1 style={{ marginTop: 0 }}>{topic?.name ?? "Guides"}</h1>
+        <h1 style={{ marginTop: 0 }}>{topic?.name ?? <T k="guides.title" />}</h1>
         <p className="small" style={{ marginTop: 8 }}>
-          {topic?.description ??
-            "Practical, parent-first notes to help you compare schools without relying on marketing promises."}
+          {topic?.description ?? <T k="posts.indexSubtitle" />}
         </p>
 
         <div className="grid" style={{ marginTop: 12 }}>
@@ -88,25 +87,25 @@ export default function GuideTopicPage({ params, locale = "en" }: { params: { to
       </div>
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>Directory shortcuts</h2>
+        <h2 style={{ marginTop: 0 }}><T k="posts.directoryShortcutsTitle" /></h2>
         <p className="small" style={{ marginTop: 0 }}>
-          Use these pages for the latest, continuously updated school profiles.
+          <T k="posts.directoryShortcutsBody" />
         </p>
         <div className="inlineLinks" style={{ marginTop: 12 }}>
           <a className="btn" href="/areas">
-            Areas
+            <T k="search.areas" />
           </a>
           <a className="btn" href="/curriculums">
-            Curriculums
+            <T k="search.curriculums" />
           </a>
           <a className="btn" href="/types">
-            School types
+            <T k="schoolsPage.browseTypeHeading" />
           </a>
           <a className="btn" href="/budget">
-            Budget bands
+            <T k="search.budgetBands" />
           </a>
           <a className="btn" href="/fees">
-            Fees overview
+            <T k="search.feesOverview" />
           </a>
         </div>
       </div>
