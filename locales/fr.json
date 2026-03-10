@@ -257,7 +257,17 @@
     "feesOverview": "Aperçu des frais",
     "feeNotes": "Fee notes",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Les frais sont affichés comme des fourchettes annuelles estimatives. Merci de confirmer directement avec chaque école."
+    "feesDisclaimer": "Les frais sont affichés comme des fourchettes annuelles estimatives. Merci de confirmer directement avec chaque école.",
+    "faq": {
+      "q1": "Comment établir une shortlist d’écoles à Bali ?",
+      "a1": "Commencez par le trajet/la zone, puis vérifiez la tranche d’âge et le curriculum. Ensuite, comparez le coût total de la première année et renseignez-vous sur les étapes d’admission et les places disponibles.",
+      "q2": "Les frais sont-ils exacts ?",
+      "a2": "Les frais sont des fourchettes annuelles indicatives. Les écoles peuvent les mettre à jour à tout moment, donc demandez toujours la grille la plus récente et ce qui est inclus.",
+      "q3": "Que devons-nous demander pendant une visite d’école ?",
+      "a3": "Demandez la taille des classes, le soutien linguistique, les options de soutien pédagogique, les dates de rentrée et ce qui est inclus dans les frais (inscription, uniformes, transport, repas, examens).",
+      "q4": "Pouvez-vous nous aider à choisir une shortlist ?",
+      "a4": "Oui. Partagez votre zone, l’âge de votre enfant et quelques préférences ; nous proposerons une shortlist et une liste simple de questions à envoyer aux admissions."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Note de parent",

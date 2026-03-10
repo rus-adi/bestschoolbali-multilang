@@ -257,7 +257,17 @@
     "feesOverview": "Fees overview",
     "feeNotes": "Fee notes",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Fees are shown as best-effort annual ranges. Please confirm directly with each school."
+    "feesDisclaimer": "Fees are shown as best-effort annual ranges. Please confirm directly with each school.",
+    "faq": {
+      "q1": "How do we shortlist schools in Bali?",
+      "a1": "Start with commute/area, then match age range and curriculum. After that, compare total first-year cost and ask about admissions steps and availability.",
+      "q2": "Are the fees exact?",
+      "a2": "Fees are best-effort annual ranges. Schools can update fees at any time, so always request the latest fee sheet and confirm what’s included.",
+      "q3": "What should we ask during a school tour?",
+      "a3": "Ask about class sizes, language support, learning support options, start dates, and what fees include (registration, uniforms, transport, meals, exams).",
+      "q4": "Can you help us choose a shortlist?",
+      "a4": "Yes. Share your area, your child’s age, and a couple of preferences and we’ll suggest a shortlist plus a simple question list to send to admissions."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Parent note",

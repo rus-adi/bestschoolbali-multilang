@@ -257,7 +257,17 @@
     "feesOverview": "Gebührenübersicht",
     "feeNotes": "Gebührenhinweise",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Gebühren werden als bestmögliche Jahresbereiche angezeigt. Bitte bestätigen Sie diese direkt bei jeder Schule."
+    "feesDisclaimer": "Gebühren werden als bestmögliche Jahresbereiche angezeigt. Bitte bestätigen Sie diese direkt bei jeder Schule.",
+    "faq": {
+      "q1": "Wie erstellen wir eine Shortlist von Schulen auf Bali?",
+      "a1": "Starten Sie mit Fahrzeit/Region, prüfen Sie dann Altersstufe und Lehrplan. Vergleichen Sie anschließend die gesamten Erstjahreskosten und fragen Sie nach Aufnahmeprozess und Verfügbarkeit.",
+      "q2": "Sind die Gebühren exakt?",
+      "a2": "Gebühren sind bestmögliche Jahresbandbreiten. Schulen können Gebühren jederzeit anpassen, daher immer die aktuelle Gebührenliste anfordern und Leistungen prüfen.",
+      "q3": "Was sollten wir bei einer Schulbesichtigung fragen?",
+      "a3": "Fragen Sie nach Klassengrößen, Sprachförderung, Lernunterstützung, Startterminen und was in den Gebühren enthalten ist (Anmeldung, Uniformen, Transport, Mahlzeiten, Prüfungen).",
+      "q4": "Können Sie uns bei einer Shortlist helfen?",
+      "a4": "Ja. Teilen Sie Ihre Region, das Alter Ihres Kindes und ein paar Präferenzen, dann schlagen wir eine Shortlist und eine einfache Fragenliste für Admissions vor."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Elternnotiz",

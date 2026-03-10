@@ -257,7 +257,17 @@
     "feesOverview": "Resumen de cuotas",
     "feeNotes": "Notas de cuotas",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Las cuotas se muestran como rangos anuales aproximados. Confírmalas directamente con cada escuela."
+    "feesDisclaimer": "Las cuotas se muestran como rangos anuales aproximados. Confírmalas directamente con cada escuela.",
+    "faq": {
+      "q1": "¿Cómo hacemos una lista corta de colegios en Bali?",
+      "a1": "Empieza por trayecto/zona, luego revisa rango de edad y currículo. Después compara el coste total del primer año y pregunta por pasos de admisión y disponibilidad.",
+      "q2": "¿Las cuotas son exactas?",
+      "a2": "Las cuotas son rangos anuales orientativos. Los colegios pueden actualizarlas en cualquier momento, así que pide siempre la tabla más reciente y confirma qué incluye.",
+      "q3": "¿Qué deberíamos preguntar en una visita escolar?",
+      "a3": "Pregunta por tamaño de clase, apoyo de idioma, opciones de apoyo al aprendizaje, fechas de inicio y qué incluyen las cuotas (inscripción, uniformes, transporte, comidas, exámenes).",
+      "q4": "¿Pueden ayudarnos a elegir una lista corta?",
+      "a4": "Sí. Comparte tu zona, la edad de tu hijo/a y algunas preferencias; te sugeriremos una lista corta y preguntas simples para enviar a admisiones."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Nota de padres",

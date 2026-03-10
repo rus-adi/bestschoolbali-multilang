@@ -257,7 +257,17 @@
     "feesOverview": "Kostenoverzicht",
     "feeNotes": "Kostennotities",
     "faqHeading": "FAQ",
-    "feesDisclaimer": "Kosten worden getoond als best-effort jaarlijkse bandbreedtes. Bevestig dit rechtstreeks bij elke school."
+    "feesDisclaimer": "Kosten worden getoond als best-effort jaarlijkse bandbreedtes. Bevestig dit rechtstreeks bij elke school.",
+    "faq": {
+      "q1": "Hoe maken we een shortlist van scholen op Bali?",
+      "a1": "Begin met reistijd/regio, controleer daarna leeftijdsgroep en curriculum. Vergelijk vervolgens de totale kosten van het eerste jaar en vraag naar toelatingsstappen en beschikbaarheid.",
+      "q2": "Zijn de kosten exact?",
+      "a2": "Kosten zijn indicatieve jaarbanden. Scholen kunnen tarieven op elk moment aanpassen, dus vraag altijd de meest recente kostenlijst op en controleer wat is inbegrepen.",
+      "q3": "Wat moeten we vragen tijdens een schoolbezoek?",
+      "a3": "Vraag naar klassengrootte, taalondersteuning, leerondersteuning, startdata en wat in de kosten zit (inschrijving, uniformen, vervoer, maaltijden, examens).",
+      "q4": "Kunnen jullie ons helpen met een shortlist?",
+      "a4": "Ja. Deel je regio, de leeftijd van je kind en een paar voorkeuren, dan stellen we een shortlist en een eenvoudige vragenlijst voor toelating op."
+    }
   },
   "parentFeedbackPage": {
     "breadcrumbLabel": "Oudernotitie",
