@@ -345,8 +345,8 @@
     "title": "Типы школ",
     "subtitle": "Просматривайте школы по типу, затем открывайте профили, чтобы проверить программу, возрастные группы и стоимость.",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} школ",
+      "browse": "Смотреть"
     },
     "sections": {
       "combine": {

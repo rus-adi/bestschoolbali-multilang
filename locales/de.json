@@ -345,8 +345,8 @@
     "title": "Schularten",
     "subtitle": "Durchsuchen Sie Schulen nach Typ und öffnen Sie anschließend Profile, um Curriculum, Altersstufen und Gebühren zu prüfen.",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} Schulen",
+      "browse": "Ansehen"
     },
     "sections": {
       "combine": {

@@ -318,8 +318,8 @@
     "title": "Tipos de colegio",
     "subtitle": "Explora colegios por tipo y luego abre sus perfiles para confirmar currículo, edades y cuotas.",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} colegios",
+      "browse": "Ver"
     },
     "sections": {
       "combine": {

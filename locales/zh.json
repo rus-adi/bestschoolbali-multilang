@@ -345,8 +345,8 @@
     "title": "学校类型",
     "subtitle": "按学校类型浏览，随后打开学校资料页以确认课程体系、年龄范围和费用。",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} 所学校",
+      "browse": "查看"
     },
     "sections": {
       "combine": {

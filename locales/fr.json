@@ -345,8 +345,8 @@
     "title": "Types d’école",
     "subtitle": "Parcourez les écoles par type, puis ouvrez les profils pour confirmer le curriculum, les âges et les frais.",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} écoles",
+      "browse": "Voir"
     },
     "sections": {
       "combine": {

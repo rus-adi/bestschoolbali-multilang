@@ -345,8 +345,8 @@
     "title": "学校タイプ",
     "subtitle": "タイプ別に学校を探し、プロフィールを開いてカリキュラム、対象年齢、費用を確認してください。",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} 校",
+      "browse": "見る"
     },
     "sections": {
       "combine": {

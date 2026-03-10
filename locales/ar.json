@@ -345,8 +345,8 @@
     "title": "أنواع المدارس",
     "subtitle": "تصفّح المدارس حسب النوع، ثم افتح الملفات للتأكد من المنهج، والأعمار، والرسوم.",
     "cards": {
-      "schoolsCount": "{count} schools",
-      "browse": "Browse"
+      "schoolsCount": "{count} مدارس",
+      "browse": "تصفح"
     },
     "sections": {
       "combine": {
