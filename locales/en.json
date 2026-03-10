@@ -513,5 +513,34 @@
       "q4": "Can you help us shortlist?",
       "a4": "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions."
     }
+  },
+  "curriculumsPage": {
+    "title": "Curriculums",
+    "subtitle": "Explore schools by curriculum approach.",
+    "cards": {
+      "schoolsCount": "{count} schools",
+      "browse": "Browse"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combine curriculum with area",
+        "body": "Curriculum is important, but daily commute is often the deciding factor. Pick an area first, then shortlist.",
+        "areasCta": "Browse areas",
+        "directoryCta": "Open directory"
+      },
+      "types": {
+        "title": "Browse by school type",
+        "body": "Type labels can help if you’re looking for something specific (international, bilingual, Montessori, etc.).",
+        "typesCta": "School types",
+        "areasCta": "Areas"
+      },
+      "fees": {
+        "title": "Fees and budget",
+        "body": "Compare schools using total first-year cost. Budget bands are a quick way to narrow your shortlist.",
+        "budgetCta": "Budget bands",
+        "feesCta": "Fees overview"
+      }
+    },
+    "tip": "Tip: You can combine curriculum with area and budget filters on the directory page."
   }
 }
