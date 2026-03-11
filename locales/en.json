@@ -151,7 +151,10 @@
     "all": "All",
     "draft": "Draft",
     "notFound": "Not found",
-    "vs": "vs"
+    "vs": "vs",
+    "home": "Home",
+    "school": "school",
+    "schools": "schools"
   },
   "home": {
     "heroTitleLead": "Find the",
@@ -598,5 +601,30 @@
       "getFreeGuidance": "Get free guidance"
     },
     "disclaimer": "Disclaimer: fee data changes frequently. Always confirm directly with the school."
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "{tagName} schools in Bali",
+      "listed": "{count} {schoolLabel} listed.",
+      "feeRange": "Fee ranges span roughly Rp {minFee}–Rp {maxFee} /year."
+    },
+    "sections": {
+      "areas": {
+        "title": "Common areas for this curriculum",
+        "empty": "Area breakdown isn’t available for these listings."
+      },
+      "mix": {
+        "title": "School types and budgets",
+        "types": "Types",
+        "budgets": "Budget bands",
+        "feesOverview": "Fees overview",
+        "openDirectory": "Open directory",
+        "getGuidance": "Get guidance"
+      },
+      "related": {
+        "title": "Often explored together",
+        "viewAll": "View all curriculums"
+      }
+    }
   }
 }

@@ -151,7 +151,10 @@
     "all": "Alle",
     "draft": "Entwurf",
     "notFound": "Nicht gefunden",
-    "vs": "vs."
+    "vs": "vs.",
+    "home": "Startseite",
+    "school": "Schule",
+    "schools": "Schulen"
   },
   "home": {
     "heroTitleLead": "Finde die",
@@ -538,5 +541,30 @@
       "getFreeGuidance": "Kostenlose Beratung"
     },
     "disclaimer": "Hinweis: Gebührendaten ändern sich häufig. Bitte immer direkt bei der Schule bestätigen."
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "{tagName}-Schulen auf Bali",
+      "listed": "{count} {schoolLabel} gelistet.",
+      "feeRange": "Die Gebühren liegen typischerweise zwischen Rp {minFee} und Rp {maxFee} pro Jahr."
+    },
+    "sections": {
+      "areas": {
+        "title": "Häufige Regionen für diesen Lehrplan",
+        "empty": "Für diese Einträge ist keine Aufschlüsselung nach Regionen verfügbar."
+      },
+      "mix": {
+        "title": "Schultypen und Budgets",
+        "types": "Typen",
+        "budgets": "Budgetbänder",
+        "feesOverview": "Gebührenübersicht",
+        "openDirectory": "Verzeichnis öffnen",
+        "getGuidance": "Beratung erhalten"
+      },
+      "related": {
+        "title": "Oft zusammen angesehen",
+        "viewAll": "Alle Lehrpläne anzeigen"
+      }
+    }
   }
 }

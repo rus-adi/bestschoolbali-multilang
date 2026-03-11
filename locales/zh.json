@@ -151,7 +151,10 @@
     "all": "全部",
     "draft": "草稿",
     "notFound": "未找到",
-    "vs": "对比"
+    "vs": "对比",
+    "home": "首页",
+    "school": "所学校",
+    "schools": "所学校"
   },
   "home": {
     "heroTitleLead": "找到",
@@ -538,5 +541,30 @@
       "getFreeGuidance": "获取免费建议"
     },
     "disclaimer": "免责声明：费用数据变动频繁，请始终直接向学校确认。"
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "巴厘岛的{tagName}学校",
+      "listed": "共列出 {count} {schoolLabel}。",
+      "feeRange": "年费范围大约为 Rp {minFee}–Rp {maxFee}。"
+    },
+    "sections": {
+      "areas": {
+        "title": "该课程常见区域",
+        "empty": "这些结果暂无区域分布数据。"
+      },
+      "mix": {
+        "title": "学校类型与预算",
+        "types": "类型",
+        "budgets": "预算区间",
+        "feesOverview": "费用概览",
+        "openDirectory": "打开目录",
+        "getGuidance": "获取建议"
+      },
+      "related": {
+        "title": "常被一起浏览",
+        "viewAll": "查看全部课程"
+      }
+    }
   }
 }

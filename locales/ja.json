@@ -151,7 +151,10 @@
     "all": "すべて",
     "draft": "下書き",
     "notFound": "見つかりません",
-    "vs": "対"
+    "vs": "対",
+    "home": "ホーム",
+    "school": "校",
+    "schools": "校"
   },
   "home": {
     "heroTitleLead": "バリで",
@@ -538,5 +541,30 @@
       "getFreeGuidance": "無料相談"
     },
     "disclaimer": "注意：費用データは頻繁に更新されます。必ず学校へ直接確認してください。"
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "バリの{tagName}スクール",
+      "listed": "{count}件の{schoolLabel}を掲載。",
+      "feeRange": "年間費用の目安は Rp {minFee}〜Rp {maxFee} です。"
+    },
+    "sections": {
+      "areas": {
+        "title": "このカリキュラムでよく見られるエリア",
+        "empty": "この一覧ではエリア別内訳を表示できません。"
+      },
+      "mix": {
+        "title": "学校タイプと予算帯",
+        "types": "タイプ",
+        "budgets": "予算帯",
+        "feesOverview": "費用概要",
+        "openDirectory": "ディレクトリを開く",
+        "getGuidance": "相談する"
+      },
+      "related": {
+        "title": "よく一緒に検討される項目",
+        "viewAll": "すべてのカリキュラムを見る"
+      }
+    }
   }
 }
