@@ -151,7 +151,10 @@
     "all": "Alle",
     "draft": "Concept",
     "notFound": "Niet gevonden",
-    "vs": "vs"
+    "vs": "vs",
+    "home": "Home",
+    "school": "school",
+    "schools": "scholen"
   },
   "home": {
     "heroTitleLead": "Vind de",
@@ -509,5 +512,30 @@
       "getFreeGuidance": "Gratis advies"
     },
     "disclaimer": "Disclaimer: kostengegevens veranderen regelmatig. Controleer altijd rechtstreeks bij de school."
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "{tagName}-scholen op Bali",
+      "listed": "{count} {schoolLabel} vermeld.",
+      "feeRange": "De jaarkosten liggen grofweg tussen Rp {minFee} en Rp {maxFee}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Veelvoorkomende gebieden voor dit curriculum",
+        "empty": "Er is geen gebiedsverdeling beschikbaar voor deze resultaten."
+      },
+      "mix": {
+        "title": "Schooltypes en budgetten",
+        "types": "Types",
+        "budgets": "Budgetcategorieën",
+        "feesOverview": "Kostenoverzicht",
+        "openDirectory": "Directory openen",
+        "getGuidance": "Advies krijgen"
+      },
+      "related": {
+        "title": "Vaak samen bekeken",
+        "viewAll": "Alle curricula bekijken"
+      }
+    }
   }
 }
