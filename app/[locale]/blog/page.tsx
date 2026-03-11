@@ -1,1 +1,1 @@
-export { dynamic, generateMetadata, default } from "../posts/page";
+export { dynamic, generateStaticParams, generateMetadata, default } from "../posts/page";

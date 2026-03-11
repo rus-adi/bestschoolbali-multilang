@@ -6,13 +6,14 @@ import {
 } from '../../../guides/[topic]/page';
 import GuideTopicPageContent from '../../../guides/[topic]/GuideTopicPageContent';
 import { localizeMetadata } from '../../../../lib/seo/i18n';
+import { withLocaleStaticParams } from '../../../../lib/i18n/staticParams';
 import { isLocale, type Locale } from '../../../../lib/i18n/locales';
 
 export const dynamic = 'error';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return generateBaseStaticParams();
+  return withLocaleStaticParams(generateBaseStaticParams());
 }
 
 type LocalizedGuideTopicPageProps = {

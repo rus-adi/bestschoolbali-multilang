@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import PostsIndexView from "../../../components/PostsIndexView";
 import { isLocale, type Locale } from "../../../lib/i18n/locales";
 import { localizeMetadata } from "../../../lib/seo/i18n";
+import { generateLocaleStaticParams } from '../../../lib/i18n/staticParams';
 
 export const dynamic = "error";
+
+export function generateStaticParams() {
+  return generateLocaleStaticParams();
+}
 
 const baseMetadata: Metadata = {
   title: "Guides",
@@ -32,3 +37,4 @@ export default function LocalizedPostsIndexPage({
 
   return <PostsIndexView locale={params.locale as Locale} />;
 }
+
