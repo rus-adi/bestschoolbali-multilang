@@ -151,7 +151,10 @@
     "all": "Todos",
     "draft": "Borrador",
     "notFound": "No encontrado",
-    "vs": "vs."
+    "vs": "vs.",
+    "home": "Inicio",
+    "school": "colegio",
+    "schools": "colegios"
   },
   "home": {
     "heroTitleLead": "Encuentra la",
@@ -538,5 +541,36 @@
       "getFreeGuidance": "Asesoría gratuita"
     },
     "disclaimer": "Aviso: los datos de cuotas cambian con frecuencia. Confirma siempre directamente con el colegio."
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "Colegios {tagName} en Bali",
+      "listed": "{count} {schoolLabel} listados.",
+      "feeRange": "Los rangos de cuotas se sitúan aproximadamente entre Rp {minFee} y Rp {maxFee} al año."
+    },
+    "sections": {
+      "areas": {
+        "title": "Zonas comunes para este currículo",
+        "empty": "No hay desglose por zonas para estos resultados."
+      },
+      "mix": {
+        "title": "Tipos de colegio y presupuestos",
+        "types": "Tipos",
+        "budgets": "Bandas de presupuesto",
+        "feesOverview": "Resumen de cuotas",
+        "openDirectory": "Abrir directorio",
+        "getGuidance": "Recibir orientación"
+      },
+      "related": {
+        "title": "También se explora junto con",
+        "viewAll": "Ver todos los currículos"
+      },
+      "guides": {
+        "title": "Guías recomendadas",
+        "viewAll": "Ver todas las guías",
+        "read": "Leer"
+      }
+    },
+    "faqHeading": "Preguntas frecuentes"
   }
 }

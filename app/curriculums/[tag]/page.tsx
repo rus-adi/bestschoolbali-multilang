@@ -18,6 +18,7 @@ export function generateStaticParams(): { tag: string }[] {
 }
 
 export function generateMetadata({ params, locale = "en" }: { params: { tag: string }; locale?: string }): Metadata {
+  // Metadata is kept in English for SEO consistency on canonical non-locale route.
   const tagName = resolveCurriculumSlug(params.tag) ?? params.tag;
   const title = `${tagName} schools in Bali`;
   const description = `Browse schools offering ${tagName} in Bali. Compare areas, ages, and fees, and open individual profiles for admissions details.`;
@@ -45,7 +46,7 @@ function formatIdr(n: number) {
 export default async function CurriculumDetailPage({ params, locale = "en" }: { params: { tag: string }; locale?: string }) {
   const t = await createServerT(locale);
   const tagName = resolveCurriculumSlug(params.tag);
-  if (!tagName) return <div className="container">Not found</div>;
+  if (!tagName) return <div className="container">{t("common.notFound", "Not found")}</div>;
 
   const schools = sortSchoolsForMarketplace(schoolsWithCurriculumSlug(params.tag));
   const guides = recommendGuides({ curriculumTags: [tagName], limit: 3 });
@@ -65,8 +66,8 @@ export default async function CurriculumDetailPage({ params, locale = "en" }: { 
     .slice(0, 6);
 
   const crumbs = [
-    { name: "Home", item: SITE_URL },
-    { name: "Curriculums", item: `${SITE_URL}/curriculums` },
+    { name: t("common.home", "Home"), item: SITE_URL },
+    { name: t("curriculumsPage.title", "Curriculums"), item: `${SITE_URL}/curriculums` },
     { name: tagName, item: `${SITE_URL}/curriculums/${params.tag}` },
   ];
 
@@ -137,9 +138,9 @@ const faqJsonLd = {
   return (
     <div className="container">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
+        <a href="/">{t("common.home", "Home")}</a>
         <span aria-hidden="true">/</span>
-        <a href="/curriculums">Curriculums</a>
+        <a href="/curriculums">{t("curriculumsPage.title", "Curriculums")}</a>
         <span aria-hidden="true">/</span>
         <span>{tagName}</span>
       </nav>
@@ -147,10 +148,19 @@ const faqJsonLd = {
       <section className="hero" style={{ marginTop: 12 }}>
         <div className="heroInner">
           <div>
-            <h1>{tagName} schools in Bali</h1>
+            <h1>{t("curriculumDetailPage.hero.title", "{tagName} schools in Bali", { tagName })}</h1>
             <p className="small" style={{ marginTop: 6 }}>
-              {schools.length} {schools.length === 1 ? "school" : "schools"} listed.
-              {minFee && maxFee ? ` Fee ranges span roughly Rp ${formatIdr(minFee)}–Rp ${formatIdr(maxFee)} /year.` : ""}
+              {t(
+                "curriculumDetailPage.hero.listed",
+                "{count} {schoolLabel} listed.",
+                { count: String(schools.length), schoolLabel: schools.length === 1 ? t("common.school", "school") : t("common.schools", "schools") },
+              )}
+              {minFee && maxFee
+                ? ` ${t("curriculumDetailPage.hero.feeRange", "Fee ranges span roughly Rp {minFee}–Rp {maxFee} /year.", {
+                    minFee: formatIdr(minFee),
+                    maxFee: formatIdr(maxFee),
+                  })}`
+                : ""}
             </p>
           </div>
           <div className="heroMedia" aria-hidden="true">
@@ -161,7 +171,7 @@ const faqJsonLd = {
 
       <div className="grid" style={{ marginTop: 16 }}>
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>Common areas for this curriculum</h2>
+          <h2 style={{ marginTop: 0 }}>{t("curriculumDetailPage.sections.areas.title", "Common areas for this curriculum")}</h2>
           {topAreas.length ? (
             <div className="tagRow" style={{ marginTop: 0 }}>
               {topAreas.map((a) => (
@@ -172,18 +182,18 @@ const faqJsonLd = {
             </div>
           ) : (
             <p className="small" style={{ marginTop: 0 }}>
-              Area breakdown isn’t available for these listings.
+              {t("curriculumDetailPage.sections.areas.empty", "Area breakdown isn’t available for these listings.")}
             </p>
           )}
         </div>
 
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>School types and budgets</h2>
+          <h2 style={{ marginTop: 0 }}>{t("curriculumDetailPage.sections.mix.title", "School types and budgets")}</h2>
 
           {topTypes.length ? (
             <>
               <div className="small" style={{ marginTop: 0 }}>
-                <strong>Types</strong>
+                <strong>{t("curriculumDetailPage.sections.mix.types", "Types")}</strong>
               </div>
               <div className="tagRow" style={{ marginTop: 8 }}>
                 {topTypes.map((t) => (
@@ -198,7 +208,7 @@ const faqJsonLd = {
           {topBudgets.length ? (
             <>
               <div className="small" style={{ marginTop: 12 }}>
-                <strong>Budget bands</strong>
+                <strong>{t("curriculumDetailPage.sections.mix.budgets", "Budget bands")}</strong>
               </div>
               <div className="tagRow" style={{ marginTop: 8 }}>
                 {topBudgets.map((b) => (
@@ -212,13 +222,13 @@ const faqJsonLd = {
 
           <div className="inlineLinks" style={{ marginTop: 12 }}>
             <a className="btn" href="/fees">
-              Fees overview
+              {t("curriculumDetailPage.sections.mix.feesOverview", "Fees overview")}
             </a>
             <a className="btn" href="/schools">
-              Open directory
+              {t("curriculumDetailPage.sections.mix.openDirectory", "Open directory")}
             </a>
             <a className="btn" href="/contact">
-              Get guidance
+              {t("curriculumDetailPage.sections.mix.getGuidance", "Get guidance")}
             </a>
           </div>
         </div>
@@ -227,9 +237,9 @@ const faqJsonLd = {
       {otherCurriculums.length ? (
         <div className="card" style={{ marginTop: 16 }}>
           <div className="sectionHead">
-            <h2 style={{ margin: 0 }}>Often explored together</h2>
+            <h2 style={{ margin: 0 }}>{t("curriculumDetailPage.sections.related.title", "Often explored together")}</h2>
             <a className="sectionLink" href="/curriculums">
-              View all curriculums
+              {t("curriculumDetailPage.sections.related.viewAll", "View all curriculums")}
             </a>
           </div>
           <div className="tagRow" style={{ marginTop: 12 }}>
@@ -261,9 +271,9 @@ const faqJsonLd = {
       {guides.length ? (
         <div className="card" style={{ marginTop: 16 }}>
           <div className="sectionHead">
-            <h2 style={{ margin: 0 }}>Recommended guides</h2>
+            <h2 style={{ margin: 0 }}>{t("curriculumDetailPage.sections.guides.title", "Recommended guides")}</h2>
             <a className="sectionLink" href="/posts">
-              View all guides
+              {t("curriculumDetailPage.sections.guides.viewAll", "View all guides")}
             </a>
           </div>
           <div className="grid" style={{ marginTop: 14 }}>
@@ -274,7 +284,7 @@ const faqJsonLd = {
                 </h3>
                 <div className="small">{g.excerpt}</div>
                 <a className="btn btnLink" href={`/posts/${g.slug}`}>
-                  Read <span aria-hidden="true">→</span>
+                  {t("curriculumDetailPage.sections.guides.read", "Read")} <span aria-hidden="true">→</span>
                 </a>
               </div>
             ))}
@@ -283,7 +293,7 @@ const faqJsonLd = {
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
+        <h2 style={{ marginTop: 0 }}>{t("curriculumDetailPage.faqHeading", t("faq.heading", "FAQ"))}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">

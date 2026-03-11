@@ -151,7 +151,10 @@
     "all": "Tous",
     "draft": "Brouillon",
     "notFound": "Introuvable",
-    "vs": "vs"
+    "vs": "vs",
+    "home": "Accueil",
+    "school": "école",
+    "schools": "écoles"
   },
   "home": {
     "heroTitleLead": "Trouvez la",
@@ -538,5 +541,36 @@
       "getFreeGuidance": "Obtenir un conseil gratuit"
     },
     "disclaimer": "Avertissement : les données de frais changent fréquemment. Vérifiez toujours directement auprès de l’école."
+  },
+  "curriculumDetailPage": {
+    "hero": {
+      "title": "Écoles {tagName} à Bali",
+      "listed": "{count} {schoolLabel} listées.",
+      "feeRange": "Les frais annuels se situent généralement entre Rp {minFee} et Rp {maxFee}."
+    },
+    "sections": {
+      "areas": {
+        "title": "Zones fréquentes pour ce cursus",
+        "empty": "La répartition par zone n’est pas disponible pour ces résultats."
+      },
+      "mix": {
+        "title": "Types d’école et budgets",
+        "types": "Types",
+        "budgets": "Tranches de budget",
+        "feesOverview": "Aperçu des frais",
+        "openDirectory": "Ouvrir l’annuaire",
+        "getGuidance": "Obtenir des conseils"
+      },
+      "related": {
+        "title": "Souvent exploré avec",
+        "viewAll": "Voir tous les cursus"
+      },
+      "guides": {
+        "title": "Guides recommandés",
+        "viewAll": "Voir tous les guides",
+        "read": "Lire"
+      }
+    },
+    "faqHeading": "FAQ"
   }
 }
