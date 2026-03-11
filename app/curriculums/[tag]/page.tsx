@@ -271,9 +271,9 @@ const faqJsonLd = {
       {guides.length ? (
         <div className="card" style={{ marginTop: 16 }}>
           <div className="sectionHead">
-            <h2 style={{ margin: 0 }}>Recommended guides</h2>
+            <h2 style={{ margin: 0 }}>{t("curriculumDetailPage.sections.guides.title", "Recommended guides")}</h2>
             <a className="sectionLink" href="/posts">
-              View all guides
+              {t("curriculumDetailPage.sections.guides.viewAll", "View all guides")}
             </a>
           </div>
           <div className="grid" style={{ marginTop: 14 }}>
@@ -284,7 +284,7 @@ const faqJsonLd = {
                 </h3>
                 <div className="small">{g.excerpt}</div>
                 <a className="btn btnLink" href={`/posts/${g.slug}`}>
-                  Read <span aria-hidden="true">→</span>
+                  {t("curriculumDetailPage.sections.guides.read", "Read")} <span aria-hidden="true">→</span>
                 </a>
               </div>
             ))}
@@ -293,7 +293,7 @@ const faqJsonLd = {
       ) : null}
 
       <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>{t("faq.heading", "FAQ")}</h2>
+        <h2 style={{ marginTop: 0 }}>{t("curriculumDetailPage.faqHeading", t("faq.heading", "FAQ"))}</h2>
         <div className="faqList">
           {faqItems.map((f) => (
             <details key={f.q} className="faqItem">

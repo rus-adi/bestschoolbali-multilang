@@ -564,7 +564,13 @@
       "related": {
         "title": "常被一起浏览",
         "viewAll": "查看全部课程"
+      },
+      "guides": {
+        "title": "推荐指南",
+        "viewAll": "查看全部指南",
+        "read": "阅读"
       }
-    }
+    },
+    "faqHeading": "常见问题"
   }
 }

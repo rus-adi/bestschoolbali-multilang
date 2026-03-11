@@ -564,7 +564,13 @@
       "related": {
         "title": "함께 많이 찾는 항목",
         "viewAll": "모든 커리큘럼 보기"
+      },
+      "guides": {
+        "title": "추천 가이드",
+        "viewAll": "모든 가이드 보기",
+        "read": "읽기"
       }
-    }
+    },
+    "faqHeading": "자주 묻는 질문"
   }
 }

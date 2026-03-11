@@ -564,7 +564,13 @@
       "related": {
         "title": "Oft zusammen angesehen",
         "viewAll": "Alle Lehrpläne anzeigen"
+      },
+      "guides": {
+        "title": "Empfohlene Ratgeber",
+        "viewAll": "Alle Ratgeber anzeigen",
+        "read": "Lesen"
       }
-    }
+    },
+    "faqHeading": "Häufige Fragen"
   }
 }

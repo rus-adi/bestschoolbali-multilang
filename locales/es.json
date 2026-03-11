@@ -564,7 +564,13 @@
       "related": {
         "title": "También se explora junto con",
         "viewAll": "Ver todos los currículos"
+      },
+      "guides": {
+        "title": "Guías recomendadas",
+        "viewAll": "Ver todas las guías",
+        "read": "Leer"
       }
-    }
+    },
+    "faqHeading": "Preguntas frecuentes"
   }
 }

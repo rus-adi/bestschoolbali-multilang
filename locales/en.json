@@ -624,7 +624,13 @@
       "related": {
         "title": "Often explored together",
         "viewAll": "View all curriculums"
+      },
+      "guides": {
+        "title": "Recommended guides",
+        "viewAll": "View all guides",
+        "read": "Read"
       }
-    }
+    },
+    "faqHeading": "FAQ"
   }
 }

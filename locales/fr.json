@@ -564,7 +564,13 @@
       "related": {
         "title": "Souvent exploré avec",
         "viewAll": "Voir tous les cursus"
+      },
+      "guides": {
+        "title": "Guides recommandés",
+        "viewAll": "Voir tous les guides",
+        "read": "Lire"
       }
-    }
+    },
+    "faqHeading": "FAQ"
   }
 }

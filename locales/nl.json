@@ -535,7 +535,13 @@
       "related": {
         "title": "Vaak samen bekeken",
         "viewAll": "Alle curricula bekijken"
+      },
+      "guides": {
+        "title": "Aanbevolen gidsen",
+        "viewAll": "Alle gidsen bekijken",
+        "read": "Lezen"
       }
-    }
+    },
+    "faqHeading": "Veelgestelde vragen"
   }
 }
