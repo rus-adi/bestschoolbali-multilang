@@ -15,9 +15,7 @@ function mergeRobots(base: Metadata['robots'], noindex: boolean): Metadata['robo
 }
 
 export function localizeMetadata(base: Metadata, locale: Locale, pathname: string, opts?: { noindex?: boolean }) {
-  const canonical = opts?.noindex
-    ? buildLocalizedUrl(DEFAULT_LOCALE, pathname)
-    : buildLocalizedUrl(locale, pathname);
+  const canonical = buildLocalizedUrl(locale, pathname);
 
   const languages: Record<string, string> = {};
   for (const l of LOCALES) {

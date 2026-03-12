@@ -543,5 +543,94 @@
       }
     },
     "faqHeading": "Veelgestelde vragen"
+  },
+  "faq": {
+    "heading": "FAQ [EN fallback]",
+    "areaDetail": {
+      "q1": "Which schools are in {areaName}? [EN fallback]",
+      "a1": "This page lists schools tagged in {areaName}. Open a school profile to check ages, curriculum, and the most recent admissions notes. [EN fallback]",
+      "q2": "What fee range is common in {areaName}? [EN fallback]",
+      "a2WithRange": "Listed fee ranges in this area run from about Rp {minFee} to Rp {maxFee} per year, depending on program and age level. [EN fallback]",
+      "a2": "Fees vary by school and grade level. Open individual profiles and confirm the latest fee table with admissions. [EN fallback]",
+      "q3": "How should we shortlist schools in {areaName}? [EN fallback]",
+      "a3": "Start with commute time, then filter by curriculum and age range. After that, compare total first-year costs (tuition plus one-time fees). [EN fallback]",
+      "q4": "Can we visit or do a trial day? [EN fallback]",
+      "a4": "Many schools offer a campus tour and some offer trial days. Ask what your child can join and whether there is a trial fee. [EN fallback]",
+      "q5": "What should we confirm before enrolling? [EN fallback]",
+      "a5": "Confirm start dates, language support, class sizes, and what fees include (registration, uniforms, transport, meals, exams). [EN fallback]"
+    },
+    "ageBand": {
+      "q1": "Which schools cover {bandName} ages? [EN fallback]",
+      "a1": "This page lists schools whose published age range overlaps roughly {min}–{max}. Confirm exact year levels, start dates, and placement with admissions. [EN fallback]",
+      "q2": "Do schools accept mid-year transfers? [EN fallback]",
+      "a2": "Some schools accept transfers mid-year, others prefer term starts. Ask about space in your target grade and whether assessments are required. [EN fallback]",
+      "q3": "What should we confirm for placement? [EN fallback]",
+      "a3": "Confirm the child’s current grade, language level, and learning support needs. Ask how the school places new students and what documentation is needed. [EN fallback]",
+      "q4": "What fees should we compare for this age band? [EN fallback]",
+      "a4": "Ask for the total first-year cost: tuition plus registration, materials, uniforms, transport, meals, and any program fees that apply to this age group. [EN fallback]",
+      "q5": "How do we shortlist efficiently? [EN fallback]",
+      "a5": "Pick a realistic commute, then shortlist 3–5 schools. Book tours close together and use the same question list so you can compare fairly. [EN fallback]"
+    },
+    "budgetBand": {
+      "q1": "What does the “{bandName}” band mean? [EN fallback]",
+      "a1": "It’s a simple grouping based on annual tuition ranges. Exact fees vary by grade level and what’s included, so always request the current fee sheet from admissions. [EN fallback]",
+      "q2": "What costs are usually not included in tuition? [EN fallback]",
+      "a2": "Often: registration fees, uniforms, transport, meals, exams, some extracurriculars, learning materials, and capital levies. Ask for a full first‑year total. [EN fallback]",
+      "q3": "How do we shortlist within a budget band? [EN fallback]",
+      "a3": "Start with area (commute), confirm age/grade coverage, then compare curriculum and support needs. After that, ask each school for a breakdown of one‑time fees and monthly/annual extras. [EN fallback]",
+      "q4": "Do schools offer sibling discounts or payment plans? [EN fallback]",
+      "a4": "Some do. Ask whether there are sibling discounts, term-by-term payment options, and what happens if you start mid‑term. [EN fallback]",
+      "q5": "How often do fees change? [EN fallback]",
+      "a5": "Schools can update fees each academic year and sometimes mid-year. Use this directory as a starting point and confirm details before enrolling. [EN fallback]"
+    },
+    "curriculumDetail": {
+      "q1": "What does “{tagName}” mean for a school in Bali? [EN fallback]",
+      "a1": "Schools use curriculum labels in different ways. Open a profile and confirm the grade levels offered, the exam pathway (if any), and the language of instruction. [EN fallback]",
+      "q2": "How do we shortlist {tagName} schools? [EN fallback]",
+      "a2": "Start with your area and commute, then confirm ages/grade levels and total first-year costs. A campus tour and a trial day (if offered) are usually the fastest way to sense fit. [EN fallback]",
+      "q3": "Do all {tagName} schools have the same fees? [EN fallback]",
+      "a3": "No. Fees vary by campus, facilities, and age level. Use the fee range shown on each profile as a starting point and confirm the latest fee table with admissions. [EN fallback]",
+      "q4": "Can we combine this curriculum with an area search? [EN fallback]",
+      "a4": "Yes. Browse by area first, then check which schools match {tagName}. For a tighter shortlist, pick the areas you’d actually commute from. [EN fallback]"
+    },
+    "compareAreasDetail": {
+      "q1": "Is {areaA} or {areaB} better for schools? [EN fallback]",
+      "a1": "It depends on commute, your child’s age, and curriculum preference. Use this page to shortlist, then confirm availability and the latest fees with admissions. [EN fallback]",
+      "q2": "How should we test commute time? [EN fallback]",
+      "a2": "If possible, do a trial drive at drop‑off and pick‑up times. A route that looks short on a map can feel very different in school traffic. [EN fallback]",
+      "q3": "What should we compare besides tuition? [EN fallback]",
+      "a3": "Compare total first‑year cost (tuition + one‑time fees + recurring extras), language support, year levels offered, and how placement is handled for new students. [EN fallback]",
+      "q4": "Can you help us shortlist? [EN fallback]",
+      "a4": "Yes — share your area preference, child’s age, and any curriculum needs. We’ll suggest a shortlist and a short question list to send to admissions. [EN fallback]"
+    }
+  },
+  "curriculumsPage": {
+    "title": "Curriculums [EN fallback]",
+    "subtitle": "Explore schools by curriculum approach. [EN fallback]",
+    "cards": {
+      "schoolsCount": "{count} schools [EN fallback]",
+      "browse": "Browse [EN fallback]"
+    },
+    "sections": {
+      "combine": {
+        "title": "Combine curriculum with area [EN fallback]",
+        "body": "Curriculum is important, but daily commute is often the deciding factor. Pick an area first, then shortlist. [EN fallback]",
+        "areasCta": "Browse areas [EN fallback]",
+        "directoryCta": "Open directory [EN fallback]"
+      },
+      "types": {
+        "title": "Browse by school type [EN fallback]",
+        "body": "Type labels can help if you’re looking for something specific (international, bilingual, Montessori, etc.). [EN fallback]",
+        "typesCta": "School types [EN fallback]",
+        "areasCta": "Areas [EN fallback]"
+      },
+      "fees": {
+        "title": "Fees and budget [EN fallback]",
+        "body": "Compare schools using total first-year cost. Budget bands are a quick way to narrow your shortlist. [EN fallback]",
+        "budgetCta": "Budget bands [EN fallback]",
+        "feesCta": "Fees overview [EN fallback]"
+      }
+    },
+    "tip": "Tip: You can combine curriculum with area and budget filters on the directory page. [EN fallback]"
   }
 }
