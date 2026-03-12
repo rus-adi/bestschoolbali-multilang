@@ -1,54 +1,58 @@
-# QA report
+# QA swarm report
 
 Generated: 2026-03-11
 
-## Scope
-Repository-wide QA refresh covering:
-- routing and locale export behavior
-- translation key coverage
-- form integration consistency
-- static link and asset integrity
-- accessibility/UX/SEO spot checks
+## Swarm setup
+Test coverage was executed as a simulated multi-role swarm:
+- QA testers (routing, broken links, build stability)
+- UX testers (navigation clarity + locale consistency)
+- SEO auditors (canonical/hreflang/title checks)
+- accessibility testers (image alt + semantic issues)
+- performance testers (static generation, payload and export checks)
+- multilingual/i18n testers (locale route parity + slug stability)
 
-## Routing validation
-- ✅ Localized static routes are generated for all supported locales (`en`, `nl`, `de`, `es`, `fr`, `ru`, `zh`, `ko`, `ja`, `ar`) via shared locale static params.
-- ✅ Localized dynamic routes now combine locale + segment params during static generation, preventing root-language fallback behavior on exported pages.
-- ✅ `npm run build` succeeds and pre-renders localized routes such as `/en/schools`, `/zh/schools`, and locale-specific detail pages.
-- ✅ `npm run dev` serves localized routes correctly after making `next.config.js` output mode environment-aware for development.
+## Issues discovered and fixes applied
 
-## Translation coverage
-- ✅ Locale JSON key structure is now aligned across all language files.
-- ✅ Missing translation keys were backfilled from English values and marked with `[EN fallback]`.
-- ✅ Post-fix verification reports `missing total 0` across locale JSON files.
+### 1) Broken localized links caused by translated taxonomy slugs
+- **Problem:** Non-English pages could generate links like `/de/types/schule` and `/de/budget/mittelklasse`, but exported routes were canonical slugs (`/de/types/school`, `/de/budget/mid-range`).
+- **Impact:** Broken links in static export, locale navigation inconsistency.
+- **Affected code:** `lib/taxonomy.ts` (areas, curriculums, budgets, types helpers).
+- **Fix applied:** Reworked taxonomy aggregation to:
+  - derive canonical slugs from English dataset,
+  - keep localized display labels by slug where available,
+  - use slug-based matching in `schoolsInArea`, `schoolsInBudget`, and `schoolsInType`.
 
-## Form integration
-- ✅ Centralized school inquiry form URL is defined in `lib/forms/schoolInterest.ts`.
-- ✅ "Share Interest" and "Contact About This School" flows use the shared form builder.
-- ✅ Canonical form URL in use: `https://forms.gle/pzrQT9VDd2j3sBN6A`.
-- ✅ No placeholder tokens (`FORM_ID`, `SCHOOL_FIELD_ID`) found in repository scan.
+### 2) Missing route target for `canggu-sanur`
+- **Problem:** Internal links referenced `/areas/canggu-sanur` and localized variants, but this slug was not always present in generated area pages.
+- **Impact:** Repeated broken-link findings across locale pages.
+- **Affected code:** `lib/taxonomy.ts` (`getAllAreas`).
+- **Fix applied:** Added `STATIC_AREA_ALIASES` including `canggu-sanur` to ensure this route is exported consistently.
 
-## Broken links / missing assets
-Static export scan (`out/`):
-- ⚠️ Internal links checked: 3,466 HTML files scanned.
-- ⚠️ Potential broken internal links detected: 909.
-  - Most are localized slug mismatches (e.g. links to localized path variants that are not exported for translated slugs).
-- ✅ Missing static assets referenced by HTML: 0.
+### 3) SEO canonical mismatch on non-default locales
+- **Problem:** Non-English pages were marked `noindex` but canonical pointed to default locale, which can confuse locale intent.
+- **Impact:** SEO consistency issue in localized metadata output.
+- **Affected code:** `lib/seo/i18n.ts` (`localizeMetadata`).
+- **Fix applied:** Canonical now always uses the current locale path while preserving locale-specific robots behavior.
 
-## Accessibility findings
-- ⚠️ Multiple `<img>` elements use empty `alt=""` in content sections.
-  - Some are decorative and acceptable.
-  - Some content images may benefit from descriptive `alt` text for screen readers.
+## Validation results
 
-## UX consistency findings
-- ✅ Locale-aware navigation/header/footer links are generated through locale-aware href handling.
-- ⚠️ Remaining UX inconsistency risk: some localized content still points to non-localized derived links where translated slugs are unavailable.
-
-## SEO metadata findings
-- ✅ Locale pages emit locale-aware canonical + hreflang metadata.
-- ⚠️ Duplicate `<title>` values remain common across locale variants (expected for translated/canonicalized shared templates), but should be reviewed for priority landing pages if unique per-locale title strategy is desired.
-
-## Build and deployment readiness
+### Build / export
 - ✅ `npm install` passed.
 - ✅ `npm run build` passed.
-- ✅ Static export directory `out/` is generated and suitable for static hosting.
-- ✅ Exported output is compatible with Vercel static deployment and Hostinger static hosting (upload `out/` contents).
+- ✅ Static export generated `/out` successfully.
+- ✅ Export remains compatible with static hosting (Hostinger) and Vercel deployment workflows.
+
+### Routing / links
+- Static export scan results:
+  - Previous pass: **869** broken internal links.
+  - Current pass: **755** broken internal links.
+- Improvement came from slug-stability and route alias fixes above.
+- Remaining broken links are primarily data/content-generated and should be cleaned in follow-up content normalization.
+
+### Multilingual coverage
+- Localized route generation remains complete across supported locales.
+- Taxonomy links are now locale-display + canonical-slug stable.
+
+### Accessibility / UX / performance notes
+- Decorative images with empty `alt` are still present across templates; this is acceptable for purely decorative media but content images should be reviewed.
+- Static generation completes for all routes and remains deterministic for export.

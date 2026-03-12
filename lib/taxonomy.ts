@@ -29,22 +29,62 @@ function uniqSorted(items: string[]) {
   return Array.from(new Set(items.filter(Boolean))).sort((a, b) => a.localeCompare(b));
 }
 
+type Bucket = { count: number; variants: Map<string, number> };
+
+const STATIC_AREA_ALIASES: Array<{ slug: string; name: string }> = [
+  { slug: "canggu-sanur", name: "Canggu / Sanur" },
+];
+
+function pickDisplay(bucket?: Bucket, fallback = "") {
+  if (!bucket) return fallback;
+  let display = fallback;
+  let best = -1;
+  for (const [variant, c] of bucket.variants.entries()) {
+    if (c > best || (c === best && variant.length < display.length)) {
+      best = c;
+      display = variant;
+    }
+  }
+  return display;
+}
+
+function mergeBuckets(values: string[]) {
+  const buckets = new Map<string, Bucket>();
+  for (const raw of values) {
+    const value = String(raw ?? "").trim();
+    if (!value) continue;
+    const slug = slugify(value);
+    const bucket = buckets.get(slug) ?? { count: 0, variants: new Map<string, number>() };
+    bucket.count += 1;
+    bucket.variants.set(value, (bucket.variants.get(value) ?? 0) + 1);
+    buckets.set(slug, bucket);
+  }
+  return buckets;
+}
+
 export function getAllAreas(locale = "en"): AreaEntry[] {
-  const schools = getAllSchools(locale);
+  const canonicalSchools = getAllSchools("en");
+  const localizedSchools = getAllSchools(locale);
 
-  // Prefer explicit "areas" array when present; fall back to "area".
-  const allAreas = schools.flatMap((s) => (s.areas?.length ? s.areas : [s.area])).filter(Boolean);
-  const areas = uniqSorted(allAreas);
+  const canonicalValues = canonicalSchools.flatMap((s) => (s.areas?.length ? s.areas : [s.area])).filter(Boolean);
+  const localizedValues = localizedSchools.flatMap((s) => (s.areas?.length ? s.areas : [s.area])).filter(Boolean);
 
-  const counts = new Map<string, number>();
-  for (const s of schools) {
-    const list = s.areas?.length ? s.areas : [s.area];
-    for (const a of list) {
-      counts.set(a, (counts.get(a) ?? 0) + 1);
+  const canonical = mergeBuckets(canonicalValues);
+  const localized = mergeBuckets(localizedValues);
+
+  const entries: AreaEntry[] = Array.from(canonical.entries()).map(([slug, bucket]) => ({
+    slug,
+    count: bucket.count,
+    name: pickDisplay(localized.get(slug), pickDisplay(bucket, slug)),
+  }));
+
+  for (const alias of STATIC_AREA_ALIASES) {
+    if (!entries.some((entry) => entry.slug === alias.slug)) {
+      entries.push({ ...alias, count: 0 });
     }
   }
 
-  return areas.map((name) => ({ name, slug: slugify(name), count: counts.get(name) ?? 0 }));
+  return entries.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function resolveAreaSlug(slug: string, locale = "en"): string | null {
@@ -54,51 +94,26 @@ export function resolveAreaSlug(slug: string, locale = "en"): string | null {
 
 export function schoolsInArea(areaName: string, locale = "en"): School[] {
   const schools = getAllSchools(locale);
+  const areaSlug = slugify(areaName);
   return schools.filter((s) => {
     const list = s.areas?.length ? s.areas : [s.area];
-    return list.some((a) => a === areaName);
+    return list.some((a) => slugify(String(a ?? "")) === areaSlug);
   });
 }
 
 export function getAllCurriculums(locale = "en"): CurriculumEntry[] {
-  const schools = getAllSchools(locale);
+  const canonicalSchools = getAllSchools("en");
+  const localizedSchools = getAllSchools(locale);
 
-  // Normalize by slug so we don't accidentally create duplicate pages
-  // (e.g., "Nature-Based" vs "Nature-based").
-  const buckets = new Map<
-    string,
-    {
-      count: number;
-      variants: Map<string, number>;
-    }
-  >();
+  const canonical = mergeBuckets(canonicalSchools.flatMap((s) => s.curriculum_tags ?? []));
+  const localized = mergeBuckets(localizedSchools.flatMap((s) => s.curriculum_tags ?? []));
 
-  for (const s of schools) {
-    for (const raw of s.curriculum_tags ?? []) {
-      const tag = String(raw ?? "").trim();
-      if (!tag) continue;
-      const slug = slugify(tag);
-      const bucket = buckets.get(slug) ?? { count: 0, variants: new Map<string, number>() };
-      bucket.count += 1;
-      bucket.variants.set(tag, (bucket.variants.get(tag) ?? 0) + 1);
-      buckets.set(slug, bucket);
-    }
-  }
+  const entries: CurriculumEntry[] = Array.from(canonical.entries()).map(([slug, bucket]) => ({
+    slug,
+    count: bucket.count,
+    tag: pickDisplay(localized.get(slug), pickDisplay(bucket, slug)),
+  }));
 
-  const entries: CurriculumEntry[] = Array.from(buckets.entries()).map(([slug, b]) => {
-    // Pick the most common display variant for the slug.
-    let display = slug;
-    let best = -1;
-    for (const [variant, c] of b.variants.entries()) {
-      if (c > best || (c === best && variant.length < display.length)) {
-        best = c;
-        display = variant;
-      }
-    }
-    return { tag: display, slug, count: b.count };
-  });
-
-  // Keep the UI stable and easy to scan: alphabetical by display tag.
   return entries.sort((a, b) => a.tag.localeCompare(b.tag));
 }
 
@@ -119,25 +134,28 @@ export function schoolsWithCurriculumSlug(slug: string, locale = "en"): School[]
 }
 
 export function getAllBudgets(locale = "en"): BudgetEntry[] {
-  const schools = getAllSchools(locale);
-  const counts = new Map<string, number>();
-  for (const s of schools) {
-    const b = String(s.budget_category ?? "").trim();
-    if (!b) continue;
-    counts.set(b, (counts.get(b) ?? 0) + 1);
-  }
+  const canonicalSchools = getAllSchools("en");
+  const localizedSchools = getAllSchools(locale);
 
-  const preferredOrder = ["Budget", "Mid-range", "Premium", "Luxury"];
-  const names = Array.from(counts.keys()).sort((a, b) => {
-    const ai = preferredOrder.indexOf(a);
-    const bi = preferredOrder.indexOf(b);
-    if (ai === -1 && bi === -1) return a.localeCompare(b);
+  const canonical = mergeBuckets(canonicalSchools.map((s) => String(s.budget_category ?? "").trim()));
+  const localized = mergeBuckets(localizedSchools.map((s) => String(s.budget_category ?? "").trim()));
+
+  const preferredOrder = ["budget", "mid-range", "premium", "luxury"];
+
+  const entries: BudgetEntry[] = Array.from(canonical.entries()).map(([slug, bucket]) => ({
+    slug,
+    count: bucket.count,
+    name: pickDisplay(localized.get(slug), pickDisplay(bucket, slug)),
+  }));
+
+  return entries.sort((a, b) => {
+    const ai = preferredOrder.indexOf(a.slug);
+    const bi = preferredOrder.indexOf(b.slug);
+    if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
     if (ai === -1) return 1;
     if (bi === -1) return -1;
     return ai - bi;
   });
-
-  return names.map((name) => ({ name, slug: slugify(name), count: counts.get(name) ?? 0 }));
 }
 
 export function resolveBudgetSlug(slug: string, locale = "en"): string | null {
@@ -147,7 +165,8 @@ export function resolveBudgetSlug(slug: string, locale = "en"): string | null {
 
 export function schoolsInBudget(budgetName: string, locale = "en"): School[] {
   const schools = getAllSchools(locale);
-  return schools.filter((s) => String(s.budget_category ?? "") === budgetName);
+  const budgetSlug = slugify(budgetName);
+  return schools.filter((s) => slugify(String(s.budget_category ?? "")) === budgetSlug);
 }
 
 export function schoolsInBudgetSlug(slug: string, locale = "en"): School[] {
@@ -156,41 +175,18 @@ export function schoolsInBudgetSlug(slug: string, locale = "en"): School[] {
 }
 
 export function getAllTypes(locale = "en"): TypeEntry[] {
-  const schools = getAllSchools(locale);
+  const canonicalSchools = getAllSchools("en");
+  const localizedSchools = getAllSchools(locale);
 
-  // Normalize by slug so we don't accidentally create duplicate pages
-  // (e.g., "International school" vs "International School").
-  const buckets = new Map<
-    string,
-    {
-      count: number;
-      variants: Map<string, number>;
-    }
-  >();
+  const canonical = mergeBuckets(canonicalSchools.map((s) => String(s.type ?? "").trim()));
+  const localized = mergeBuckets(localizedSchools.map((s) => String(s.type ?? "").trim()));
 
-  for (const s of schools) {
-    const raw = String(s.type ?? "").trim();
-    if (!raw) continue;
-    const slug = slugify(raw);
-    const bucket = buckets.get(slug) ?? { count: 0, variants: new Map<string, number>() };
-    bucket.count += 1;
-    bucket.variants.set(raw, (bucket.variants.get(raw) ?? 0) + 1);
-    buckets.set(slug, bucket);
-  }
+  const entries: TypeEntry[] = Array.from(canonical.entries()).map(([slug, bucket]) => ({
+    slug,
+    count: bucket.count,
+    name: pickDisplay(localized.get(slug), pickDisplay(bucket, slug)),
+  }));
 
-  const entries: TypeEntry[] = Array.from(buckets.entries()).map(([slug, b]) => {
-    let display = slug;
-    let best = -1;
-    for (const [variant, c] of b.variants.entries()) {
-      if (c > best || (c === best && variant.length < display.length)) {
-        best = c;
-        display = variant;
-      }
-    }
-    return { name: display, slug, count: b.count };
-  });
-
-  // Most common types first (parents tend to browse this way).
   return entries.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
 
@@ -201,7 +197,8 @@ export function resolveTypeSlug(slug: string, locale = "en"): string | null {
 
 export function schoolsInType(typeName: string, locale = "en"): School[] {
   const schools = getAllSchools(locale);
-  return schools.filter((s) => String(s.type ?? "") === typeName);
+  const typeSlug = slugify(typeName);
+  return schools.filter((s) => slugify(String(s.type ?? "")) === typeSlug);
 }
 
 export function schoolsInTypeSlug(slug: string, locale = "en"): School[] {

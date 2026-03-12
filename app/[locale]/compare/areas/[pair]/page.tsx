@@ -5,7 +5,7 @@ import BasePage, {
   generateStaticParams as generateBaseStaticParams,
 } from '../../../../compare/areas/[pair]/page';
 import { localizeMetadata } from '../../../../../lib/seo/i18n';
-import { withLocaleStaticParams } from '../../../../lib/i18n/staticParams';
+import { withLocaleStaticParams } from '../../../../../lib/i18n/staticParams';
 import { isLocale, type Locale } from '../../../../../lib/i18n/locales';
 
 export const dynamic = 'error';
