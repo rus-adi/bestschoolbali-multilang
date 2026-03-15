@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import PathAwareLegacyChrome from '../components/PathAwareLegacyChrome';
+import GoogleAnalyticsTracker from '../components/GoogleAnalyticsTracker';
 
 const SITE_URL = 'https://bestschoolbali.com';
 
@@ -60,6 +62,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-753DZKBTTG" strategy="afterInteractive" />
+        <Script id="google-analytics-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-753DZKBTTG');
+          `}
+        </Script>
+        <GoogleAnalyticsTracker />
         <PathAwareLegacyChrome>{children}</PathAwareLegacyChrome>
         <script
           type="application/ld+json"
