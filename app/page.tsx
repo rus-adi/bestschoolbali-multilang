@@ -184,10 +184,10 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
             </a>
           </div>
 
-          <div className="grid" style={{ marginTop: 14 }}>
+          <div className="grid sectionGrid">
             <div className="card">
-              <h3 style={{ marginTop: 0 }}><T k="home.feesCardBrowseBudgetTitle" /></h3>
-              <p className="small" style={{ marginTop: 0 }}>
+              <h3 className="cardTitleReset"><T k="home.feesCardBrowseBudgetTitle" /></h3>
+              <p className="small textReset">
                 <T k="home.feesCardBrowseBudgetBody" />
               </p>
               <a className="btn btnLink" href="/budget">
@@ -195,8 +195,8 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
               </a>
             </div>
             <div className="card">
-              <h3 style={{ marginTop: 0 }}><T k="home.feesCardBrowseTypeTitle" /></h3>
-              <p className="small" style={{ marginTop: 0 }}>
+              <h3 className="cardTitleReset"><T k="home.feesCardBrowseTypeTitle" /></h3>
+              <p className="small textReset">
                 <T k="home.feesCardBrowseTypeBody" />
               </p>
               <a className="btn btnLink" href="/types">
@@ -204,8 +204,8 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
               </a>
             </div>
             <div className="card">
-              <h3 style={{ marginTop: 0 }}><T k="home.feesCardFeeNotesTitle" /></h3>
-              <p className="small" style={{ marginTop: 0 }}>
+              <h3 className="cardTitleReset"><T k="home.feesCardFeeNotesTitle" /></h3>
+              <p className="small textReset">
                 <T k="home.feesCardFeeNotesBody" />
               </p>
               <a className="btn btnLink" href="/fees/estimate">
@@ -213,8 +213,8 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
               </a>
             </div>
             <div className="card">
-              <h3 style={{ marginTop: 0 }}><T k="home.feesCardMethodologyTitle" /></h3>
-              <p className="small" style={{ marginTop: 0 }}>
+              <h3 className="cardTitleReset"><T k="home.feesCardMethodologyTitle" /></h3>
+              <p className="small textReset">
                 <T k="home.feesCardMethodologyBody" />
               </p>
               <a className="btn btnLink" href="/methodology">
@@ -237,9 +237,9 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
           {!latest ? (
             <p className="small"><T k="home.noPosts" /></p>
           ) : (
-            <div className="grid" style={{ marginTop: 14 }}>
+            <div className="grid sectionGrid">
               <div className="card">
-                <h3 style={{ marginTop: 0 }}>
+                <h3 className="cardTitleReset">
                   <a href={`/posts/${latest.slug}`}>{latest.title}</a>
                 </h3>
                 <div className="small">{latest.date}</div>
@@ -250,10 +250,10 @@ export default function HomePage({ locale = "en" }: { locale?: string }) {
               </div>
 
               <div className="card">
-                <h3 style={{ marginTop: 0 }}><T k="home.morePosts" /></h3>
-                <ul style={{ margin: 0, paddingLeft: 18 }}>
+                <h3 className="cardTitleReset"><T k="home.morePosts" /></h3>
+                <ul className="listCompact">
                   {posts.slice(0, 5).map((p) => (
-                    <li key={p.slug} style={{ marginBottom: 8 }}>
+                    <li key={p.slug}>
                       <a href={`/posts/${p.slug}`}>{p.title}</a>
                       <div className="small">{p.date}</div>
                     </li>

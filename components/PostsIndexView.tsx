@@ -37,7 +37,7 @@ export default function PostsIndexView({ locale }: { locale?: Locale }) {
         <div className="heroInner">
           <div>
             <h1><T k="posts.indexTitle" /></h1>
-            <p className="small" style={{ marginTop: 6 }}>
+            <p className="small metaRow">
               <T k="posts.indexSubtitle" />
             </p>
           </div>
@@ -48,14 +48,14 @@ export default function PostsIndexView({ locale }: { locale?: Locale }) {
       </section>
 
       {categories.length ? (
-        <div className="card" style={{ marginTop: 16 }}>
-          <div className="sectionHead" style={{ marginBottom: 10 }}>
-            <h2 style={{ margin: 0 }}><T k="posts.browseByTopic" /></h2>
+        <div className="card sectionGrid">
+          <div className="sectionHead sectionHeadTight">
+            <h2 className="cardTitleReset"><T k="posts.browseByTopic" /></h2>
             <a className="sectionLink" href={href("/schools", locale)}>
               <T k="posts.browseSchools" />
             </a>
           </div>
-          <div className="tagRow" style={{ marginTop: 0 }}>
+          <div className="tagRow tagRowTight">
             {categories.map((c) => (
               <a key={c.name} className="tag" href={`#${encodeURIComponent(c.name)}`}>
                 {c.name} <span className="small">({c.count})</span>
@@ -65,23 +65,23 @@ export default function PostsIndexView({ locale }: { locale?: Locale }) {
         </div>
       ) : null}
 
-      <div className="grid" style={{ marginTop: 16 }}>
+      <div className="grid sectionGrid">
         {orderedKeys.map((key) => {
           const group = groups.get(key) ?? [];
           return (
             <section className="card" key={key} id={encodeURIComponent(key)}>
               <div className="sectionHead">
-                <h2 style={{ margin: 0 }}>{key}</h2>
+                <h2 className="cardTitleReset">{key}</h2>
                 <div className="small">{group.length} <T k="posts.articleCountLabel" values={{ count: group.length }} /></div>
               </div>
-              <div className="grid" style={{ marginTop: 12 }}>
+              <div className="grid sectionGrid">
                 {group.map((p) => (
-                  <a key={p.slug} className="card" href={href(`/posts/${p.slug}`, locale)}>
-                    <div style={{ fontWeight: 800 }}>{p.title}</div>
-                    <div className="small" style={{ marginTop: 6 }}>
+                  <a key={p.slug} className="card postCardLink flowCompact" href={href(`/posts/${p.slug}`, locale)}>
+                    <div className="postCardTitle">{p.title}</div>
+                    <div className="small metaRow">
                       {p.excerpt}
                     </div>
-                    <div className="small" style={{ marginTop: 10 }}>
+                    <div className="small">
                       {p.date}
                     </div>
                   </a>

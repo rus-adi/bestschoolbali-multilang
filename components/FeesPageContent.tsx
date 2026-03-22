@@ -35,7 +35,7 @@ export default function FeesPageContent({
         <div className="heroInner">
           <div>
             <h1>{tr('feesPage.title', 'School fees in Bali')}</h1>
-            <p className="small" style={{ marginTop: 6 }}>
+            <p className="small metaRow">
               {tr(
                 'feesPage.subtitle',
                 'Fees are a moving target. This directory shows best-effort ranges as a starting point — then you confirm the latest fee sheet directly with admissions.',
@@ -48,16 +48,16 @@ export default function FeesPageContent({
         </div>
       </section>
 
-      <div className="grid" style={{ marginTop: 16 }}>
+      <div className="grid sectionGrid">
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>{tr('feesPage.meaning.title', 'What the fee numbers usually mean')}</h2>
-          <p className="small" style={{ marginTop: 0 }}>
+          <h2 className="cardTitleReset">{tr('feesPage.meaning.title', 'What the fee numbers usually mean')}</h2>
+          <p className="small textReset">
             {tr(
               'feesPage.meaning.body',
               'Many schools quote tuition per year. The part families miss is the “first-year total” — tuition plus one‑time registration, uniforms, transport, meals, exams, and activities.',
             )}
           </p>
-          <ul style={{ marginBottom: 0 }}>
+          <ul className="listCompact">
             <li>
               <strong>{tr('feesPage.meaning.listedLabel', 'Listed')}</strong>: {tr('feesPage.meaning.listedBody', 'a fee range publicly available (still confirm the latest).')}
             </li>
@@ -68,8 +68,8 @@ export default function FeesPageContent({
         </div>
 
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>{tr('feesPage.coverage.title', 'Directory coverage')}</h2>
-          <p className="small" style={{ marginTop: 0 }}>
+          <h2 className="cardTitleReset">{tr('feesPage.coverage.title', 'Directory coverage')}</h2>
+          <p className="small textReset">
             {tr(
               'feesPage.coverage.body',
               'Out of {total} schools in the directory, {listed} have publicly listed ranges and {estimate} are best-effort estimates.',
@@ -90,9 +90,9 @@ export default function FeesPageContent({
         </div>
       </div>
 
-      <div className="card" style={{ marginTop: 16 }}>
-        <h2 style={{ marginTop: 0 }}>{tr('feesPage.budgetBand.title', 'Browse by budget band')}</h2>
-        <p className="small" style={{ marginTop: 0 }}>
+      <div className="card sectionGrid">
+        <h2 className="cardTitleReset">{tr('feesPage.budgetBand.title', 'Browse by budget band')}</h2>
+        <p className="small textReset">
           {tr(
             'feesPage.budgetBand.body',
             'Budget bands help you narrow quickly. Within any band, you’ll still see differences by age level and what’s included.',
@@ -107,10 +107,10 @@ export default function FeesPageContent({
         </div>
       </div>
 
-      <div className="grid" style={{ marginTop: 16 }}>
+      <div className="grid sectionGrid">
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>{tr('feesPage.questions.title', 'Questions to ask every school')}</h2>
-          <ol style={{ marginBottom: 0 }}>
+          <h2 className="cardTitleReset">{tr('feesPage.questions.title', 'Questions to ask every school')}</h2>
+          <ol className="listCompact">
             <li>{tr('feesPage.questions.q1', 'What is the total first-year cost (tuition + one-time fees)?')}</li>
             <li>{tr('feesPage.questions.q2', 'What is included (uniforms, meals, transport, books, exams, activities)?')}</li>
             <li>{tr('feesPage.questions.q3', 'Are there discounts (siblings, mid-year entry) or payment plans?')}</li>
@@ -120,8 +120,8 @@ export default function FeesPageContent({
         </div>
 
         <div className="card">
-          <h2 style={{ marginTop: 0 }}>{tr('feesPage.shortlist.title', 'Prefer a short list?')}</h2>
-          <p className="small" style={{ marginTop: 0 }}>
+          <h2 className="cardTitleReset">{tr('feesPage.shortlist.title', 'Prefer a short list?')}</h2>
+          <p className="small textReset">
             {tr(
               'feesPage.shortlist.body',
               'Tell us your area, your child’s age, and the curriculum you want. We’ll help you shortlist and prepare a simple script for admissions calls.',
@@ -141,7 +141,7 @@ export default function FeesPageContent({
         </div>
       </div>
 
-      <p className="small" style={{ marginTop: 16 }}>
+      <p className="small sectionGrid">
         {tr('feesPage.disclaimer', 'Disclaimer: fee data changes frequently. Always confirm directly with the school.')}
       </p>
     </div>
