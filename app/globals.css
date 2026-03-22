@@ -1760,3 +1760,533 @@ h3 {
 .backToTopBtn:hover {
   background: rgba(15, 23, 42, 1);
 }
+
+
+/* 2026 UI refresh overrides */
+:root {
+  --bg: #f4f7fb;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: #ffffff;
+  --surface-muted: rgba(248, 250, 252, 0.9);
+  --text: #0f172a;
+  --muted: #526072;
+  --primary: #0f766e;
+  --primary-hover: #0b5f59;
+  --primary-soft: rgba(15, 118, 110, 0.1);
+  --border: rgba(148, 163, 184, 0.22);
+  --ring: rgba(15, 118, 110, 0.18);
+  --shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.05);
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(900px 420px at 0% -10%, rgba(20, 184, 166, 0.14), transparent 60%),
+    radial-gradient(780px 360px at 100% 0%, rgba(59, 130, 246, 0.12), transparent 60%),
+    linear-gradient(180deg, #f8fbfd 0%, #f4f7fb 52%, #eef4f8 100%);
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 24px;
+}
+
+h1,
+h2,
+h3 {
+  color: #0f172a;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+}
+
+h3 {
+  font-size: 1.08rem;
+}
+
+p,
+.small,
+li,
+label,
+input,
+select,
+textarea,
+button {
+  letter-spacing: -0.01em;
+}
+
+.small {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.siteHeader {
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+  background: rgba(244, 247, 251, 0.78);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+}
+
+.headerInner {
+  gap: 18px;
+  min-height: 82px;
+}
+
+.brand {
+  gap: 12px;
+}
+
+.brandLogo {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
+}
+
+.nav {
+  gap: 8px;
+}
+
+.navLink {
+  font-weight: 600;
+  padding: 10px 14px;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.navLink:hover {
+  transform: translateY(-1px);
+}
+
+.siteFooter {
+  margin-top: 72px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.footerInner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card,
+.hero,
+.heroMedia,
+.schoolTile,
+.areaTile,
+.postHero,
+.quoteCard,
+.faqItem,
+.compareBar,
+.compareSuggest,
+.compareChip,
+.tocCard,
+.compareTableWrap {
+  backdrop-filter: blur(12px);
+}
+
+.card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.card:hover {
+  box-shadow: var(--shadow);
+}
+
+.section {
+  margin-top: 48px;
+}
+
+.sectionHead {
+  margin-bottom: 18px;
+}
+
+.sectionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.96rem;
+}
+
+.input,
+.select,
+.textarea {
+  min-height: 48px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border-color: rgba(148, 163, 184, 0.28);
+  background: rgba(255, 255, 255, 0.95);
+  transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.textarea {
+  min-height: 132px;
+}
+
+.btn {
+  min-height: 46px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btnPrimary {
+  box-shadow: 0 16px 32px rgba(15, 118, 110, 0.22);
+}
+
+.btnLink {
+  box-shadow: none;
+}
+
+.tag,
+.pill,
+.comparePill,
+.schoolTilePill,
+.chip,
+.badgePill {
+  border-radius: 999px;
+}
+
+.hero {
+  border-radius: var(--radius-lg);
+  border-color: rgba(148, 163, 184, 0.22);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 249, 255, 0.82)),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(59, 130, 246, 0.08));
+  box-shadow: var(--shadow);
+}
+
+.heroInner {
+  gap: 28px;
+  padding: 28px;
+}
+
+.heroMedia,
+.homeHeroMedia {
+  border-radius: 24px;
+}
+
+.homeHero {
+  padding: 34px 0 18px 0;
+  background:
+    linear-gradient(110deg, rgba(15, 23, 42, 0.7), rgba(15, 118, 110, 0.38)),
+    url("/img/banners/hero-wide.webp") center / cover no-repeat;
+}
+
+.homeHero::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.08));
+}
+
+.homeHero::after {
+  bottom: -210px;
+  height: 390px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.heroContent {
+  max-width: 640px;
+}
+
+.homeHeroTitle {
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 1.02;
+}
+
+.homeHeroSubtitle {
+  margin-top: 14px;
+  max-width: 58ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.heroBadges {
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.badgePill,
+.chip {
+  padding: 11px 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.heroSearchCard {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.searchGrid {
+  gap: 14px;
+}
+
+.searchLabel {
+  margin-bottom: 10px;
+  font-size: 0.94rem;
+  color: #0f172a;
+}
+
+.searchLabelIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+}
+
+.tileGrid,
+.grid {
+  gap: 20px;
+}
+
+.schoolTileCard {
+  gap: 14px;
+}
+
+.schoolTile,
+.areaTile,
+.schoolCard,
+.postCardLink {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.schoolTile:hover,
+.areaTile:hover,
+.schoolCard:hover,
+.postCardLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+}
+
+.schoolTile {
+  border-radius: 24px;
+}
+
+.schoolTile img {
+  height: 230px;
+  padding: 24px;
+}
+
+.schoolTileContent {
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+}
+
+.schoolTileTitle {
+  font-size: 1.16rem;
+}
+
+.schoolTileMeta {
+  margin-top: 6px;
+}
+
+.schoolTilePills {
+  margin-top: 12px;
+}
+
+.schoolTileActions .btn,
+.schoolCardActions .btn {
+  min-height: 44px;
+}
+
+.areaScroller {
+  gap: 18px;
+  padding-bottom: 10px;
+}
+
+.areaTile {
+  flex-basis: 248px;
+  border-radius: 22px;
+}
+
+.areaTile img {
+  height: 152px;
+}
+
+.areaTileBody {
+  padding: 16px;
+}
+
+.schoolCardMedia img {
+  height: clamp(156px, 22vw, 190px);
+}
+
+.schoolCardBody {
+  padding: 16px 16px 8px;
+}
+
+.schoolCardActions {
+  padding: 0 16px 16px;
+}
+
+.toggleRow {
+  padding: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow-soft);
+}
+
+.toggleBtn {
+  min-height: 42px;
+}
+
+.localeTrigger,
+.navToggle {
+  box-shadow: var(--shadow-soft);
+}
+
+.backToTopBtn {
+  right: 22px;
+  bottom: 22px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* utility classes for cleaner markup */
+.flowTight > * + * {
+  margin-top: 10px;
+}
+
+.flowCompact > * + * {
+  margin-top: 6px;
+}
+
+.sectionGrid {
+  margin-top: 20px;
+}
+
+.cardTitleReset,
+.textReset {
+  margin-top: 0;
+}
+
+.sectionHeadTight {
+  margin-bottom: 10px;
+}
+
+.tagRowTight {
+  margin-top: 0;
+}
+
+.listCompact {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.listCompact li + li {
+  margin-top: 10px;
+}
+
+.metaRow {
+  margin-top: 6px;
+}
+
+.postCardLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.postCardTitle {
+  font-weight: 800;
+  color: var(--text);
+}
+
+.formIntro {
+  margin-top: 10px;
+}
+
+.formSectionTop {
+  margin-top: 16px;
+}
+
+.formFullSpan {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 980px) {
+  .container {
+    padding: 20px;
+  }
+
+  .homeHero {
+    padding-top: 26px;
+  }
+
+  .heroInner {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 840px) {
+  .headerInner {
+    min-height: 74px;
+  }
+
+  .nav {
+    top: calc(100% + 10px);
+    left: 20px;
+    right: 20px;
+    padding: 12px;
+    border-radius: 20px;
+    background: rgba(244, 247, 251, 0.96);
+  }
+
+  .heroSearchCard {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+
+  .homeHeroTitle {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  .heroBadges,
+  .chipRow {
+    gap: 10px;
+  }
+
+  .badgePill,
+  .chip {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .heroInner,
+  .homeHeroInner,
+  .card,
+  .heroSearchCard {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .card {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

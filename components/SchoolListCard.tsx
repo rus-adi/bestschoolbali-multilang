@@ -34,7 +34,7 @@ export default function SchoolListCard({ school, meta, feeText }: Props) {
           ) : null}
         </div>
         {meta ? <div className="small">{meta}</div> : null}
-        <div className="small" style={{ marginTop: 6 }}>
+        <div className="small metaRow">
           <strong>
             <T k="school.feesLabel" />:
           </strong>{' '}
