@@ -178,16 +178,16 @@ export default function GuidanceFormClient({
       </div>
 
       {mode === "schools" ? (
-        <div className="small" style={{ marginTop: 10 }}>
+        <div className="small formIntro">
           {t("guidanceForm.schoolHelp")}
         </div>
       ) : (
-        <div className="small" style={{ marginTop: 10 }}>
+        <div className="small formIntro">
           {t("guidanceForm.parentHelp")}
         </div>
       )}
 
-      <div className="formGrid" style={{ marginTop: 14 }}>
+      <div className="formGrid formSectionTop">
         <div>
           <label className="small">{t("guidanceForm.nameOptional")}</label>
           <input className="input" value={name} onChange={(e) => setName(e.target.value)} placeholder={t("guidanceForm.yourName")} />
@@ -291,7 +291,7 @@ export default function GuidanceFormClient({
           </>
         )}
 
-        <div style={{ gridColumn: "1 / -1" }}>
+        <div className="formFullSpan">
           <label className="small">
             {mode === "schools" ? t("guidanceForm.requestedUpdates") : t("guidanceForm.notesOptional")}
           </label>
